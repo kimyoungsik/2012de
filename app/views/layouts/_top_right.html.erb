@@ -1,0 +1,36 @@
+<ul>
+	<% if user_signed_in? %>
+		<li class="top-item dropdown-box">
+			<ul id="top-user-item">
+				<li><%= link_to "#{current_user.name} 님의 프로필 페이지", current_user %></li>
+				<li><%= link_to "쪽지 보내기", messages_path %></li>
+				<li><%= link_to "회원정보 수정", edit_registration_path(current_user) %></li>
+				<li><%= link_to '로그아웃', destroy_user_session_path, :method => :delete %></li>
+				<li></li>
+			</ul>
+			<div id="dropdown-button"></div>
+		</li>
+		<li class="top-item">
+			<div id="top-profile-image"><%= link_to profile_photo(current_user, :small, 25), current_user %></div>
+			<div id="top-profile-name"><%= link_to current_user.name, current_user %></div>
+		</li>
+		
+		<li class="top-item" id="top-search-item">
+			<% search_path = case params[:controller]
+				when "networks" then networks_path
+				when "kits" then kits_path
+				else seeds_path
+				end
+			%>
+			<%= form_tag search_path, :method => :get do %>
+				<i class="top-nav-search"></i>
+				<%= text_field_tag :search, params[:search] %>
+				<%= submit_tag "Search", :title => nil %>
+			<% end %>
+		</li>
+
+	<% else %>
+		<li class="top-item" id="login-button"><%= link_to '로그인', root_path %></li>
+		<li class="top-item" id="top-facebook-item"><%= link_to image_tag('login-facebook.png'), '/auth/facebook' %></li>
+	<% end %>
+</ul>

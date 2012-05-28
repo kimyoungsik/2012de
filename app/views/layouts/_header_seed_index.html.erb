@@ -1,0 +1,11 @@
+<div id="header">
+	<div id="header-box">
+		<div class="item-box">
+			<% Seed.all.shuffle.first(20).each do |seed| %>
+				<span class="<%= seed_level(seed) %>">
+					<%= link_to truncate(seed.title, :length => 20), seed %>
+				</span>
+			<% end %>
+		</div>
+	</div>
+</div>

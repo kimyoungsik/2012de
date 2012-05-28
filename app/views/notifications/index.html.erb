@@ -1,0 +1,5 @@
+<div id="notifications" class="main-box">
+	<div class="item-box notification-new">확인하지 않은 알림 <strong><%= current_user.unread_notifications.count %></strong>개</div>
+	<%= render @notifications %>
+</div>
+<%= will_paginate @messages %>

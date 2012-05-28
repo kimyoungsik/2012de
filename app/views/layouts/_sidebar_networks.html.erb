@@ -1,0 +1,10 @@
+<div class="sidebar-box">
+<div class="sidebar-search">
+	<%= form_tag networks_path, :method => :get do %>
+		<i class="nav-search"></i>
+		<%= text_field_tag :search, params[:search], data: {autocomplete_source: Network.order(:name).map(&:name)}, :id => 'network-search' %>
+		<%= submit_tag "Search", :name => nil %>
+	<% end %>
+</div>	
+	<%= render @networks %>
+</div>

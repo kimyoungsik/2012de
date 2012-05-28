@@ -1,0 +1,15 @@
+<% if user_signed_in? %>
+	<div class="item-left">
+		<%= profile_photo(current_user, :small, 40) %>
+	</div>
+	<div class="item-content">
+		<%= form_for @message.replies.build(:user_id => current_user.id, :message_id => @message.id), :remote => true do |f| %>
+			<%= f.hidden_field :message_id %>
+			<%= f.text_area :content, :id => "message-textarea" %>
+			<div id="reply-button-box">
+				<%= f.submit "쪽지 보내기", :id => "reply-submit", :disable_with=>"쪽지 보내기" %>
+			</div>
+		<% end %>
+	</div>
+	<div class="clear"></div>
+<% end %>

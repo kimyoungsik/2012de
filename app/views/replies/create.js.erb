@@ -1,0 +1,2 @@
+$("#reply_<%= @reply.message.id %>").append("<%= escape_javascript(render(@reply)) %>");
+$("#reply_<%= @reply.id %>").effect("highlight", {}, 3000);

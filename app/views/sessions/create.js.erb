@@ -1,0 +1,7 @@
+<% if user_signed_in? %>
+	$(".popup-wrapper").fadeOut();
+	$("#top-right").html("<%= escape_javascript(render 'layouts/top_right') %>");
+	$("#dropdown-button").parent().click(function(){
+		$("#top-user-item").toggle();
+	});
+<% end %>

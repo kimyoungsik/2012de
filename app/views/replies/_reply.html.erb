@@ -1,0 +1,14 @@
+<%= div_for reply do %>	
+<div class="item-box reply-item">
+	<div class="item-left">
+		<%= link_to profile_photo(reply.user, :small, 40), reply.user %>
+	</div>
+
+	<div class="item-content">
+		<h3><%= link_to reply.user.name, reply.user.name %></h3>
+		<div><%= reply.content %></div>
+		<div class="content-info"><%= time_ago_in_words(reply.created_at) %> 전</div>
+	</div>
+	<div class="clear"></div>
+</div>	
+<% end %>

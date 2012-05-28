@@ -1,0 +1,21 @@
+<%= div_for(comment, :class => "item-box comment-item") do %>
+<% if user_signed_in? and current_user == comment.user %>
+	<div id="comment-control">
+		<%= link_to "", comment, :confirm => "정말로 삭제하시겠습니까?", :method => :delete, :remote => true, :id => "comment-delete" %>
+	</div>
+<% end %>
+
+	<div class="item-left">
+		<%= image_tag(comment.user.avatar.url(:small), :width => 40) %>
+	</div>
+
+	<div class="item-content">
+		<h3><%= link_to comment.user.name, comment.user %></h3>
+		<div><%= auto_link(comment.content) %></div>
+
+		<div class="content-info"><%= time_ago_in_words(comment.created_at) %> 전</div>
+		
+		<%= render 'comments/like_button', :comment => comment %>
+		<div class="clear"></div>		
+	</div>
+<% end %>

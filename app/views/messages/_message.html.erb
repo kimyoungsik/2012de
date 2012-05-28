@@ -1,0 +1,19 @@
+<% if message.replies.any? %>
+	<div class="item-box <%= message.message_participations.find_by_user_id(current_user.id).read ? 'message-title-read' : 'message-title-unread' %>">
+		<i class="sidebar-selector"></i>
+		<div class="item-left">
+			<%= link_to profile_photo(message.replies.last.user, :small, 40), message.replies.last.user %>
+		</div>
+		<% message_participants = []
+		message.message_participations.each do |message_participation| 
+			message_participants.push(message_participation.user.name) if message_participation.user != current_user
+		end
+			%>
+		<div class="item-content">
+			<h2><%= link_to message_participants.join(', '), message_path(message), :remote => true %>
+				<span><%= time_ago_in_words(message.replies.last.created_at) %> 전</span>
+			</h2>
+			<p><%= truncate(message.replies.last.content, :length => 20) %></p>
+		</div>
+	</div>
+<% end %>

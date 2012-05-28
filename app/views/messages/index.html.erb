@@ -1,0 +1,23 @@
+<% if user_signed_in? %>
+<div id="message-main" class="main-box">
+	<div id="message-new" class="item-box">
+		<div class="item-left">
+			<%= profile_photo(current_user, :small, 60) %>
+		</div>
+
+		<div class="item-content">
+			<%= form_for @message, :validate => true do |f| %>
+			<div class="input-box">
+				<%= f.autocomplete_field :user_tokens, "data-pre" => @message.users.map(&:attributes).to_json %>
+				<%= f.text_field :title %>
+				<%= f.text_area :content, :id => "message-form-text" %>
+			</div>
+			<div id="message-button-box">
+				<%= f.submit "쪽지 보내기", :id => "message-submit", :disable_with=>"쪽지 보내기" %>	
+			</div>
+			<% end %>
+		</div>
+		<div class="clear"></div>
+	</div>	
+</div>
+<% end %>

@@ -1,0 +1,1829 @@
+Creating scope :page. Overwriting existing method Delayed::Backend::ActiveRecord::Job.page.
+DEPRECATION WARNING: The InstanceMethods module inside ActiveSupport::Concern will be no longer included automatically. Please define instance methods directly in RSolr::Connection instead. (called from <top (required)> at /Users/headflow/dreamkit_next/config/environment.rb:5)
+Creating scope :page. Overwriting existing method Delayed::Backend::ActiveRecord::Job.page.
+DEPRECATION WARNING: The InstanceMethods module inside ActiveSupport::Concern will be no longer included automatically. Please define instance methods directly in RSolr::Connection instead. (called from <top (required)> at /Users/headflow/dreamkit_next/config/environment.rb:5)
+Creating scope :page. Overwriting existing method Admin.page.
+Creating scope :page. Overwriting existing method User.page.
+[f962e7c7c25381238179e9fcd5f8a368] [127.0.0.1] 
+
+Started GET "/" for 127.0.0.1 at 2012-04-19 08:18:16 +0900
+[f962e7c7c25381238179e9fcd5f8a368] [127.0.0.1] Creating scope :page. Overwriting existing method Seed.page.
+[f962e7c7c25381238179e9fcd5f8a368] [127.0.0.1] Processing by SeedsController#index as HTML
+[f962e7c7c25381238179e9fcd5f8a368] [127.0.0.1] Mysql2::Error: Table 'dreamkit_development.seeds' doesn't exist: SHOW FULL FIELDS FROM `seeds`
+[f962e7c7c25381238179e9fcd5f8a368] [127.0.0.1] Completed 500 Internal Server Error in 4ms
+[f962e7c7c25381238179e9fcd5f8a368] [127.0.0.1] 
+ActiveRecord::StatementInvalid (Mysql2::Error: Table 'dreamkit_development.seeds' doesn't exist: SHOW FULL FIELDS FROM `seeds`):
+  app/controllers/seeds_controller.rb:21:in `new'
+  app/controllers/seeds_controller.rb:21:in `index'
+
+
+[f962e7c7c25381238179e9fcd5f8a368] [127.0.0.1]   Rendered /Users/headflow/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.9ms)
+[f962e7c7c25381238179e9fcd5f8a368] [127.0.0.1]   Rendered /Users/headflow/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+[f962e7c7c25381238179e9fcd5f8a368] [127.0.0.1]   Rendered /Users/headflow/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.4ms)
+[6000bc4ff9aef22588e855ee89445348] [127.0.0.1] 
+
+Started GET "/" for 127.0.0.1 at 2012-04-19 08:18:17 +0900
+[6000bc4ff9aef22588e855ee89445348] [127.0.0.1] Processing by SeedsController#index as HTML
+[6000bc4ff9aef22588e855ee89445348] [127.0.0.1] Mysql2::Error: Table 'dreamkit_development.seeds' doesn't exist: SHOW FULL FIELDS FROM `seeds`
+[6000bc4ff9aef22588e855ee89445348] [127.0.0.1] Completed 500 Internal Server Error in 117ms
+[6000bc4ff9aef22588e855ee89445348] [127.0.0.1] 
+ActiveRecord::StatementInvalid (Mysql2::Error: Table 'dreamkit_development.seeds' doesn't exist: SHOW FULL FIELDS FROM `seeds`):
+  app/controllers/seeds_controller.rb:21:in `new'
+  app/controllers/seeds_controller.rb:21:in `index'
+
+
+[6000bc4ff9aef22588e855ee89445348] [127.0.0.1]   Rendered /Users/headflow/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.4ms)
+[6000bc4ff9aef22588e855ee89445348] [127.0.0.1]   Rendered /Users/headflow/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+[6000bc4ff9aef22588e855ee89445348] [127.0.0.1]   Rendered /Users/headflow/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.3ms)
+Creating scope :page. Overwriting existing method Delayed::Backend::ActiveRecord::Job.page.
+DEPRECATION WARNING: The InstanceMethods module inside ActiveSupport::Concern will be no longer included automatically. Please define instance methods directly in RSolr::Connection instead. (called from <top (required)> at /Users/headflow/dreamkit_next/config/environment.rb:5)
+Creating scope :page. Overwriting existing method Admin.page.
+Creating scope :page. Overwriting existing method User.page.
+  [1m[36m (121.4ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (249.1ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateSupports (20120109182032)
+  [1m[35m (88.9ms)[0m  CREATE TABLE `supports` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `seed_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (132.7ms)[0m  [1mCREATE INDEX `index_supports_on_user_id` ON `supports` (`user_id`)[0m
+  [1m[35m (113.1ms)[0m  CREATE INDEX `index_supports_on_seed_id` ON `supports` (`seed_id`)
+  [1m[36m (1.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120109182032')[0m
+Migrating to CreateSeeds (20120109182105)
+  [1m[35m (151.3ms)[0m  CREATE TABLE `seeds` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `title` varchar(255), `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (126.0ms)[0m  [1mCREATE INDEX `index_seeds_on_user_id` ON `seeds` (`user_id`)[0m
+  [1m[35m (1.7ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120109182105')
+Migrating to CreateReplies (20120109182136)
+  [1m[36m (101.6ms)[0m  [1mCREATE TABLE `replies` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `message_id` int(11), `content` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (123.1ms)[0m  CREATE INDEX `index_replies_on_user_id` ON `replies` (`user_id`)
+  [1m[36m (111.0ms)[0m  [1mCREATE INDEX `index_replies_on_message_id` ON `replies` (`message_id`)[0m
+  [1m[35m (1.7ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120109182136')
+Migrating to CreatePasswordResets (20120109182213)
+  [1m[36m (121.6ms)[0m  [1mCREATE TABLE `password_resets` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255), `name` varchar(255), `user_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (1.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120109182213')
+Migrating to CreateParticipations (20120109182240)
+  [1m[36m (125.4ms)[0m  [1mCREATE TABLE `participations` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `seed_id` int(11), `status` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (116.3ms)[0m  CREATE INDEX `index_participations_on_user_id` ON `participations` (`user_id`)
+  [1m[36m (122.5ms)[0m  [1mCREATE INDEX `index_participations_on_seed_id` ON `participations` (`seed_id`)[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120109182240')
+Migrating to CreateNotifications (20120109182403)
+  [1m[36m (113.6ms)[0m  [1mCREATE TABLE `notifications` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `notification_type` varchar(255), `notifiable_id` int(11), `notifiable_type` varchar(255), `read` tinyint(1) DEFAULT 0, `message` varchar(255), `subject` varchar(255), `url` varchar(255), `sender_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (1.7ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120109182403')
+Migrating to CreateNotificationSettings (20120109182510)
+  [1m[36m (134.3ms)[0m  [1mCREATE TABLE `notification_settings` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `kit_notify` tinyint(1) DEFAULT 1, `seed_kit_notify` tinyint(1) DEFAULT 1, `moim_kit_notify` tinyint(1) DEFAULT 1, `comment_notify` tinyint(1) DEFAULT 1, `other_comment_notify` tinyint(1) DEFAULT 1, `reply_notify` tinyint(1) DEFAULT 1, `friendship_notify` tinyint(1) DEFAULT 1, `friendship_acceptance_notify` tinyint(1) DEFAULT 1, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (1.8ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120109182510')
+Migrating to CreateNetworks (20120109182743)
+  [1m[36m (116.7ms)[0m  [1mCREATE TABLE `networks` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `network_type` varchar(255), `address` varchar(255), `privacy` tinyint(1) DEFAULT 0, `network_participations_count` int(11) DEFAULT 0, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (1.8ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120109182743')
+Migrating to CreateNetworkParticipations (20120109183006)
+  [1m[36m (126.9ms)[0m  [1mCREATE TABLE `network_participations` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `network_id` int(11), `approved` tinyint(1) DEFAULT 0, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (117.4ms)[0m  CREATE INDEX `index_network_participations_on_user_id` ON `network_participations` (`user_id`)
+  [1m[36m (111.5ms)[0m  [1mCREATE INDEX `index_network_participations_on_network_id` ON `network_participations` (`network_id`)[0m
+  [1m[35m (1.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120109183006')
+Migrating to CreateMoims (20120109183108)
+  [1m[36m (122.0ms)[0m  [1mCREATE TABLE `moims` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` text, `user_id` int(11), `location` varchar(255), `event_time` datetime, `hasMap` tinyint(1) DEFAULT 0, `mapCoordinates` varchar(255) DEFAULT ':N/A', `mapAddress` varchar(255) DEFAULT ':N/A', `moimable_id` int(11), `moimable_type` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (123.3ms)[0m  CREATE INDEX `index_moims_on_moimable_id` ON `moims` (`moimable_id`)
+  [1m[36m (112.2ms)[0m  [1mCREATE INDEX `index_moims_on_user_id` ON `moims` (`user_id`)[0m
+  [1m[35m (2.9ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120109183108')
+Migrating to CreateMessages (20120109183251)
+  [1m[36m (120.5ms)[0m  [1mCREATE TABLE `messages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (1.7ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120109183251')
+Migrating to CreateMessageParticipations (20120109183335)
+  [1m[36m (72.0ms)[0m  [1mCREATE TABLE `message_participations` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `message_id` int(11), `read` tinyint(1) DEFAULT 0, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (113.9ms)[0m  CREATE INDEX `index_message_participations_on_user_id` ON `message_participations` (`user_id`)
+  [1m[36m (113.1ms)[0m  [1mCREATE INDEX `index_message_participations_on_message_id` ON `message_participations` (`message_id`)[0m
+  [1m[35m (1.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120109183335')
+Migrating to CreateMajors (20120109183416)
+  [1m[36m (132.8ms)[0m  [1mCREATE TABLE `majors` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (1.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120109183416')
+Migrating to CreateKits (20120109183434)
+  [1m[36m (172.4ms)[0m  [1mCREATE TABLE `kits` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `content` text, `kitable_id` int(11), `kitable_type` varchar(255), `photo_file_name` varchar(255), `photo_content_type` varchar(255), `photo_file_size` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (100.4ms)[0m  CREATE INDEX `index_kits_on_user_id` ON `kits` (`user_id`)
+  [1m[36m (115.0ms)[0m  [1mCREATE INDEX `index_kits_on_kitable_id` ON `kits` (`kitable_id`)[0m
+  [1m[35m (1.8ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120109183434')
+Migrating to CreateInvitations (20120109183558)
+  [1m[36m (122.2ms)[0m  [1mCREATE TABLE `invitations` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `invitee_email` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (3.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120109183558')
+Migrating to CreateInterests (20120109183615)
+  [1m[36m (133.2ms)[0m  [1mCREATE TABLE `interests` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (1.9ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120109183615')
+Migrating to CreateFriendships (20120109183639)
+  [1m[36m (119.3ms)[0m  [1mCREATE TABLE `friendships` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `friend_id` int(11), `status` varchar(255) DEFAULT 'pending', `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (138.5ms)[0m  CREATE INDEX `index_friendships_on_user_id` ON `friendships` (`user_id`)
+  [1m[36m (121.8ms)[0m  [1mCREATE INDEX `index_friendships_on_friend_id` ON `friendships` (`friend_id`)[0m
+  [1m[35m (2.8ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120109183639')
+Migrating to CreateDittos (20120109183722)
+  [1m[36m (129.7ms)[0m  [1mCREATE TABLE `dittos` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `dittoable_id` int(11), `dittoable_type` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (135.4ms)[0m  CREATE INDEX `index_dittos_on_dittoable_id` ON `dittos` (`dittoable_id`)
+  [1m[36m (111.5ms)[0m  [1mCREATE INDEX `index_dittos_on_user_id` ON `dittos` (`user_id`)[0m
+  [1m[35m (1.9ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120109183722')
+Migrating to CreateComments (20120109183832)
+  [1m[36m (133.3ms)[0m  [1mCREATE TABLE `comments` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `content` text, `kit_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (135.3ms)[0m  CREATE INDEX `index_comments_on_user_id` ON `comments` (`user_id`)
+  [1m[36m (123.7ms)[0m  [1mCREATE INDEX `index_comments_on_kit_id` ON `comments` (`kit_id`)[0m
+  [1m[35m (2.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120109183832')
+Migrating to CreateAuthentications (20120109183903)
+  [1m[36m (129.1ms)[0m  [1mCREATE TABLE `authentications` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `provider` varchar(255), `uid` varchar(255), `token` varchar(255), `nickname` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (1.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120109183903')
+Migrating to CreateAttendances (20120109183938)
+  [1m[36m (127.1ms)[0m  [1mCREATE TABLE `attendances` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `attendee_id` int(11), `attended_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (124.7ms)[0m  CREATE INDEX `index_attendances_on_attendee_id` ON `attendances` (`attendee_id`)
+  [1m[36m (113.1ms)[0m  [1mCREATE INDEX `index_attendances_on_attended_id` ON `attendances` (`attended_id`)[0m
+  [1m[35m (2.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120109183938')
+Migrating to DeviseCreateUsers (20120112140837)
+  [1m[36m (130.3ms)[0m  [1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `birthday` datetime, `cellphone` varchar(255), `avatar_file_size` int(11), `avatar_file_name` varchar(255), `avatar_content_type` varchar(255), `admin` tinyint(1) DEFAULT 0, `profile` varchar(255), `remember_token` varchar(255), `major_detail` varchar(255), `major_id` int(11), `interest_id` int(11), `sex` varchar(255), `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `password_salt` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (149.6ms)[0m  CREATE UNIQUE INDEX `index_users_on_email` ON `users` (`email`)
+  [1m[36m (121.0ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_reset_password_token` ON `users` (`reset_password_token`)[0m
+  [1m[35m (3.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120112140837')
+Migrating to DeviseCreateAdmins (20120113160910)
+  [1m[36m (128.3ms)[0m  [1mCREATE TABLE `admins` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `sign_in_count` int(11) DEFAULT 0, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `failed_attempts` int(11) DEFAULT 0, `unlock_token` varchar(255), `locked_at` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (136.7ms)[0m  CREATE UNIQUE INDEX `index_admins_on_email` ON `admins` (`email`)
+  [1m[36m (1.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120113160910')[0m
+Migrating to CreateRailsAdminHistoriesTable (20120113184344)
+  [1m[35m (112.8ms)[0m  CREATE TABLE `rails_admin_histories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `message` text, `username` varchar(255), `item` int(11), `table` varchar(255), `month` smallint, `year` bigint, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (157.0ms)[0m  [1mCREATE INDEX `index_rails_admin_histories` ON `rails_admin_histories` (`item`, `table`, `month`, `year`)[0m
+  [1m[35m (1.7ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120113184344')
+Migrating to CreatePhotos (20120209132809)
+  [1m[36m (112.7ms)[0m  [1mCREATE TABLE `photos` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `image_file_name` varchar(255), `image_content_type` varchar(255), `image_file_size` int(11), `photoable_id` int(11), `photoable_type` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (124.3ms)[0m  CREATE INDEX `index_photos_on_photoable_id` ON `photos` (`photoable_id`)
+  [1m[36m (121.9ms)[0m  [1mCREATE INDEX `index_photos_on_user_id` ON `photos` (`user_id`)[0m
+  [1m[35m (1.7ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120209132809')
+  [1m[36m (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Creating scope :page. Overwriting existing method Delayed::Backend::ActiveRecord::Job.page.
+DEPRECATION WARNING: The InstanceMethods module inside ActiveSupport::Concern will be no longer included automatically. Please define instance methods directly in RSolr::Connection instead. (called from <top (required)> at /Users/headflow/dreamkit_next/config/environment.rb:5)
+Creating scope :page. Overwriting existing method Admin.page.
+Creating scope :page. Overwriting existing method User.page.
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateSupports (20120109182032)
+Migrating to CreateSeeds (20120109182105)
+Migrating to CreateReplies (20120109182136)
+Migrating to CreatePasswordResets (20120109182213)
+Migrating to CreateParticipations (20120109182240)
+Migrating to CreateNotifications (20120109182403)
+Migrating to CreateNotificationSettings (20120109182510)
+Migrating to CreateNetworks (20120109182743)
+Migrating to CreateNetworkParticipations (20120109183006)
+Migrating to CreateMoims (20120109183108)
+Migrating to CreateMessages (20120109183251)
+Migrating to CreateMessageParticipations (20120109183335)
+Migrating to CreateMajors (20120109183416)
+Migrating to CreateKits (20120109183434)
+Migrating to CreateInvitations (20120109183558)
+Migrating to CreateInterests (20120109183615)
+Migrating to CreateFriendships (20120109183639)
+Migrating to CreateDittos (20120109183722)
+Migrating to CreateComments (20120109183832)
+Migrating to CreateAuthentications (20120109183903)
+Migrating to CreateAttendances (20120109183938)
+Migrating to DeviseCreateUsers (20120112140837)
+Migrating to DeviseCreateAdmins (20120113160910)
+Migrating to CreateRailsAdminHistoriesTable (20120113184344)
+Migrating to CreatePhotos (20120209132809)
+  [1m[35m (0.1ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Creating scope :page. Overwriting existing method Delayed::Backend::ActiveRecord::Job.page.
+DEPRECATION WARNING: The InstanceMethods module inside ActiveSupport::Concern will be no longer included automatically. Please define instance methods directly in RSolr::Connection instead. (called from <top (required)> at /Users/headflow/dreamkit_next/config/environment.rb:5)
+Creating scope :page. Overwriting existing method Admin.page.
+Creating scope :page. Overwriting existing method User.page.
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] 
+
+Started GET "/" for 127.0.0.1 at 2012-04-19 08:19:32 +0900
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Creating scope :page. Overwriting existing method Seed.page.
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Processing by SeedsController#index as HTML
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1]   [1m[36mSeed Load (0.4ms)[0m  [1mSELECT `seeds`.* FROM `seeds` ORDER BY seeds.updated_at DESC, id LIMIT 20 OFFSET 0[0m
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1]   Rendered collection (0.0ms)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1]   Rendered seeds/index.html.erb within layouts/application (42.7ms)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled _mixin.css  (78ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled authentications.css  (1ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled comments.css  (1ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled dittos.css  (3ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled friendships.css  (1ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled home.css  (1ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled imports.css  (1ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled jquery-ui-1.8.17.custom.css  (0ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] DEPRECATION WARNING:
+On line 1 of "", after "*"
+Starting in Sass 3.2, "html" may only be used at the beginning of a selector.
+
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] DEPRECATION WARNING:
+On line 1 of "", after "*"
+Starting in Sass 3.2, "html" may only be used at the beginning of a selector.
+
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled kits.css  (105ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled messages.css  (1ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled moims.css  (1ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled network_participations.css  (1ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled networks.css  (1ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled notification_settings.css  (1ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled notifications.css  (1ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled participations.css  (1ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled photos.css  (13ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled registrations.css  (1ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled replies.css  (2ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled seeds.css  (1ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled sessions.css  (1ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled supports.css  (1ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled token-input-facebook.css  (0ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled users.css  (1ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled application.css  (2202ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled jquery.js  (2ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled jquery-ui.js  (4ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled jquery_ujs.js  (0ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled jquery.tokeninput.js  (0ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled jquery.purr.js  (0ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled jquery.elastic.source.js  (0ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled best_in_place.js  (0ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled rails.validations.js  (0ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled authentications.js  (170ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled comments.js  (5ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled dittos.js  (0ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled friendships.js  (0ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled home.js  (0ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled imports.js  (1ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled jquery-ui-1.8.17.custom.min.js  (0ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled jquery.Jcrop.min.js  (0ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled jquery.watermark.min.js  (0ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled kits.js  (4ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled messages.js  (0ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled moims.js  (0ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled network_participations.js  (1ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled networks.js  (4ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled notification_settings.js  (0ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled notifications.js  (0ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled participations.js  (0ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled photos.js  (0ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled registrations.js  (0ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled replies.js  (0ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled seeds.js  (2ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled sessions.js  (0ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled supports.js  (0ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled users.js  (3ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Compiled application.js  (801ms)  (pid 723)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1]   Rendered layouts/_top_right.html.erb (1.9ms)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1]   [1m[35mSeed Load (0.4ms)[0m  SELECT `seeds`.* FROM `seeds` ORDER BY seeds.updated_at DESC
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1]   Rendered layouts/_header_seed_index.html.erb (1.9ms)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `seeds`.* FROM `seeds` ORDER BY seeds.updated_at DESC[0m
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1]   Rendered layouts/_sidebar_seeds.html.erb (1.9ms)
+[8515bdb0cf6a5ee2d51b4d0e9faeca2d] [127.0.0.1] Completed 200 OK in 3361ms (Views: 3350.9ms | ActiveRecord: 0.8ms | Solr: 0.0ms)
+[fc832f7733c2de349c750333788dfb92] [127.0.0.1] 
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2012-04-19 08:19:35 +0900
+[fc832f7733c2de349c750333788dfb92] [127.0.0.1] Served asset /authentications.css - 200 OK (21ms)
+[ab3d856a1c13c743e5c31a00f95bbb31] [127.0.0.1] 
+
+Started GET "/assets/dittos.css?body=1" for 127.0.0.1 at 2012-04-19 08:19:35 +0900
+[ab3d856a1c13c743e5c31a00f95bbb31] [127.0.0.1] Served asset /dittos.css - 200 OK (2ms)
+[366ec55a5b60b44b4099f474545bf980] [127.0.0.1] 
+
+Started GET "/assets/friendships.css?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[366ec55a5b60b44b4099f474545bf980] [127.0.0.1] Served asset /friendships.css - 200 OK (2ms)
+[1602d25b99977ac5150c896caaaddd1b] [127.0.0.1] 
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[1602d25b99977ac5150c896caaaddd1b] [127.0.0.1] Served asset /comments.css - 200 OK (2ms)
+[2f67645f4a3baf215cf5f64e9bc5fa13] [127.0.0.1] 
+
+Started GET "/assets/_mixin.css?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[2f67645f4a3baf215cf5f64e9bc5fa13] [127.0.0.1] Served asset /_mixin.css - 200 OK (2ms)
+[85fe09aa982a179b27a0856581c30a04] [127.0.0.1] 
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[85fe09aa982a179b27a0856581c30a04] [127.0.0.1] Served asset /home.css - 200 OK (3ms)
+[7bae30b98e86b17301e6eaf65f9d8555] [127.0.0.1] 
+
+Started GET "/assets/imports.css?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[7bae30b98e86b17301e6eaf65f9d8555] [127.0.0.1] Served asset /imports.css - 200 OK (2ms)
+[5b92daee077564ec8b0058d34e1b3aa8] [127.0.0.1] 
+
+Started GET "/assets/jquery-ui-1.8.17.custom.css?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[5b92daee077564ec8b0058d34e1b3aa8] [127.0.0.1] Served asset /jquery-ui-1.8.17.custom.css - 200 OK (2ms)
+[16c032f5f37b638e1a78d91a26bcd84d] [127.0.0.1] 
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[16c032f5f37b638e1a78d91a26bcd84d] [127.0.0.1] Served asset /messages.css - 200 OK (3ms)
+[ee6d6b853a54aff077666d5311122fe6] [127.0.0.1] 
+
+Started GET "/assets/moims.css?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[ee6d6b853a54aff077666d5311122fe6] [127.0.0.1] Served asset /moims.css - 200 OK (2ms)
+[d165bda24031de787367f099d400c7dd] [127.0.0.1] 
+
+Started GET "/assets/network_participations.css?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[d165bda24031de787367f099d400c7dd] [127.0.0.1] Served asset /network_participations.css - 200 OK (2ms)
+[cfe4095863cde28ba14358f79993b8f2] [127.0.0.1] 
+
+Started GET "/assets/networks.css?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[cfe4095863cde28ba14358f79993b8f2] [127.0.0.1] Served asset /networks.css - 200 OK (2ms)
+[9da4a1073a090c6076c9c491a3d712e5] [127.0.0.1] 
+
+Started GET "/assets/notification_settings.css?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[9da4a1073a090c6076c9c491a3d712e5] [127.0.0.1] Served asset /notification_settings.css - 200 OK (3ms)
+[f4202834439acdab3d4fd471365a7b3e] [127.0.0.1] 
+
+Started GET "/assets/notifications.css?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[f4202834439acdab3d4fd471365a7b3e] [127.0.0.1] Served asset /notifications.css - 200 OK (2ms)
+[70595b129ba1eccd18ef3ed0077cda86] [127.0.0.1] 
+
+Started GET "/assets/registrations.css?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[70595b129ba1eccd18ef3ed0077cda86] [127.0.0.1] Served asset /registrations.css - 200 OK (2ms)
+[47878ebf5f19be9d888fa8a2243cdcf3] [127.0.0.1] 
+
+Started GET "/assets/replies.css?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[47878ebf5f19be9d888fa8a2243cdcf3] [127.0.0.1] Served asset /replies.css - 200 OK (2ms)
+[482178556cff79d3c5170f1794231314] [127.0.0.1] 
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[482178556cff79d3c5170f1794231314] [127.0.0.1] Served asset /sessions.css - 200 OK (2ms)
+[7f9ffce36a315830919673a2daf97ab0] [127.0.0.1] 
+
+Started GET "/assets/supports.css?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[7f9ffce36a315830919673a2daf97ab0] [127.0.0.1] Served asset /supports.css - 200 OK (2ms)
+[c1e465e3a28761a823f3e217b3b35f96] [127.0.0.1] 
+
+Started GET "/assets/token-input-facebook.css?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[c1e465e3a28761a823f3e217b3b35f96] [127.0.0.1] Served asset /token-input-facebook.css - 200 OK (2ms)
+[015f3e552c60a82cff89035f723194c3] [127.0.0.1] 
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[015f3e552c60a82cff89035f723194c3] [127.0.0.1] Served asset /jquery-ui.js - 200 OK (4ms)
+[474f58be64413627ae7945e064b082c1] [127.0.0.1] 
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[474f58be64413627ae7945e064b082c1] [127.0.0.1] Served asset /jquery.tokeninput.js - 200 OK (2ms)
+[4d3d73f9518097e73cb79c2d681d186c] [127.0.0.1] 
+
+Started GET "/assets/jquery.elastic.source.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[4d3d73f9518097e73cb79c2d681d186c] [127.0.0.1] Served asset /jquery.elastic.source.js - 200 OK (2ms)
+[31c0d4a15224c701cb6dad5e8213e251] [127.0.0.1] 
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[31c0d4a15224c701cb6dad5e8213e251] [127.0.0.1] Served asset /rails.validations.js - 200 OK (4ms)
+[7d55efc9741f4fca356f3cb43c6f88b1] [127.0.0.1] 
+
+Started GET "/assets/authentications.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[7d55efc9741f4fca356f3cb43c6f88b1] [127.0.0.1] Served asset /authentications.js - 200 OK (1ms)
+[57cd5114639de083de421d7c02484ecb] [127.0.0.1] 
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[57cd5114639de083de421d7c02484ecb] [127.0.0.1] Served asset /comments.js - 200 OK (1ms)
+[69e40e66eff2810da386e9b4a9134fb0] [127.0.0.1] 
+
+Started GET "/assets/dittos.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[69e40e66eff2810da386e9b4a9134fb0] [127.0.0.1] Served asset /dittos.js - 200 OK (1ms)
+[a3630945eae6a45a5daa90fe8327b836] [127.0.0.1] 
+
+Started GET "/assets/jquery-ui-1.8.17.custom.min.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[a3630945eae6a45a5daa90fe8327b836] [127.0.0.1] Served asset /jquery-ui-1.8.17.custom.min.js - 200 OK (2ms)
+[72bf9029a67e01332775b1445f02b422] [127.0.0.1] 
+
+Started GET "/assets/friendships.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[72bf9029a67e01332775b1445f02b422] [127.0.0.1] Served asset /friendships.js - 200 OK (2ms)
+[f81a814c0139ccf542261e541edc79dc] [127.0.0.1] 
+
+Started GET "/assets/jquery.Jcrop.min.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[f81a814c0139ccf542261e541edc79dc] [127.0.0.1] Served asset /jquery.Jcrop.min.js - 200 OK (2ms)
+[a8c5b7e6b20e9184e513d77d64ff0fc1] [127.0.0.1] 
+
+Started GET "/assets/jquery.watermark.min.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[a8c5b7e6b20e9184e513d77d64ff0fc1] [127.0.0.1] Served asset /jquery.watermark.min.js - 200 OK (1ms)
+[d308d23914d10a12685bcc24300f282e] [127.0.0.1] 
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[d308d23914d10a12685bcc24300f282e] [127.0.0.1] Served asset /messages.js - 200 OK (1ms)
+[e5863f0b84e20e61a90860374807db66] [127.0.0.1] 
+
+Started GET "/assets/moims.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[e5863f0b84e20e61a90860374807db66] [127.0.0.1] Served asset /moims.js - 200 OK (1ms)
+[b1d6e812d7f4571da258907b38f5a089] [127.0.0.1] 
+
+Started GET "/assets/network_participations.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[b1d6e812d7f4571da258907b38f5a089] [127.0.0.1] Served asset /network_participations.js - 200 OK (1ms)
+[0aeb9b21db7186d7b070680069ef5018] [127.0.0.1] 
+
+Started GET "/assets/networks.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[0aeb9b21db7186d7b070680069ef5018] [127.0.0.1] Served asset /networks.js - 200 OK (3ms)
+[1c867eed7c58675dd932838c2acc2717] [127.0.0.1] 
+
+Started GET "/assets/notification_settings.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[1c867eed7c58675dd932838c2acc2717] [127.0.0.1] Served asset /notification_settings.js - 200 OK (4ms)
+[f74a79a2955e8bcf48a38dd2c7a9f301] [127.0.0.1] 
+
+Started GET "/assets/notifications.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[f74a79a2955e8bcf48a38dd2c7a9f301] [127.0.0.1] Served asset /notifications.js - 200 OK (2ms)
+[515ac90a62f41de85bf6f0993e627d90] [127.0.0.1] 
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[515ac90a62f41de85bf6f0993e627d90] [127.0.0.1] Served asset /registrations.js - 200 OK (2ms)
+[ad8da83a2c6872cf2319ddc6bca45817] [127.0.0.1] 
+
+Started GET "/assets/replies.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[ad8da83a2c6872cf2319ddc6bca45817] [127.0.0.1] Served asset /replies.js - 200 OK (2ms)
+[51258fb7b7e28d7aeb7d9baaa30347ce] [127.0.0.1] 
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[51258fb7b7e28d7aeb7d9baaa30347ce] [127.0.0.1] Served asset /sessions.js - 200 OK (2ms)
+[1d6cd249b8105e17e6d0e025eaffa3e6] [127.0.0.1] 
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[1d6cd249b8105e17e6d0e025eaffa3e6] [127.0.0.1] Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+[eee96d1e914853d0527a70d9503ba3a3] [127.0.0.1] 
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[eee96d1e914853d0527a70d9503ba3a3] [127.0.0.1] Served asset /application.css - 200 OK (28ms)
+[6f55488f6587d913474b47a06660996f] [127.0.0.1] 
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[6f55488f6587d913474b47a06660996f] [127.0.0.1] Served asset /jquery.js - 304 Not Modified (4ms)
+[5857e2337cb33c8d9decea71ac3f178a] [127.0.0.1] 
+
+Started GET "/assets/supports.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[5857e2337cb33c8d9decea71ac3f178a] [127.0.0.1] Served asset /supports.js - 200 OK (12ms)
+[9a80feb88f919d37d54dd52e0766b155] [127.0.0.1] 
+
+Started GET "/assets/kits.css?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[9a80feb88f919d37d54dd52e0766b155] [127.0.0.1] Served asset /kits.css - 200 OK (2ms)
+[79a375c10dfdaabb85da1882d3b9fcb5] [127.0.0.1] 
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[79a375c10dfdaabb85da1882d3b9fcb5] [127.0.0.1] Served asset /jquery.purr.js - 200 OK (2ms)
+[232c90f73c71f21b74086f0520a73bf2] [127.0.0.1] 
+
+Started GET "/assets/participations.css?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[232c90f73c71f21b74086f0520a73bf2] [127.0.0.1] Served asset /participations.css - 304 Not Modified (2ms)
+[8e079168bbf1f69ae7ef1ecb350dd530] [127.0.0.1] 
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[8e079168bbf1f69ae7ef1ecb350dd530] [127.0.0.1] Served asset /photos.css - 200 OK (2ms)
+[cd8fae03d07eb3c69232960e113cfdf9] [127.0.0.1] 
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[cd8fae03d07eb3c69232960e113cfdf9] [127.0.0.1] Served asset /users.css - 304 Not Modified (2ms)
+[4b2a718e7d047945bf5b1fd5816c11a1] [127.0.0.1] 
+
+Started GET "/assets/seeds.css?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[4b2a718e7d047945bf5b1fd5816c11a1] [127.0.0.1] Served asset /seeds.css - 304 Not Modified (2ms)
+[1950f6aee80a8049a9f909139250e73a] [127.0.0.1] 
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[1950f6aee80a8049a9f909139250e73a] [127.0.0.1] Served asset /best_in_place.js - 304 Not Modified (3ms)
+[1256fa985fdd1c7b9712613bc27e0fb7] [127.0.0.1] 
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[1256fa985fdd1c7b9712613bc27e0fb7] [127.0.0.1] Served asset /home.js - 304 Not Modified (2ms)
+[093b386efc0ec5503e8d48003ff55e55] [127.0.0.1] 
+
+Started GET "/assets/imports.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[093b386efc0ec5503e8d48003ff55e55] [127.0.0.1] Served asset /imports.js - 304 Not Modified (1ms)
+[e4c0a448b32157077d7a08fd0e40c15e] [127.0.0.1] 
+
+Started GET "/assets/kits.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[e4c0a448b32157077d7a08fd0e40c15e] [127.0.0.1] Served asset /kits.js - 200 OK (2ms)
+[06d795c6b3cfcefd79831963e0e38261] [127.0.0.1] 
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[06d795c6b3cfcefd79831963e0e38261] [127.0.0.1] Served asset /users.js - 200 OK (1ms)
+[290d1f81c736d45ce1cadbd6b86c7122] [127.0.0.1] 
+
+Started GET "/assets/seeds.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[290d1f81c736d45ce1cadbd6b86c7122] [127.0.0.1] Served asset /seeds.js - 200 OK (1ms)
+[e1d8d604b79151004fe09e2c6e7e5248] [127.0.0.1] 
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[e1d8d604b79151004fe09e2c6e7e5248] [127.0.0.1] Served asset /photos.js - 304 Not Modified (1ms)
+[a3c3581ef5ff443939158f3a28073f33] [127.0.0.1] 
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[a3c3581ef5ff443939158f3a28073f33] [127.0.0.1] Served asset /application.js - 200 OK (121ms)
+[e05ef6f9de8a83fe977a7cf204ca5f44] [127.0.0.1] 
+
+Started GET "/assets/participations.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[e05ef6f9de8a83fe977a7cf204ca5f44] [127.0.0.1] Served asset /participations.js - 304 Not Modified (1ms)
+[eb77171b4d97d05be19bb99259e72358] [127.0.0.1] 
+
+Started GET "/assets/dreamkit.png" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[eb77171b4d97d05be19bb99259e72358] [127.0.0.1] Served asset /dreamkit.png - 200 OK (24ms)
+[0848df4cc1b2a6e5a64f9115552f939a] [127.0.0.1] 
+
+Started GET "/assets/background-bottom.png" for 127.0.0.1 at 2012-04-19 08:19:36 +0900
+[0848df4cc1b2a6e5a64f9115552f939a] [127.0.0.1] Served asset /background-bottom.png - 200 OK (71ms)
+[db56f5581dba73ec3923e893efafdc2c] [127.0.0.1] 
+
+Started GET "/assets/login-facebook.png" for 127.0.0.1 at 2012-04-19 08:19:37 +0900
+[db56f5581dba73ec3923e893efafdc2c] [127.0.0.1] Served asset /login-facebook.png - 304 Not Modified (14ms)
+[475e96caef82e7605a705ddabf65459c] [127.0.0.1] 
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2012-04-19 08:19:37 +0900
+[475e96caef82e7605a705ddabf65459c] [127.0.0.1] Served asset /favicon.ico - 200 OK (4ms)
+[2781b8869c51323613479fc23f6b414e] [127.0.0.1] 
+
+Started GET "/kits" for 127.0.0.1 at 2012-04-19 08:19:40 +0900
+[2781b8869c51323613479fc23f6b414e] [127.0.0.1] Creating scope :page. Overwriting existing method Kit.page.
+[2781b8869c51323613479fc23f6b414e] [127.0.0.1] Processing by KitsController#index as HTML
+[2781b8869c51323613479fc23f6b414e] [127.0.0.1]   Rendered kits/_kit_form.html.erb (1.7ms)
+[2781b8869c51323613479fc23f6b414e] [127.0.0.1]   [1m[35mKit Load (0.3ms)[0m  SELECT `kits`.* FROM `kits` ORDER BY kits.updated_at DESC, id LIMIT 20 OFFSET 0
+[2781b8869c51323613479fc23f6b414e] [127.0.0.1]   Rendered collection (0.0ms)
+[2781b8869c51323613479fc23f6b414e] [127.0.0.1]   Rendered kits/index.html.erb within layouts/application (10.9ms)
+[2781b8869c51323613479fc23f6b414e] [127.0.0.1]   Rendered layouts/_top_right.html.erb (0.4ms)
+[2781b8869c51323613479fc23f6b414e] [127.0.0.1]   [1m[36mSeed Load (0.3ms)[0m  [1mSELECT `seeds`.* FROM `seeds` ORDER BY seeds.updated_at DESC[0m
+[2781b8869c51323613479fc23f6b414e] [127.0.0.1]   Rendered layouts/_sidebar_seeds.html.erb (1.3ms)
+[2781b8869c51323613479fc23f6b414e] [127.0.0.1] Completed 200 OK in 170ms (Views: 158.1ms | ActiveRecord: 9.6ms | Solr: 0.0ms)
+[7e80c4da2aff15cd8e71319068587e3d] [127.0.0.1] 
+
+Started GET "/assets/participations.css?body=1" for 127.0.0.1 at 2012-04-19 08:19:40 +0900
+[7e80c4da2aff15cd8e71319068587e3d] [127.0.0.1] Served asset /participations.css - 304 Not Modified (0ms)
+[c2350e31a04c8a32ac4975d073dfcab3] [127.0.0.1] 
+
+Started GET "/assets/seeds.css?body=1" for 127.0.0.1 at 2012-04-19 08:19:40 +0900
+[c2350e31a04c8a32ac4975d073dfcab3] [127.0.0.1] Served asset /seeds.css - 304 Not Modified (0ms)
+[ff7738464923e058bbc84d2f6799a5d7] [127.0.0.1] 
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-19 08:19:40 +0900
+[ff7738464923e058bbc84d2f6799a5d7] [127.0.0.1] Served asset /users.css - 304 Not Modified (0ms)
+[547c4dd8cedf1d4a7600f6b536306383] [127.0.0.1] 
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:40 +0900
+[547c4dd8cedf1d4a7600f6b536306383] [127.0.0.1] Served asset /best_in_place.js - 304 Not Modified (0ms)
+[28df9119d996473d7f9b093b97819c29] [127.0.0.1] 
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:40 +0900
+[28df9119d996473d7f9b093b97819c29] [127.0.0.1] Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+[0326267fa3af56d6aa35158567ac2f69] [127.0.0.1] 
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:40 +0900
+[0326267fa3af56d6aa35158567ac2f69] [127.0.0.1] Served asset /home.js - 304 Not Modified (0ms)
+[d165fe48aacb7f42c7a7c3fca45a35fb] [127.0.0.1] 
+
+Started GET "/assets/imports.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:40 +0900
+[d165fe48aacb7f42c7a7c3fca45a35fb] [127.0.0.1] Served asset /imports.js - 304 Not Modified (0ms)
+[db1956d510b2c09a0d021435035f1cdd] [127.0.0.1] 
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:40 +0900
+[db1956d510b2c09a0d021435035f1cdd] [127.0.0.1] Served asset /jquery.js - 304 Not Modified (0ms)
+[d05865b21fd45917fe872268a82cccbf] [127.0.0.1] 
+
+Started GET "/assets/participations.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:40 +0900
+[d05865b21fd45917fe872268a82cccbf] [127.0.0.1] Served asset /participations.js - 304 Not Modified (0ms)
+[ba96495a2543f55e56f28367acd307ce] [127.0.0.1] 
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:40 +0900
+[ba96495a2543f55e56f28367acd307ce] [127.0.0.1] Served asset /photos.js - 304 Not Modified (0ms)
+[5a5700573c26dda670a10f8fef64cef0] [127.0.0.1] 
+
+Started GET "/assets/popup_logo.png" for 127.0.0.1 at 2012-04-19 08:19:40 +0900
+[5a5700573c26dda670a10f8fef64cef0] [127.0.0.1] Served asset /popup_logo.png - 200 OK (26ms)
+[f5532bb3003ace1cf45546e938b91417] [127.0.0.1] 
+
+Started GET "/assets/login-facebook.png" for 127.0.0.1 at 2012-04-19 08:19:40 +0900
+[f5532bb3003ace1cf45546e938b91417] [127.0.0.1] Served asset /login-facebook.png - 304 Not Modified (0ms)
+[e1103d7ac10eac2b376d29e304fb38ad] [127.0.0.1] 
+
+Started GET "/assets/facebook_logo.png" for 127.0.0.1 at 2012-04-19 08:19:40 +0900
+[e1103d7ac10eac2b376d29e304fb38ad] [127.0.0.1] Served asset /facebook_logo.png - 304 Not Modified (15ms)
+[f1592b8ef88333f5e3f0e280a97d7f00] [127.0.0.1] 
+
+Started GET "/assets/facebook_logo.png" for 127.0.0.1 at 2012-04-19 08:19:41 +0900
+[f1592b8ef88333f5e3f0e280a97d7f00] [127.0.0.1] Served asset /facebook_logo.png - 304 Not Modified (0ms)
+[c22b705b2af06a0186b44de3b1522f2a] [127.0.0.1] 
+
+Started GET "/assets/ui-bg_highlight-soft_75_eeeeee_1x100.png" for 127.0.0.1 at 2012-04-19 08:19:43 +0900
+[c22b705b2af06a0186b44de3b1522f2a] [127.0.0.1] Served asset /ui-bg_highlight-soft_75_eeeeee_1x100.png - 200 OK (7ms)
+[1aebe6e59efa3ef4cde74d8babc669e2] [127.0.0.1] 
+
+Started GET "/assets/ui-bg_glass_65_f4f4f4_1x400.png" for 127.0.0.1 at 2012-04-19 08:19:43 +0900
+[1aebe6e59efa3ef4cde74d8babc669e2] [127.0.0.1] Served asset /ui-bg_glass_65_f4f4f4_1x400.png - 200 OK (6ms)
+[aec72a2262a541bc2fc074566a3738f4] [127.0.0.1] 
+
+Started GET "/assets/ui-bg_glass_75_e5e5e5_1x400.png" for 127.0.0.1 at 2012-04-19 08:19:43 +0900
+[aec72a2262a541bc2fc074566a3738f4] [127.0.0.1] Served asset /ui-bg_glass_75_e5e5e5_1x400.png - 200 OK (6ms)
+[8159d87ef1b5dc56e96a9a9f61c0329d] [127.0.0.1] 
+
+Started GET "/validators/uniqueness?case_sensitive=true&user%5Bemail%5D=dean1%40headflow.net" for 127.0.0.1 at 2012-04-19 08:19:51 +0900
+[8159d87ef1b5dc56e96a9a9f61c0329d] [127.0.0.1]   [1m[35mUser Exists (0.4ms)[0m  SELECT 1 FROM `users` WHERE `users`.`email` = 'dean1@headflow.net' ORDER BY users.avatar_content_type is not NULL DESC, users.updated_at DESC LIMIT 1
+[a9676972eba7f046ff218ab3d7fad215] [127.0.0.1] 
+
+Started POST "/d/users" for 127.0.0.1 at 2012-04-19 08:19:53 +0900
+[a9676972eba7f046ff218ab3d7fad215] [127.0.0.1] Processing by RegistrationsController#create as HTML
+[a9676972eba7f046ff218ab3d7fad215] [127.0.0.1]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"xx4Klfd+C3M3Uy0OBpSdbT9A9U+OSk9PxYOdOdJh31Y=", "user"=>{"name"=>"dean", "email"=>"dean1@headflow.net", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"시작하기"}
+[a9676972eba7f046ff218ab3d7fad215] [127.0.0.1]   [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+[a9676972eba7f046ff218ab3d7fad215] [127.0.0.1]   [1m[35mUser Exists (0.5ms)[0m  SELECT 1 FROM `users` WHERE `users`.`email` = BINARY 'dean1@headflow.net' LIMIT 1
+[a9676972eba7f046ff218ab3d7fad215] [127.0.0.1]   [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `users` (`admin`, `avatar_content_type`, `avatar_file_name`, `avatar_file_size`, `birthday`, `cellphone`, `created_at`, `current_sign_in_at`, `current_sign_in_ip`, `email`, `encrypted_password`, `interest_id`, `last_sign_in_at`, `last_sign_in_ip`, `major_detail`, `major_id`, `name`, `password_salt`, `profile`, `remember_created_at`, `remember_token`, `reset_password_sent_at`, `reset_password_token`, `sex`, `sign_in_count`, `updated_at`) VALUES (0, NULL, NULL, NULL, NULL, NULL, '2012-04-18 23:19:54', NULL, NULL, 'dean1@headflow.net', '318e93f3bb6654fc7796417a8002a2bcf2e01c12', NULL, NULL, NULL, NULL, NULL, 'dean', 'sHMiWah3zn3ZUf1mC4X7', NULL, NULL, NULL, NULL, NULL, NULL, 0, '2012-04-18 23:19:54')[0m
+[a9676972eba7f046ff218ab3d7fad215] [127.0.0.1] [paperclip] Saving attachments.
+[a9676972eba7f046ff218ab3d7fad215] [127.0.0.1]   [1m[35m (1.4ms)[0m  COMMIT
+[a9676972eba7f046ff218ab3d7fad215] [127.0.0.1]   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+[a9676972eba7f046ff218ab3d7fad215] [127.0.0.1]   [1m[35m (0.5ms)[0m  UPDATE `users` SET `last_sign_in_at` = '2012-04-18 23:19:54', `current_sign_in_at` = '2012-04-18 23:19:54', `last_sign_in_ip` = '127.0.0.1', `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 1, `updated_at` = '2012-04-18 23:19:54' WHERE `users`.`id` = 1
+[a9676972eba7f046ff218ab3d7fad215] [127.0.0.1] [paperclip] Saving attachments.
+[a9676972eba7f046ff218ab3d7fad215] [127.0.0.1]   [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+[a9676972eba7f046ff218ab3d7fad215] [127.0.0.1] Redirected to http://127.0.0.1:3000/
+[a9676972eba7f046ff218ab3d7fad215] [127.0.0.1] Creating scope :page. Overwriting existing method NotificationSetting.page.
+[a9676972eba7f046ff218ab3d7fad215] [127.0.0.1]   [1m[35mNotificationSetting Load (0.3ms)[0m  SELECT `notification_settings`.* FROM `notification_settings` WHERE `notification_settings`.`user_id` = 1 LIMIT 1
+[a9676972eba7f046ff218ab3d7fad215] [127.0.0.1]   [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+[a9676972eba7f046ff218ab3d7fad215] [127.0.0.1]   [1m[35mSQL (0.6ms)[0m  INSERT INTO `notification_settings` (`comment_notify`, `created_at`, `friendship_acceptance_notify`, `friendship_notify`, `kit_notify`, `moim_kit_notify`, `other_comment_notify`, `reply_notify`, `seed_kit_notify`, `updated_at`, `user_id`) VALUES (1, '2012-04-18 23:19:54', 1, 1, 1, 1, 1, 1, 1, '2012-04-18 23:19:54', 1)
+[a9676972eba7f046ff218ab3d7fad215] [127.0.0.1]   [1m[36m (26.9ms)[0m  [1mCOMMIT[0m
+[a9676972eba7f046ff218ab3d7fad215] [127.0.0.1] Completed 302 Found in 225ms (ActiveRecord: 32.2ms)
+[a5a2b9f9ecc23dd26793bc136e4468bb] [127.0.0.1] 
+
+Started GET "/" for 127.0.0.1 at 2012-04-19 08:19:54 +0900
+[a5a2b9f9ecc23dd26793bc136e4468bb] [127.0.0.1] Processing by SeedsController#index as HTML
+[a5a2b9f9ecc23dd26793bc136e4468bb] [127.0.0.1]   [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY users.avatar_content_type is not NULL DESC, users.updated_at DESC LIMIT 1
+[a5a2b9f9ecc23dd26793bc136e4468bb] [127.0.0.1] Creating scope :page. Overwriting existing method Notification.page.
+[a5a2b9f9ecc23dd26793bc136e4468bb] [127.0.0.1]   [1m[36mNotification Load (0.3ms)[0m  [1mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`user_id` = 1 ORDER BY notifications.created_at DESC[0m
+[a5a2b9f9ecc23dd26793bc136e4468bb] [127.0.0.1] Creating scope :page. Overwriting existing method Authentication.page.
+[a5a2b9f9ecc23dd26793bc136e4468bb] [127.0.0.1]   [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'
+[a5a2b9f9ecc23dd26793bc136e4468bb] [127.0.0.1] Creating scope :page. Overwriting existing method Photo.page.
+[a5a2b9f9ecc23dd26793bc136e4468bb] [127.0.0.1]   [1m[36mPhoto Load (0.8ms)[0m  [1mSELECT `photos`.* FROM `photos` WHERE `photos`.`photoable_id` = 1 AND `photos`.`photoable_type` = 'User' ORDER BY photos.created_at DESC LIMIT 1[0m
+[a5a2b9f9ecc23dd26793bc136e4468bb] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'
+[a5a2b9f9ecc23dd26793bc136e4468bb] [127.0.0.1]   [1m[36mSeed Load (0.2ms)[0m  [1mSELECT `seeds`.* FROM `seeds` ORDER BY seeds.updated_at DESC, id LIMIT 20 OFFSET 0[0m
+[a5a2b9f9ecc23dd26793bc136e4468bb] [127.0.0.1]   Rendered collection (0.0ms)
+[a5a2b9f9ecc23dd26793bc136e4468bb] [127.0.0.1]   Rendered seeds/index.html.erb within layouts/application (29.8ms)
+[a5a2b9f9ecc23dd26793bc136e4468bb] [127.0.0.1] Creating scope :page. Overwriting existing method NetworkParticipation.page.
+[a5a2b9f9ecc23dd26793bc136e4468bb] [127.0.0.1] Creating scope :page. Overwriting existing method Network.page.
+[a5a2b9f9ecc23dd26793bc136e4468bb] [127.0.0.1]   [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `networks` INNER JOIN `network_participations` ON `networks`.`id` = `network_participations`.`network_id` WHERE `network_participations`.`user_id` = 1
+[a5a2b9f9ecc23dd26793bc136e4468bb] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `networks` INNER JOIN `network_participations` ON `networks`.`id` = `network_participations`.`network_id` WHERE `network_participations`.`user_id` = 1[0m
+[a5a2b9f9ecc23dd26793bc136e4468bb] [127.0.0.1]   Rendered network_participations/_network_participation_status.html.erb (2.3ms)
+[a5a2b9f9ecc23dd26793bc136e4468bb] [127.0.0.1] Creating scope :page. Overwriting existing method Major.page.
+[a5a2b9f9ecc23dd26793bc136e4468bb] [127.0.0.1]   [1m[35mMajor Load (0.2ms)[0m  SELECT `majors`.* FROM `majors` 
+[a5a2b9f9ecc23dd26793bc136e4468bb] [127.0.0.1] Creating scope :page. Overwriting existing method Interest.page.
+[a5a2b9f9ecc23dd26793bc136e4468bb] [127.0.0.1]   [1m[36mInterest Load (0.3ms)[0m  [1mSELECT `interests`.* FROM `interests` [0m
+[a5a2b9f9ecc23dd26793bc136e4468bb] [127.0.0.1]   [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `notifications` WHERE `notifications`.`user_id` = 1 AND `notifications`.`read` = 0
+[a5a2b9f9ecc23dd26793bc136e4468bb] [127.0.0.1]   Rendered collection (0.0ms)
+[a5a2b9f9ecc23dd26793bc136e4468bb] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `photos`.* FROM `photos` WHERE `photos`.`photoable_id` = 1 AND `photos`.`photoable_type` = 'User' ORDER BY photos.created_at DESC LIMIT 1[0m
+[a5a2b9f9ecc23dd26793bc136e4468bb] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'
+[a5a2b9f9ecc23dd26793bc136e4468bb] [127.0.0.1]   Rendered layouts/_top_right.html.erb (5.9ms)
+[a5a2b9f9ecc23dd26793bc136e4468bb] [127.0.0.1]   [1m[36mSeed Load (0.3ms)[0m  [1mSELECT `seeds`.* FROM `seeds` ORDER BY seeds.updated_at DESC[0m
+[a5a2b9f9ecc23dd26793bc136e4468bb] [127.0.0.1]   Rendered layouts/_header_seed_index.html.erb (1.1ms)
+[a5a2b9f9ecc23dd26793bc136e4468bb] [127.0.0.1] Creating scope :page. Overwriting existing method Participation.page.
+[a5a2b9f9ecc23dd26793bc136e4468bb] [127.0.0.1]   [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `seeds` INNER JOIN `participations` ON `seeds`.`id` = `participations`.`seed_id` WHERE `participations`.`user_id` = 1 AND (status = 'progress')
+[a5a2b9f9ecc23dd26793bc136e4468bb] [127.0.0.1]   [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM `seeds` INNER JOIN `participations` ON `seeds`.`id` = `participations`.`seed_id` WHERE `participations`.`user_id` = 1 AND (status = 'complete')[0m
+[a5a2b9f9ecc23dd26793bc136e4468bb] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `seeds`.* FROM `seeds` ORDER BY seeds.updated_at DESC
+[a5a2b9f9ecc23dd26793bc136e4468bb] [127.0.0.1]   Rendered layouts/_sidebar_seeds.html.erb (18.6ms)
+[a5a2b9f9ecc23dd26793bc136e4468bb] [127.0.0.1] Completed 200 OK in 379ms (Views: 297.5ms | ActiveRecord: 36.5ms | Solr: 0.0ms)
+[020b59e2bf44bae7ba22033d94a107f3] [127.0.0.1] 
+
+Started GET "/assets/seeds.css?body=1" for 127.0.0.1 at 2012-04-19 08:19:54 +0900
+[020b59e2bf44bae7ba22033d94a107f3] [127.0.0.1] Served asset /seeds.css - 304 Not Modified (0ms)
+[8d45f442c12114e45852d7e7c72be90e] [127.0.0.1] 
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-19 08:19:54 +0900
+[8d45f442c12114e45852d7e7c72be90e] [127.0.0.1] Served asset /users.css - 304 Not Modified (0ms)
+[d7828511d07bcddd9e8af1015d8f1911] [127.0.0.1] 
+
+Started GET "/assets/participations.css?body=1" for 127.0.0.1 at 2012-04-19 08:19:54 +0900
+[d7828511d07bcddd9e8af1015d8f1911] [127.0.0.1] Served asset /participations.css - 304 Not Modified (0ms)
+[310946486f58793c3bed685c0e2a6563] [127.0.0.1] 
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:54 +0900
+[310946486f58793c3bed685c0e2a6563] [127.0.0.1] Served asset /jquery.js - 304 Not Modified (0ms)
+[687cd034f7740dd19338a6cdc9b11a1b] [127.0.0.1] 
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:54 +0900
+[687cd034f7740dd19338a6cdc9b11a1b] [127.0.0.1] Served asset /best_in_place.js - 304 Not Modified (0ms)
+[a00b6234d5da269ef8c26b6c414aab38] [127.0.0.1] 
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:54 +0900
+[a00b6234d5da269ef8c26b6c414aab38] [127.0.0.1] Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+[dc9c4cc696de94296a529a00bb7ce009] [127.0.0.1] 
+
+Started GET "/assets/imports.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:54 +0900
+[dc9c4cc696de94296a529a00bb7ce009] [127.0.0.1] Served asset /imports.js - 304 Not Modified (0ms)
+[2a204344acd42ee620736e0ef73d3bbc] [127.0.0.1] 
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:54 +0900
+[2a204344acd42ee620736e0ef73d3bbc] [127.0.0.1] Served asset /home.js - 304 Not Modified (0ms)
+[8250b3ff29ebeb0748f752c7b3e75e43] [127.0.0.1] 
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:54 +0900
+[8250b3ff29ebeb0748f752c7b3e75e43] [127.0.0.1] Served asset /photos.js - 304 Not Modified (0ms)
+[152437e29332e5ebd4c3d20f861fe872] [127.0.0.1] 
+
+Started GET "/assets/participations.js?body=1" for 127.0.0.1 at 2012-04-19 08:19:54 +0900
+[152437e29332e5ebd4c3d20f861fe872] [127.0.0.1] Served asset /participations.js - 304 Not Modified (0ms)
+[16dff3221fc935e9a1053f3c8136796d] [127.0.0.1] 
+
+Started GET "/assets/icon3.png" for 127.0.0.1 at 2012-04-19 08:19:55 +0900
+[16dff3221fc935e9a1053f3c8136796d] [127.0.0.1] Served asset /icon3.png - 200 OK (49ms)
+[38b3bd327bb7ec2e59d61c0e1ce0de68] [127.0.0.1] 
+
+Started GET "/assets/selector.png" for 127.0.0.1 at 2012-04-19 08:19:55 +0900
+[38b3bd327bb7ec2e59d61c0e1ce0de68] [127.0.0.1] Served asset /selector.png - 200 OK (6ms)
+[7bffed6cc38be0d0d3cca118e0191131] [127.0.0.1] 
+
+Started GET "/assets/icon1.png" for 127.0.0.1 at 2012-04-19 08:19:55 +0900
+[7bffed6cc38be0d0d3cca118e0191131] [127.0.0.1] Served asset /icon1.png - 200 OK (138ms)
+[3d1b9441eb08a35c070feab41b3c6019] [127.0.0.1] 
+
+Started GET "/assets/icon2.png" for 127.0.0.1 at 2012-04-19 08:19:55 +0900
+[3d1b9441eb08a35c070feab41b3c6019] [127.0.0.1] Served asset /icon2.png - 200 OK (6ms)
+[19fd9f898239543f7743ad616951c364] [127.0.0.1] 
+
+Started GET "/assets/default_profile.png" for 127.0.0.1 at 2012-04-19 08:19:55 +0900
+[19fd9f898239543f7743ad616951c364] [127.0.0.1] Served asset /default_profile.png - 200 OK (26ms)
+[c3faaf8f7cedfa198bae2e5edcce5a10] [127.0.0.1] 
+
+Started PUT "/users/1" for 127.0.0.1 at 2012-04-19 08:20:01 +0900
+[c3faaf8f7cedfa198bae2e5edcce5a10] [127.0.0.1] Processing by UsersController#update as JSON
+[c3faaf8f7cedfa198bae2e5edcce5a10] [127.0.0.1]   Parameters: {"user"=>{"profile"=>"a"}, "authenticity_token"=>"xx4Klfd+C3M3Uy0OBpSdbT9A9U+OSk9PxYOdOdJh31Y=", "id"=>"1"}
+[c3faaf8f7cedfa198bae2e5edcce5a10] [127.0.0.1]   [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY users.avatar_content_type is not NULL DESC, users.updated_at DESC LIMIT 1[0m
+[c3faaf8f7cedfa198bae2e5edcce5a10] [127.0.0.1]   [1m[35mNotification Load (0.1ms)[0m  SELECT `notifications`.* FROM `notifications` WHERE `notifications`.`user_id` = 1 ORDER BY notifications.created_at DESC
+[c3faaf8f7cedfa198bae2e5edcce5a10] [127.0.0.1]   [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'[0m
+[c3faaf8f7cedfa198bae2e5edcce5a10] [127.0.0.1]   [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY users.avatar_content_type is not NULL DESC, users.updated_at DESC LIMIT 1
+[c3faaf8f7cedfa198bae2e5edcce5a10] [127.0.0.1]   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+[c3faaf8f7cedfa198bae2e5edcce5a10] [127.0.0.1]   [1m[35m (0.6ms)[0m  UPDATE `users` SET `profile` = 'a', `updated_at` = '2012-04-18 23:20:01' WHERE `users`.`id` = 1
+[c3faaf8f7cedfa198bae2e5edcce5a10] [127.0.0.1] [paperclip] Saving attachments.
+[c3faaf8f7cedfa198bae2e5edcce5a10] [127.0.0.1]   [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+[c3faaf8f7cedfa198bae2e5edcce5a10] [127.0.0.1]   [1m[35m (0.1ms)[0m  BEGIN
+[c3faaf8f7cedfa198bae2e5edcce5a10] [127.0.0.1] [paperclip] Saving attachments.
+[c3faaf8f7cedfa198bae2e5edcce5a10] [127.0.0.1]   [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+[c3faaf8f7cedfa198bae2e5edcce5a10] [127.0.0.1] Completed 200 OK in 17ms (ActiveRecord: 0.2ms)
+[031f64f5b86a74d455f865922c24d976] [127.0.0.1] 
+
+Started GET "/networks?term=%ED%95%AD%EA%B3%B5" for 127.0.0.1 at 2012-04-19 08:20:06 +0900
+[031f64f5b86a74d455f865922c24d976] [127.0.0.1] Processing by NetworksController#index as JSON
+[031f64f5b86a74d455f865922c24d976] [127.0.0.1]   Parameters: {"term"=>"항공"}
+[031f64f5b86a74d455f865922c24d976] [127.0.0.1]   [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY users.avatar_content_type is not NULL DESC, users.updated_at DESC LIMIT 1
+[031f64f5b86a74d455f865922c24d976] [127.0.0.1]   [1m[36mNotification Load (0.1ms)[0m  [1mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`user_id` = 1 ORDER BY notifications.created_at DESC[0m
+[031f64f5b86a74d455f865922c24d976] [127.0.0.1]   [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'
+[031f64f5b86a74d455f865922c24d976] [127.0.0.1]   [1m[36mNetwork Load (0.3ms)[0m  [1mSELECT `networks`.* FROM `networks` ORDER BY networks.network_participations_count DESC, networks.created_at[0m
+[031f64f5b86a74d455f865922c24d976] [127.0.0.1]   [1m[35mNetwork Load (0.3ms)[0m  SELECT `networks`.* FROM `networks` WHERE (name like '%항공%') ORDER BY networks.network_participations_count DESC, networks.created_at, name
+[031f64f5b86a74d455f865922c24d976] [127.0.0.1] Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 1.3ms | Solr: 0.0ms)
+[8c0a0177708315e6c0aeaeef8825d175] [127.0.0.1] 
+
+Started POST "/network_participations" for 127.0.0.1 at 2012-04-19 08:20:08 +0900
+[8c0a0177708315e6c0aeaeef8825d175] [127.0.0.1] Processing by NetworkParticipationsController#create as JS
+[8c0a0177708315e6c0aeaeef8825d175] [127.0.0.1]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"xx4Klfd+C3M3Uy0OBpSdbT9A9U+OSk9PxYOdOdJh31Y=", "network_participation"=>{"network_name"=>"항공"}, "commit"=>"등록하기"}
+[8c0a0177708315e6c0aeaeef8825d175] [127.0.0.1]   [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY users.avatar_content_type is not NULL DESC, users.updated_at DESC LIMIT 1[0m
+[8c0a0177708315e6c0aeaeef8825d175] [127.0.0.1]   [1m[35mNotification Load (0.1ms)[0m  SELECT `notifications`.* FROM `notifications` WHERE `notifications`.`user_id` = 1 ORDER BY notifications.created_at DESC
+[8c0a0177708315e6c0aeaeef8825d175] [127.0.0.1]   [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'[0m
+[8c0a0177708315e6c0aeaeef8825d175] [127.0.0.1]   [1m[35mNetwork Load (0.4ms)[0m  SELECT `networks`.* FROM `networks` WHERE `networks`.`name` = '항공' ORDER BY networks.network_participations_count DESC, networks.created_at LIMIT 1
+[8c0a0177708315e6c0aeaeef8825d175] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `networks`.* FROM `networks` WHERE `networks`.`name` = '항공' ORDER BY networks.network_participations_count DESC, networks.created_at LIMIT 1[0m
+[8c0a0177708315e6c0aeaeef8825d175] [127.0.0.1]   [1m[35m (0.1ms)[0m  BEGIN
+[8c0a0177708315e6c0aeaeef8825d175] [127.0.0.1]   [1m[36mNetworkParticipation Exists (0.4ms)[0m  [1mSELECT 1 FROM `network_participations` WHERE (`network_participations`.`user_id` = BINARY 1 AND `network_participations`.`network_id` IS NULL) LIMIT 1[0m
+[8c0a0177708315e6c0aeaeef8825d175] [127.0.0.1]   [1m[35m (0.1ms)[0m  ROLLBACK
+[8c0a0177708315e6c0aeaeef8825d175] [127.0.0.1]   [1m[36m (11.8ms)[0m  [1mSELECT COUNT(*) FROM `networks` INNER JOIN `network_participations` ON `networks`.`id` = `network_participations`.`network_id` WHERE `network_participations`.`user_id` = 1[0m
+[8c0a0177708315e6c0aeaeef8825d175] [127.0.0.1]   Rendered network_participations/_network_participation_status.html.erb (14.5ms)
+[8c0a0177708315e6c0aeaeef8825d175] [127.0.0.1]   Rendered network_participations/create.js.erb (16.2ms)
+[8c0a0177708315e6c0aeaeef8825d175] [127.0.0.1] Completed 200 OK in 35ms (Views: 11.9ms | ActiveRecord: 13.3ms | Solr: 0.0ms)
+[77778c3b17a9e378d5b03b965d720a8b] [127.0.0.1] 
+
+Started POST "/seeds" for 127.0.0.1 at 2012-04-19 08:20:28 +0900
+[77778c3b17a9e378d5b03b965d720a8b] [127.0.0.1] Processing by SeedsController#create as HTML
+[77778c3b17a9e378d5b03b965d720a8b] [127.0.0.1]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"xx4Klfd+C3M3Uy0OBpSdbT9A9U+OSk9PxYOdOdJh31Y=", "seed"=>{"title"=>"gkgk", "description"=>"gkgk"}, "commit"=>"시드 만들기"}
+[77778c3b17a9e378d5b03b965d720a8b] [127.0.0.1]   [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY users.avatar_content_type is not NULL DESC, users.updated_at DESC LIMIT 1
+[77778c3b17a9e378d5b03b965d720a8b] [127.0.0.1]   [1m[36mNotification Load (0.1ms)[0m  [1mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`user_id` = 1 ORDER BY notifications.created_at DESC[0m
+[77778c3b17a9e378d5b03b965d720a8b] [127.0.0.1]   [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'
+[77778c3b17a9e378d5b03b965d720a8b] [127.0.0.1]   [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+[77778c3b17a9e378d5b03b965d720a8b] [127.0.0.1]   [1m[35mSQL (0.4ms)[0m  INSERT INTO `seeds` (`created_at`, `description`, `title`, `updated_at`, `user_id`) VALUES ('2012-04-18 23:20:28', 'gkgk', 'gkgk', '2012-04-18 23:20:28', 1)
+[77778c3b17a9e378d5b03b965d720a8b] [127.0.0.1]   [1m[36mKit Load (0.9ms)[0m  [1mSELECT `kits`.* FROM `kits` WHERE `kits`.`kitable_id` = 1 AND `kits`.`kitable_type` = 'Seed' ORDER BY kits.updated_at DESC[0m
+[77778c3b17a9e378d5b03b965d720a8b] [127.0.0.1]   [1m[32mSOLR Request (1.1ms)[0m  [ path=#<RSolr::Client:0x007f832dcfca30> parameters={data: [1m[1m<?xml version="1.0" encoding="UTF-8"?><add><doc><field name="id">Seed 1</field><field name="type">Seed</field><field name="type">ActiveRecord::Base</field><field name="class_name">Seed</field><field boost="5" name="title_text">gkgk</field><field name="description_text">gkgk</field></doc></add>[0m, headers: [1m[1m{"Content-Type"=>"text/xml"}[0m, method: [1m[1mpost[0m, params: [1m[1m{:wt=>:ruby}[0m, query: [1m[1mwt=ruby[0m, path: [1m[1mupdate[0m, uri: [1m[1mhttp://localhost:8982/solr/update?wt=ruby[0m} ]
+[77778c3b17a9e378d5b03b965d720a8b] [127.0.0.1]   [1m[35m (1.1ms)[0m  ROLLBACK
+[77778c3b17a9e378d5b03b965d720a8b] [127.0.0.1] Completed 500 Internal Server Error in 188ms
+[77778c3b17a9e378d5b03b965d720a8b] [127.0.0.1] 
+Errno::ECONNREFUSED (Connection refused - connect(2)):
+  app/controllers/seeds_controller.rb:26:in `create'
+
+
+[77778c3b17a9e378d5b03b965d720a8b] [127.0.0.1]   Rendered /Users/headflow/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (67.2ms)
+[77778c3b17a9e378d5b03b965d720a8b] [127.0.0.1]   Rendered /Users/headflow/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+[77778c3b17a9e378d5b03b965d720a8b] [127.0.0.1]   Rendered /Users/headflow/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (71.9ms)
+[1963d8f2a76d44369d0227ad306dfb49] [127.0.0.1] 
+
+Started GET "/" for 127.0.0.1 at 2012-04-19 08:20:38 +0900
+[1963d8f2a76d44369d0227ad306dfb49] [127.0.0.1] Processing by SeedsController#index as HTML
+[1963d8f2a76d44369d0227ad306dfb49] [127.0.0.1]   [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY users.avatar_content_type is not NULL DESC, users.updated_at DESC LIMIT 1[0m
+[1963d8f2a76d44369d0227ad306dfb49] [127.0.0.1]   [1m[35mNotification Load (0.2ms)[0m  SELECT `notifications`.* FROM `notifications` WHERE `notifications`.`user_id` = 1 ORDER BY notifications.created_at DESC
+[1963d8f2a76d44369d0227ad306dfb49] [127.0.0.1]   [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'[0m
+[1963d8f2a76d44369d0227ad306dfb49] [127.0.0.1]   [1m[35mPhoto Load (0.2ms)[0m  SELECT `photos`.* FROM `photos` WHERE `photos`.`photoable_id` = 1 AND `photos`.`photoable_type` = 'User' ORDER BY photos.created_at DESC LIMIT 1
+[1963d8f2a76d44369d0227ad306dfb49] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'[0m
+[1963d8f2a76d44369d0227ad306dfb49] [127.0.0.1]   [1m[35mSeed Load (0.4ms)[0m  SELECT `seeds`.* FROM `seeds` ORDER BY seeds.updated_at DESC, id LIMIT 20 OFFSET 0
+[1963d8f2a76d44369d0227ad306dfb49] [127.0.0.1]   Rendered collection (0.0ms)
+[1963d8f2a76d44369d0227ad306dfb49] [127.0.0.1]   Rendered seeds/index.html.erb within layouts/application (12.1ms)
+[1963d8f2a76d44369d0227ad306dfb49] [127.0.0.1]   [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `notifications` WHERE `notifications`.`user_id` = 1 AND `notifications`.`read` = 0[0m
+[1963d8f2a76d44369d0227ad306dfb49] [127.0.0.1]   Rendered collection (0.0ms)
+[1963d8f2a76d44369d0227ad306dfb49] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `photos`.* FROM `photos` WHERE `photos`.`photoable_id` = 1 AND `photos`.`photoable_type` = 'User' ORDER BY photos.created_at DESC LIMIT 1
+[1963d8f2a76d44369d0227ad306dfb49] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'[0m
+[1963d8f2a76d44369d0227ad306dfb49] [127.0.0.1]   Rendered layouts/_top_right.html.erb (5.7ms)
+[1963d8f2a76d44369d0227ad306dfb49] [127.0.0.1]   [1m[35mSeed Load (0.3ms)[0m  SELECT `seeds`.* FROM `seeds` ORDER BY seeds.updated_at DESC
+[1963d8f2a76d44369d0227ad306dfb49] [127.0.0.1]   Rendered layouts/_header_seed_index.html.erb (1.1ms)
+[1963d8f2a76d44369d0227ad306dfb49] [127.0.0.1]   [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM `seeds` INNER JOIN `participations` ON `seeds`.`id` = `participations`.`seed_id` WHERE `participations`.`user_id` = 1 AND (status = 'progress')[0m
+[1963d8f2a76d44369d0227ad306dfb49] [127.0.0.1]   [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `seeds` INNER JOIN `participations` ON `seeds`.`id` = `participations`.`seed_id` WHERE `participations`.`user_id` = 1 AND (status = 'complete')
+[1963d8f2a76d44369d0227ad306dfb49] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `seeds`.* FROM `seeds` ORDER BY seeds.updated_at DESC[0m
+[1963d8f2a76d44369d0227ad306dfb49] [127.0.0.1]   Rendered layouts/_sidebar_seeds.html.erb (3.8ms)
+[1963d8f2a76d44369d0227ad306dfb49] [127.0.0.1]   [1m[32mSOLR Request (0.9ms)[0m  [ path=#<RSolr::Client:0x007f832dcfca30> parameters={data: [1m[1m<?xml version="1.0" encoding="UTF-8"?><commit/>[0m, headers: [1m[1m{"Content-Type"=>"text/xml"}[0m, method: [1m[1mpost[0m, params: [1m[1m{:wt=>:ruby}[0m, query: [1m[1mwt=ruby[0m, path: [1m[1mupdate[0m, uri: [1m[1mhttp://localhost:8982/solr/update?wt=ruby[0m} ]
+[1963d8f2a76d44369d0227ad306dfb49] [127.0.0.1] Completed 500 Internal Server Error in 63ms
+[1963d8f2a76d44369d0227ad306dfb49] [127.0.0.1] 
+Errno::ECONNREFUSED (Connection refused - connect(2)):
+  /Users/headflow/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/net/http.rb:762:in `initialize'
+  /Users/headflow/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/net/http.rb:762:in `open'
+  /Users/headflow/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/net/http.rb:762:in `block in connect'
+  /Users/headflow/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/timeout.rb:54:in `timeout'
+  /Users/headflow/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/timeout.rb:99:in `timeout'
+  /Users/headflow/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/net/http.rb:762:in `connect'
+  /Users/headflow/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/net/http.rb:755:in `do_start'
+  /Users/headflow/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/net/http.rb:744:in `start'
+  /Users/headflow/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/net/http.rb:1284:in `request'
+  rsolr (1.0.6) lib/rsolr/connection.rb:15:in `execute'
+  sunspot_rails (1.3.0) lib/sunspot/rails/solr_instrumentation.rb:14:in `block in execute_with_as_instrumentation'
+  activesupport (3.2.0) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.0) lib/active_support/notifications.rb:123:in `instrument'
+  sunspot_rails (1.3.0) lib/sunspot/rails/solr_instrumentation.rb:12:in `execute_with_as_instrumentation'
+  rsolr (1.0.6) lib/rsolr/client.rb:163:in `execute'
+  rsolr (1.0.6) lib/rsolr/client.rb:158:in `send_and_receive'
+  (eval):2:in `post'
+  rsolr (1.0.6) lib/rsolr/client.rb:67:in `update'
+  rsolr (1.0.6) lib/rsolr/client.rb:96:in `commit'
+  sunspot (1.3.0) lib/sunspot/session.rb:107:in `commit'
+  sunspot (1.3.0) lib/sunspot/session.rb:204:in `commit_if_dirty'
+  sunspot (1.3.0) lib/sunspot/session_proxy/abstract_session_proxy.rb:11:in `commit_if_dirty'
+  sunspot (1.3.0) lib/sunspot.rb:516:in `commit_if_dirty'
+  sunspot_rails (1.3.0) lib/sunspot/rails/request_lifecycle.rb:26:in `block (2 levels) in included'
+  activesupport (3.2.0) lib/active_support/callbacks.rb:449:in `_run__3857765692737978227__process_action__253473831012965021__callbacks'
+  activesupport (3.2.0) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.0) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.0) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.0) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.0) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.0) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.0) lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+  activerecord (3.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.0) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.0) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.0) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.0) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.0) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.0) lib/action_dispatch/routing/route_set.rb:66:in `call'
+  actionpack (3.2.0) lib/action_dispatch/routing/route_set.rb:66:in `dispatch'
+  actionpack (3.2.0) lib/action_dispatch/routing/route_set.rb:30:in `call'
+  journey (1.0.1) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.1) lib/journey/router.rb:56:in `each'
+  journey (1.0.1) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.0) lib/action_dispatch/routing/route_set.rb:570:in `call'
+  rack-pjax (0.5.7) lib/rack/pjax.rb:12:in `call'
+  omniauth (1.0.2) lib/omniauth/strategy.rb:168:in `call!'
+  omniauth (1.0.2) lib/omniauth/strategy.rb:148:in `call'
+  omniauth (1.0.2) lib/omniauth/builder.rb:42:in `call'
+  /Users/headflow/.rvm/gems/ruby-1.9.3-p0/bundler/gems/client_side_validations-bf593243aac1/lib/client_side_validations/middleware.rb:16:in `call'
+  warden (1.1.0) lib/warden/manager.rb:35:in `block in call'
+  warden (1.1.0) lib/warden/manager.rb:34:in `catch'
+  warden (1.1.0) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/head.rb:14:in `call'
+  remotipart (1.0.1) lib/remotipart/middleware.rb:30:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.0) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.0) lib/active_support/callbacks.rb:405:in `_run__718247135550663674__call__3119351530481134114__callbacks'
+  activesupport (3.2.0) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.0) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.0) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.0) lib/rails/rack/logger.rb:14:in `block in call'
+  activesupport (3.2.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  railties (3.2.0) lib/rails/rack/logger.rb:14:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.0) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.0) lib/rails/engine.rb:479:in `call'
+  railties (3.2.0) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.0) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/headflow/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/headflow/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/headflow/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+[1963d8f2a76d44369d0227ad306dfb49] [127.0.0.1]   Rendered /Users/headflow/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.9ms)
+[1963d8f2a76d44369d0227ad306dfb49] [127.0.0.1]   Rendered /Users/headflow/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+[1963d8f2a76d44369d0227ad306dfb49] [127.0.0.1]   Rendered /Users/headflow/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.2ms)
+[54879e6eace5a499a017d9d82219d727] [127.0.0.1] 
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2012-04-19 08:20:41 +0900
+[54879e6eace5a499a017d9d82219d727] [127.0.0.1] Served asset /favicon.ico - 304 Not Modified (0ms)
+[17d4ae2dba4122f86c26b1d222728190] [127.0.0.1] 
+
+Started GET "/assets/facebook_logo.png" for 127.0.0.1 at 2012-04-19 08:20:42 +0900
+[17d4ae2dba4122f86c26b1d222728190] [127.0.0.1] Served asset /facebook_logo.png - 304 Not Modified (0ms)
+[86436772d9ad9a9988fb233ac41f620e] [127.0.0.1] 
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2012-04-19 08:20:43 +0900
+[c8846424f42a01ecc47a0bb0938ca817] [127.0.0.1] 
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2012-04-19 08:20:44 +0900
+[aa3170adef62939dafedb9a65ecda891] [127.0.0.1] 
+
+Started GET "/assets/facebook_logo.png" for 127.0.0.1 at 2012-04-19 08:20:46 +0900
+[aa3170adef62939dafedb9a65ecda891] [127.0.0.1] Served asset /facebook_logo.png - 304 Not Modified (0ms)
+[e8578139dbddc6c8a0aaffcf606d7670] [127.0.0.1] 
+
+Started POST "/d/users/sign_in" for 127.0.0.1 at 2012-04-19 08:20:50 +0900
+[e8578139dbddc6c8a0aaffcf606d7670] [127.0.0.1] Processing by SessionsController#create as JS
+[e8578139dbddc6c8a0aaffcf606d7670] [127.0.0.1]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"xx4Klfd+C3M3Uy0OBpSdbT9A9U+OSk9PxYOdOdJh31Y=", "user"=>{"email"=>"dean1@headflow.net", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"로그인"}
+[e8578139dbddc6c8a0aaffcf606d7670] [127.0.0.1]   [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY users.avatar_content_type is not NULL DESC, users.updated_at DESC LIMIT 1
+[e8578139dbddc6c8a0aaffcf606d7670] [127.0.0.1]   [1m[36mNotification Load (0.3ms)[0m  [1mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`user_id` = 1 ORDER BY notifications.created_at DESC[0m
+[e8578139dbddc6c8a0aaffcf606d7670] [127.0.0.1]   [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'
+[e8578139dbddc6c8a0aaffcf606d7670] [127.0.0.1]   [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT `photos`.* FROM `photos` WHERE `photos`.`photoable_id` = 1 AND `photos`.`photoable_type` = 'User' ORDER BY photos.created_at DESC LIMIT 1[0m
+[e8578139dbddc6c8a0aaffcf606d7670] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'
+[e8578139dbddc6c8a0aaffcf606d7670] [127.0.0.1]   Rendered layouts/_top_right.html.erb (7.8ms)
+[e8578139dbddc6c8a0aaffcf606d7670] [127.0.0.1]   Rendered sessions/create.js.erb (9.7ms)
+[e8578139dbddc6c8a0aaffcf606d7670] [127.0.0.1] Completed 200 OK in 42ms (Views: 35.5ms | ActiveRecord: 1.2ms | Solr: 0.0ms)
+[1635f8af390b3e8d409444719f37fea4] [127.0.0.1] 
+
+Started GET "/users/1" for 127.0.0.1 at 2012-04-19 08:20:57 +0900
+[1635f8af390b3e8d409444719f37fea4] [127.0.0.1] Processing by UsersController#show as HTML
+[1635f8af390b3e8d409444719f37fea4] [127.0.0.1]   Parameters: {"id"=>"1"}
+[1635f8af390b3e8d409444719f37fea4] [127.0.0.1]   [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY users.avatar_content_type is not NULL DESC, users.updated_at DESC LIMIT 1[0m
+[1635f8af390b3e8d409444719f37fea4] [127.0.0.1]   [1m[35mNotification Load (0.3ms)[0m  SELECT `notifications`.* FROM `notifications` WHERE `notifications`.`user_id` = 1 ORDER BY notifications.created_at DESC
+[1635f8af390b3e8d409444719f37fea4] [127.0.0.1]   [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'[0m
+[1635f8af390b3e8d409444719f37fea4] [127.0.0.1]   [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY users.avatar_content_type is not NULL DESC, users.updated_at DESC LIMIT 1
+[1635f8af390b3e8d409444719f37fea4] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'[0m
+[1635f8af390b3e8d409444719f37fea4] [127.0.0.1]   [1m[35mPhoto Load (0.2ms)[0m  SELECT `photos`.* FROM `photos` WHERE `photos`.`photoable_id` = 1 AND `photos`.`photoable_type` = 'User' ORDER BY photos.created_at DESC LIMIT 1
+[1635f8af390b3e8d409444719f37fea4] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'[0m
+[1635f8af390b3e8d409444719f37fea4] [127.0.0.1]   Rendered kits/_kit_form.html.erb (11.2ms)
+[1635f8af390b3e8d409444719f37fea4] [127.0.0.1]   [1m[35mKit Load (0.4ms)[0m  SELECT `kits`.* FROM `kits` WHERE `kits`.`kitable_id` = 1 AND `kits`.`kitable_type` = 'User' ORDER BY kits.updated_at DESC LIMIT 10 OFFSET 0
+[1635f8af390b3e8d409444719f37fea4] [127.0.0.1]   Rendered collection (0.0ms)
+[1635f8af390b3e8d409444719f37fea4] [127.0.0.1]   Rendered users/show.html.erb within layouts/application (14.2ms)
+[1635f8af390b3e8d409444719f37fea4] [127.0.0.1]   [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `notifications` WHERE `notifications`.`user_id` = 1 AND `notifications`.`read` = 0[0m
+[1635f8af390b3e8d409444719f37fea4] [127.0.0.1]   Rendered collection (0.0ms)
+[1635f8af390b3e8d409444719f37fea4] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `photos`.* FROM `photos` WHERE `photos`.`photoable_id` = 1 AND `photos`.`photoable_type` = 'User' ORDER BY photos.created_at DESC LIMIT 1
+[1635f8af390b3e8d409444719f37fea4] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'[0m
+[1635f8af390b3e8d409444719f37fea4] [127.0.0.1]   Rendered layouts/_top_right.html.erb (5.4ms)
+[1635f8af390b3e8d409444719f37fea4] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `photos`.* FROM `photos` WHERE `photos`.`photoable_id` = 1 AND `photos`.`photoable_type` = 'User' ORDER BY photos.created_at DESC LIMIT 1
+[1635f8af390b3e8d409444719f37fea4] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'[0m
+[1635f8af390b3e8d409444719f37fea4] [127.0.0.1]   Rendered friendships/_friendship_status.html.erb (1.1ms)
+[1635f8af390b3e8d409444719f37fea4] [127.0.0.1]   [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `networks` INNER JOIN `network_participations` ON `networks`.`id` = `network_participations`.`network_id` WHERE `network_participations`.`user_id` = 1
+[1635f8af390b3e8d409444719f37fea4] [127.0.0.1]   Rendered network_participations/_network_participation_status.html.erb (1.7ms)
+[1635f8af390b3e8d409444719f37fea4] [127.0.0.1]   [1m[36mMajor Load (0.1ms)[0m  [1mSELECT `majors`.* FROM `majors` [0m
+[1635f8af390b3e8d409444719f37fea4] [127.0.0.1]   [1m[35mInterest Load (0.1ms)[0m  SELECT `interests`.* FROM `interests` 
+[1635f8af390b3e8d409444719f37fea4] [127.0.0.1] Creating scope :page. Overwriting existing method Friendship.page.
+[1635f8af390b3e8d409444719f37fea4] [127.0.0.1]   [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM `users` INNER JOIN `friendships` ON `users`.`id` = `friendships`.`friend_id` WHERE `friendships`.`user_id` = 1 AND (status = 'accepted')[0m
+[1635f8af390b3e8d409444719f37fea4] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `users` INNER JOIN `friendships` ON `users`.`id` = `friendships`.`friend_id` WHERE `friendships`.`user_id` = 1 AND (status = 'accepted')
+[1635f8af390b3e8d409444719f37fea4] [127.0.0.1]   [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM `users` INNER JOIN `friendships` ON `users`.`id` = `friendships`.`friend_id` WHERE `friendships`.`user_id` = 1 AND (status = 'pending')[0m
+[1635f8af390b3e8d409444719f37fea4] [127.0.0.1]   [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `users` INNER JOIN `friendships` ON `users`.`id` = `friendships`.`friend_id` WHERE `friendships`.`user_id` = 1 AND (status = 'requested')
+[1635f8af390b3e8d409444719f37fea4] [127.0.0.1]   Rendered layouts/_sidebar_users.html.erb (109.3ms)
+[1635f8af390b3e8d409444719f37fea4] [127.0.0.1] Completed 200 OK in 201ms (Views: 170.2ms | ActiveRecord: 7.6ms | Solr: 0.0ms)
+[81878edd76c7e437ee3903308651dda4] [127.0.0.1] 
+
+Started GET "/assets/seeds.css?body=1" for 127.0.0.1 at 2012-04-19 08:20:57 +0900
+[81878edd76c7e437ee3903308651dda4] [127.0.0.1] Served asset /seeds.css - 304 Not Modified (0ms)
+[c62d38418b29cf7f2431a8083df65c2c] [127.0.0.1] 
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-19 08:20:57 +0900
+[c62d38418b29cf7f2431a8083df65c2c] [127.0.0.1] Served asset /users.css - 304 Not Modified (0ms)
+[d8b6528b8e4611ce6021f613dc4beb1f] [127.0.0.1] 
+
+Started GET "/assets/participations.css?body=1" for 127.0.0.1 at 2012-04-19 08:20:57 +0900
+[d8b6528b8e4611ce6021f613dc4beb1f] [127.0.0.1] Served asset /participations.css - 304 Not Modified (0ms)
+[94a74efe3758735d637310dca56594c5] [127.0.0.1] 
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2012-04-19 08:20:57 +0900
+[94a74efe3758735d637310dca56594c5] [127.0.0.1] Served asset /best_in_place.js - 304 Not Modified (0ms)
+[d6b90fadbdad442500570cfcdcc3d68e] [127.0.0.1] 
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-19 08:20:57 +0900
+[d6b90fadbdad442500570cfcdcc3d68e] [127.0.0.1] Served asset /jquery.js - 304 Not Modified (0ms)
+[f9224c5bc58fcba273c31715bebce0a9] [127.0.0.1] 
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-19 08:20:57 +0900
+[f9224c5bc58fcba273c31715bebce0a9] [127.0.0.1] Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+[107e05482e19bace232ad4f97382b7b6] [127.0.0.1] 
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-04-19 08:20:57 +0900
+[107e05482e19bace232ad4f97382b7b6] [127.0.0.1] Served asset /home.js - 304 Not Modified (0ms)
+[fcba601f8d70ef729f1d5f3c14079268] [127.0.0.1] 
+
+Started GET "/assets/participations.js?body=1" for 127.0.0.1 at 2012-04-19 08:20:57 +0900
+[fcba601f8d70ef729f1d5f3c14079268] [127.0.0.1] Served asset /participations.js - 304 Not Modified (0ms)
+[8c5cc2b1eb379940e86defd400c87b42] [127.0.0.1] 
+
+Started GET "/assets/imports.js?body=1" for 127.0.0.1 at 2012-04-19 08:20:57 +0900
+[8c5cc2b1eb379940e86defd400c87b42] [127.0.0.1] Served asset /imports.js - 304 Not Modified (0ms)
+[3fb410fb5ca3f16c5634d47a576d4e09] [127.0.0.1] 
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2012-04-19 08:20:57 +0900
+[3fb410fb5ca3f16c5634d47a576d4e09] [127.0.0.1] Served asset /photos.js - 304 Not Modified (0ms)
+[afe99fd988ca0fe66af21eed04505c4c] [127.0.0.1] 
+
+Started POST "/kits" for 127.0.0.1 at 2012-04-19 08:21:00 +0900
+[afe99fd988ca0fe66af21eed04505c4c] [127.0.0.1] Processing by KitsController#create as JS
+[afe99fd988ca0fe66af21eed04505c4c] [127.0.0.1]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"xx4Klfd+C3M3Uy0OBpSdbT9A9U+OSk9PxYOdOdJh31Y=", "kit"=>{"content"=>"ㅁㄴㅇㄹ", "kitable_id"=>"1", "kitable_type"=>"User"}}
+[afe99fd988ca0fe66af21eed04505c4c] [127.0.0.1]   [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY users.avatar_content_type is not NULL DESC, users.updated_at DESC LIMIT 1[0m
+[afe99fd988ca0fe66af21eed04505c4c] [127.0.0.1]   [1m[35mNotification Load (0.1ms)[0m  SELECT `notifications`.* FROM `notifications` WHERE `notifications`.`user_id` = 1 ORDER BY notifications.created_at DESC
+[afe99fd988ca0fe66af21eed04505c4c] [127.0.0.1]   [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'[0m
+[afe99fd988ca0fe66af21eed04505c4c] [127.0.0.1]   [1m[35m (0.1ms)[0m  BEGIN
+[afe99fd988ca0fe66af21eed04505c4c] [127.0.0.1]   [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `kits` (`content`, `created_at`, `kitable_id`, `kitable_type`, `photo_content_type`, `photo_file_name`, `photo_file_size`, `updated_at`, `user_id`) VALUES ('ㅁㄴㅇㄹ', '2012-04-18 23:21:00', 1, 'User', NULL, NULL, NULL, '2012-04-18 23:21:00', 1)[0m
+[afe99fd988ca0fe66af21eed04505c4c] [127.0.0.1] Creating scope :page. Overwriting existing method Comment.page.
+[afe99fd988ca0fe66af21eed04505c4c] [127.0.0.1]   [1m[35mComment Load (0.4ms)[0m  SELECT `comments`.* FROM `comments` WHERE `comments`.`kit_id` = 1
+[afe99fd988ca0fe66af21eed04505c4c] [127.0.0.1]   [1m[32mSOLR Request (1.3ms)[0m  [ path=#<RSolr::Client:0x007f832dd2acf0> parameters={data: [1m[1m<?xml version="1.0" encoding="UTF-8"?><add><doc><field name="id">Kit 1</field><field name="type">Kit</field><field name="type">ActiveRecord::Base</field><field name="class_name">Kit</field><field boost="2" name="content_text">ㅁㄴㅇㄹ</field></doc></add>[0m, headers: [1m[1m{"Content-Type"=>"text/xml"}[0m, method: [1m[1mpost[0m, params: [1m[1m{:wt=>:ruby}[0m, query: [1m[1mwt=ruby[0m, path: [1m[1mupdate[0m, uri: [1m[1mhttp://localhost:8982/solr/update?wt=ruby[0m} ]
+[afe99fd988ca0fe66af21eed04505c4c] [127.0.0.1]   [1m[36m (0.8ms)[0m  [1mROLLBACK[0m
+[afe99fd988ca0fe66af21eed04505c4c] [127.0.0.1] Completed 500 Internal Server Error in 86ms
+[afe99fd988ca0fe66af21eed04505c4c] [127.0.0.1] 
+Errno::ECONNREFUSED (Connection refused - connect(2)):
+  app/controllers/kits_controller.rb:26:in `create'
+
+
+[afe99fd988ca0fe66af21eed04505c4c] [127.0.0.1]   Rendered /Users/headflow/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.6ms)
+[afe99fd988ca0fe66af21eed04505c4c] [127.0.0.1]   Rendered /Users/headflow/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+[afe99fd988ca0fe66af21eed04505c4c] [127.0.0.1]   Rendered /Users/headflow/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.7ms)
+[e6918452e4c4a47d83d18525ccc12d00] [127.0.0.1] 
+
+Started POST "/kits" for 127.0.0.1 at 2012-04-19 08:21:08 +0900
+[e6918452e4c4a47d83d18525ccc12d00] [127.0.0.1] Processing by KitsController#create as JS
+[e6918452e4c4a47d83d18525ccc12d00] [127.0.0.1]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"xx4Klfd+C3M3Uy0OBpSdbT9A9U+OSk9PxYOdOdJh31Y=", "kit"=>{"content"=>"ㅁㄴㅇㄹ", "kitable_id"=>"1", "kitable_type"=>"User"}}
+[e6918452e4c4a47d83d18525ccc12d00] [127.0.0.1]   [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY users.avatar_content_type is not NULL DESC, users.updated_at DESC LIMIT 1
+[e6918452e4c4a47d83d18525ccc12d00] [127.0.0.1]   [1m[36mNotification Load (0.1ms)[0m  [1mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`user_id` = 1 ORDER BY notifications.created_at DESC[0m
+[e6918452e4c4a47d83d18525ccc12d00] [127.0.0.1]   [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'
+[e6918452e4c4a47d83d18525ccc12d00] [127.0.0.1]   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+[e6918452e4c4a47d83d18525ccc12d00] [127.0.0.1]   [1m[35mSQL (0.3ms)[0m  INSERT INTO `kits` (`content`, `created_at`, `kitable_id`, `kitable_type`, `photo_content_type`, `photo_file_name`, `photo_file_size`, `updated_at`, `user_id`) VALUES ('ㅁㄴㅇㄹ', '2012-04-18 23:21:08', 1, 'User', NULL, NULL, NULL, '2012-04-18 23:21:08', 1)
+[e6918452e4c4a47d83d18525ccc12d00] [127.0.0.1]   [1m[36mComment Load (0.4ms)[0m  [1mSELECT `comments`.* FROM `comments` WHERE `comments`.`kit_id` = 2[0m
+[e6918452e4c4a47d83d18525ccc12d00] [127.0.0.1]   [1m[32mSOLR Request (1.0ms)[0m  [ path=#<RSolr::Client:0x007f832dd2acf0> parameters={data: [1m[1m<?xml version="1.0" encoding="UTF-8"?><add><doc><field name="id">Kit 2</field><field name="type">Kit</field><field name="type">ActiveRecord::Base</field><field name="class_name">Kit</field><field boost="2" name="content_text">ㅁㄴㅇㄹ</field></doc></add>[0m, headers: [1m[1m{"Content-Type"=>"text/xml"}[0m, method: [1m[1mpost[0m, params: [1m[1m{:wt=>:ruby}[0m, query: [1m[1mwt=ruby[0m, path: [1m[1mupdate[0m, uri: [1m[1mhttp://localhost:8982/solr/update?wt=ruby[0m} ]
+[e6918452e4c4a47d83d18525ccc12d00] [127.0.0.1]   [1m[35m (0.9ms)[0m  ROLLBACK
+[e6918452e4c4a47d83d18525ccc12d00] [127.0.0.1] Completed 500 Internal Server Error in 13ms
+[e6918452e4c4a47d83d18525ccc12d00] [127.0.0.1] 
+Errno::ECONNREFUSED (Connection refused - connect(2)):
+  app/controllers/kits_controller.rb:26:in `create'
+
+
+[e6918452e4c4a47d83d18525ccc12d00] [127.0.0.1]   Rendered /Users/headflow/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.7ms)
+[e6918452e4c4a47d83d18525ccc12d00] [127.0.0.1]   Rendered /Users/headflow/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+[e6918452e4c4a47d83d18525ccc12d00] [127.0.0.1]   Rendered /Users/headflow/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.6ms)
+[982f6f4f3ecb35cbd5d7355a9817b486] [127.0.0.1] 
+
+Started GET "/users/1" for 127.0.0.1 at 2012-04-19 08:21:08 +0900
+[982f6f4f3ecb35cbd5d7355a9817b486] [127.0.0.1] Processing by UsersController#show as HTML
+[982f6f4f3ecb35cbd5d7355a9817b486] [127.0.0.1]   Parameters: {"id"=>"1"}
+[982f6f4f3ecb35cbd5d7355a9817b486] [127.0.0.1]   [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY users.avatar_content_type is not NULL DESC, users.updated_at DESC LIMIT 1[0m
+[982f6f4f3ecb35cbd5d7355a9817b486] [127.0.0.1]   [1m[35mNotification Load (0.1ms)[0m  SELECT `notifications`.* FROM `notifications` WHERE `notifications`.`user_id` = 1 ORDER BY notifications.created_at DESC
+[982f6f4f3ecb35cbd5d7355a9817b486] [127.0.0.1]   [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'[0m
+[982f6f4f3ecb35cbd5d7355a9817b486] [127.0.0.1]   [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY users.avatar_content_type is not NULL DESC, users.updated_at DESC LIMIT 1
+[982f6f4f3ecb35cbd5d7355a9817b486] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'[0m
+[982f6f4f3ecb35cbd5d7355a9817b486] [127.0.0.1]   [1m[35mPhoto Load (0.2ms)[0m  SELECT `photos`.* FROM `photos` WHERE `photos`.`photoable_id` = 1 AND `photos`.`photoable_type` = 'User' ORDER BY photos.created_at DESC LIMIT 1
+[982f6f4f3ecb35cbd5d7355a9817b486] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'[0m
+[982f6f4f3ecb35cbd5d7355a9817b486] [127.0.0.1]   Rendered kits/_kit_form.html.erb (9.5ms)
+[982f6f4f3ecb35cbd5d7355a9817b486] [127.0.0.1]   [1m[35mKit Load (0.7ms)[0m  SELECT `kits`.* FROM `kits` WHERE `kits`.`kitable_id` = 1 AND `kits`.`kitable_type` = 'User' ORDER BY kits.updated_at DESC LIMIT 10 OFFSET 0
+[982f6f4f3ecb35cbd5d7355a9817b486] [127.0.0.1]   Rendered collection (0.0ms)
+[982f6f4f3ecb35cbd5d7355a9817b486] [127.0.0.1]   Rendered users/show.html.erb within layouts/application (12.6ms)
+[982f6f4f3ecb35cbd5d7355a9817b486] [127.0.0.1]   [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `notifications` WHERE `notifications`.`user_id` = 1 AND `notifications`.`read` = 0[0m
+[982f6f4f3ecb35cbd5d7355a9817b486] [127.0.0.1]   Rendered collection (0.0ms)
+[982f6f4f3ecb35cbd5d7355a9817b486] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `photos`.* FROM `photos` WHERE `photos`.`photoable_id` = 1 AND `photos`.`photoable_type` = 'User' ORDER BY photos.created_at DESC LIMIT 1
+[982f6f4f3ecb35cbd5d7355a9817b486] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'[0m
+[982f6f4f3ecb35cbd5d7355a9817b486] [127.0.0.1]   Rendered layouts/_top_right.html.erb (5.6ms)
+[982f6f4f3ecb35cbd5d7355a9817b486] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `photos`.* FROM `photos` WHERE `photos`.`photoable_id` = 1 AND `photos`.`photoable_type` = 'User' ORDER BY photos.created_at DESC LIMIT 1
+[982f6f4f3ecb35cbd5d7355a9817b486] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'[0m
+[982f6f4f3ecb35cbd5d7355a9817b486] [127.0.0.1]   Rendered friendships/_friendship_status.html.erb (0.1ms)
+[982f6f4f3ecb35cbd5d7355a9817b486] [127.0.0.1]   [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `networks` INNER JOIN `network_participations` ON `networks`.`id` = `network_participations`.`network_id` WHERE `network_participations`.`user_id` = 1
+[982f6f4f3ecb35cbd5d7355a9817b486] [127.0.0.1]   Rendered network_participations/_network_participation_status.html.erb (1.8ms)
+[982f6f4f3ecb35cbd5d7355a9817b486] [127.0.0.1]   [1m[36mMajor Load (0.1ms)[0m  [1mSELECT `majors`.* FROM `majors` [0m
+[982f6f4f3ecb35cbd5d7355a9817b486] [127.0.0.1]   [1m[35mInterest Load (0.1ms)[0m  SELECT `interests`.* FROM `interests` 
+[982f6f4f3ecb35cbd5d7355a9817b486] [127.0.0.1]   [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `users` INNER JOIN `friendships` ON `users`.`id` = `friendships`.`friend_id` WHERE `friendships`.`user_id` = 1 AND (status = 'accepted')[0m
+[982f6f4f3ecb35cbd5d7355a9817b486] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `users` INNER JOIN `friendships` ON `users`.`id` = `friendships`.`friend_id` WHERE `friendships`.`user_id` = 1 AND (status = 'accepted')
+[982f6f4f3ecb35cbd5d7355a9817b486] [127.0.0.1]   [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `users` INNER JOIN `friendships` ON `users`.`id` = `friendships`.`friend_id` WHERE `friendships`.`user_id` = 1 AND (status = 'pending')[0m
+[982f6f4f3ecb35cbd5d7355a9817b486] [127.0.0.1]   [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `users` INNER JOIN `friendships` ON `users`.`id` = `friendships`.`friend_id` WHERE `friendships`.`user_id` = 1 AND (status = 'requested')
+[982f6f4f3ecb35cbd5d7355a9817b486] [127.0.0.1]   Rendered layouts/_sidebar_users.html.erb (19.0ms)
+[982f6f4f3ecb35cbd5d7355a9817b486] [127.0.0.1]   [1m[32mSOLR Request (1.2ms)[0m  [ path=#<RSolr::Client:0x007f832dd2acf0> parameters={data: [1m[1m<?xml version="1.0" encoding="UTF-8"?><commit/>[0m, headers: [1m[1m{"Content-Type"=>"text/xml"}[0m, method: [1m[1mpost[0m, params: [1m[1m{:wt=>:ruby}[0m, query: [1m[1mwt=ruby[0m, path: [1m[1mupdate[0m, uri: [1m[1mhttp://localhost:8982/solr/update?wt=ruby[0m} ]
+[982f6f4f3ecb35cbd5d7355a9817b486] [127.0.0.1] Completed 500 Internal Server Error in 158ms
+[982f6f4f3ecb35cbd5d7355a9817b486] [127.0.0.1] 
+Errno::ECONNREFUSED (Connection refused - connect(2)):
+  /Users/headflow/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/net/http.rb:762:in `initialize'
+  /Users/headflow/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/net/http.rb:762:in `open'
+  /Users/headflow/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/net/http.rb:762:in `block in connect'
+  /Users/headflow/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/timeout.rb:54:in `timeout'
+  /Users/headflow/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/timeout.rb:99:in `timeout'
+  /Users/headflow/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/net/http.rb:762:in `connect'
+  /Users/headflow/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/net/http.rb:755:in `do_start'
+  /Users/headflow/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/net/http.rb:744:in `start'
+  /Users/headflow/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/net/http.rb:1284:in `request'
+  rsolr (1.0.6) lib/rsolr/connection.rb:15:in `execute'
+  sunspot_rails (1.3.0) lib/sunspot/rails/solr_instrumentation.rb:14:in `block in execute_with_as_instrumentation'
+  activesupport (3.2.0) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.0) lib/active_support/notifications.rb:123:in `instrument'
+  sunspot_rails (1.3.0) lib/sunspot/rails/solr_instrumentation.rb:12:in `execute_with_as_instrumentation'
+  rsolr (1.0.6) lib/rsolr/client.rb:163:in `execute'
+  rsolr (1.0.6) lib/rsolr/client.rb:158:in `send_and_receive'
+  (eval):2:in `post'
+  rsolr (1.0.6) lib/rsolr/client.rb:67:in `update'
+  rsolr (1.0.6) lib/rsolr/client.rb:96:in `commit'
+  sunspot (1.3.0) lib/sunspot/session.rb:107:in `commit'
+  sunspot (1.3.0) lib/sunspot/session.rb:204:in `commit_if_dirty'
+  sunspot (1.3.0) lib/sunspot/session_proxy/abstract_session_proxy.rb:11:in `commit_if_dirty'
+  sunspot (1.3.0) lib/sunspot.rb:516:in `commit_if_dirty'
+  sunspot_rails (1.3.0) lib/sunspot/rails/request_lifecycle.rb:26:in `block (2 levels) in included'
+  activesupport (3.2.0) lib/active_support/callbacks.rb:449:in `_run__2504622131887427161__process_action__234912555590947561__callbacks'
+  activesupport (3.2.0) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.0) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.0) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.0) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.0) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.0) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.0) lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+  activerecord (3.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.0) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.0) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.0) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.0) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.0) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.0) lib/action_dispatch/routing/route_set.rb:66:in `call'
+  actionpack (3.2.0) lib/action_dispatch/routing/route_set.rb:66:in `dispatch'
+  actionpack (3.2.0) lib/action_dispatch/routing/route_set.rb:30:in `call'
+  journey (1.0.1) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.1) lib/journey/router.rb:56:in `each'
+  journey (1.0.1) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.0) lib/action_dispatch/routing/route_set.rb:570:in `call'
+  rack-pjax (0.5.7) lib/rack/pjax.rb:12:in `call'
+  omniauth (1.0.2) lib/omniauth/strategy.rb:168:in `call!'
+  omniauth (1.0.2) lib/omniauth/strategy.rb:148:in `call'
+  omniauth (1.0.2) lib/omniauth/builder.rb:42:in `call'
+  /Users/headflow/.rvm/gems/ruby-1.9.3-p0/bundler/gems/client_side_validations-bf593243aac1/lib/client_side_validations/middleware.rb:16:in `call'
+  warden (1.1.0) lib/warden/manager.rb:35:in `block in call'
+  warden (1.1.0) lib/warden/manager.rb:34:in `catch'
+  warden (1.1.0) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/head.rb:14:in `call'
+  remotipart (1.0.1) lib/remotipart/middleware.rb:30:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.0) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.0) lib/active_support/callbacks.rb:405:in `_run__718247135550663674__call__3119351530481134114__callbacks'
+  activesupport (3.2.0) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.0) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.0) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.0) lib/rails/rack/logger.rb:14:in `block in call'
+  activesupport (3.2.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  railties (3.2.0) lib/rails/rack/logger.rb:14:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.0) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.0) lib/rails/engine.rb:479:in `call'
+  railties (3.2.0) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.0) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/headflow/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/headflow/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/headflow/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+[982f6f4f3ecb35cbd5d7355a9817b486] [127.0.0.1]   Rendered /Users/headflow/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+[982f6f4f3ecb35cbd5d7355a9817b486] [127.0.0.1]   Rendered /Users/headflow/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+[982f6f4f3ecb35cbd5d7355a9817b486] [127.0.0.1]   Rendered /Users/headflow/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.9ms)
+[86a2a62701ebb252eec122dd5346eb93] [127.0.0.1] 
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2012-04-19 08:21:11 +0900
+[86a2a62701ebb252eec122dd5346eb93] [127.0.0.1] Served asset /favicon.ico - 304 Not Modified (0ms)
+[efb49406a6f55547d1da821483b8b216] [127.0.0.1] 
+
+Started GET "/assets/facebook_logo.png" for 127.0.0.1 at 2012-04-19 08:21:13 +0900
+[efb49406a6f55547d1da821483b8b216] [127.0.0.1] Served asset /facebook_logo.png - 304 Not Modified (0ms)
+[1534c68913df9ccb192452c9d93114f2] [127.0.0.1] 
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2012-04-19 08:21:13 +0900
+[4e866545bf8037fb230bb214a2f86cbf] [127.0.0.1] 
+
+Started GET "/assets/facebook_logo.png" for 127.0.0.1 at 2012-04-19 08:21:15 +0900
+[4e866545bf8037fb230bb214a2f86cbf] [127.0.0.1] Served asset /facebook_logo.png - 304 Not Modified (0ms)
+[81230a4c97c6fce9fcbf4618519ca2d1] [127.0.0.1] 
+
+Started POST "/d/users/sign_in" for 127.0.0.1 at 2012-04-19 08:21:34 +0900
+[81230a4c97c6fce9fcbf4618519ca2d1] [127.0.0.1] Processing by SessionsController#create as JS
+[81230a4c97c6fce9fcbf4618519ca2d1] [127.0.0.1]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"xx4Klfd+C3M3Uy0OBpSdbT9A9U+OSk9PxYOdOdJh31Y=", "user"=>{"email"=>"dean1@headflow.net", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"로그인"}
+[81230a4c97c6fce9fcbf4618519ca2d1] [127.0.0.1]   [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY users.avatar_content_type is not NULL DESC, users.updated_at DESC LIMIT 1[0m
+[81230a4c97c6fce9fcbf4618519ca2d1] [127.0.0.1]   [1m[35mNotification Load (0.6ms)[0m  SELECT `notifications`.* FROM `notifications` WHERE `notifications`.`user_id` = 1 ORDER BY notifications.created_at DESC
+[81230a4c97c6fce9fcbf4618519ca2d1] [127.0.0.1]   [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'[0m
+[81230a4c97c6fce9fcbf4618519ca2d1] [127.0.0.1]   [1m[35mPhoto Load (0.2ms)[0m  SELECT `photos`.* FROM `photos` WHERE `photos`.`photoable_id` = 1 AND `photos`.`photoable_type` = 'User' ORDER BY photos.created_at DESC LIMIT 1
+[81230a4c97c6fce9fcbf4618519ca2d1] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'[0m
+[81230a4c97c6fce9fcbf4618519ca2d1] [127.0.0.1]   Rendered layouts/_top_right.html.erb (6.0ms)
+[81230a4c97c6fce9fcbf4618519ca2d1] [127.0.0.1]   Rendered sessions/create.js.erb (7.1ms)
+[81230a4c97c6fce9fcbf4618519ca2d1] [127.0.0.1] Completed 200 OK in 21ms (Views: 14.8ms | ActiveRecord: 1.1ms | Solr: 0.0ms)
+[c03f2e33aaf9e8e47cd361819423ad2a] [127.0.0.1] 
+
+Started GET "/networks" for 127.0.0.1 at 2012-04-19 08:21:36 +0900
+[c03f2e33aaf9e8e47cd361819423ad2a] [127.0.0.1] Processing by NetworksController#index as HTML
+[c03f2e33aaf9e8e47cd361819423ad2a] [127.0.0.1]   [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY users.avatar_content_type is not NULL DESC, users.updated_at DESC LIMIT 1
+[c03f2e33aaf9e8e47cd361819423ad2a] [127.0.0.1]   [1m[36mNotification Load (0.2ms)[0m  [1mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`user_id` = 1 ORDER BY notifications.created_at DESC[0m
+[c03f2e33aaf9e8e47cd361819423ad2a] [127.0.0.1]   [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'
+[c03f2e33aaf9e8e47cd361819423ad2a] [127.0.0.1]   [1m[36mNetwork Load (0.1ms)[0m  [1mSELECT `networks`.* FROM `networks` ORDER BY networks.network_participations_count DESC, networks.created_at[0m
+[c03f2e33aaf9e8e47cd361819423ad2a] [127.0.0.1]   [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` ORDER BY users.avatar_content_type is not NULL DESC, users.updated_at DESC, id LIMIT 30 OFFSET 0
+[c03f2e33aaf9e8e47cd361819423ad2a] [127.0.0.1]   [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT `photos`.* FROM `photos` WHERE `photos`.`photoable_id` = 1 AND `photos`.`photoable_type` = 'User' ORDER BY photos.created_at DESC LIMIT 1[0m
+[c03f2e33aaf9e8e47cd361819423ad2a] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'
+[c03f2e33aaf9e8e47cd361819423ad2a] [127.0.0.1]   Rendered users/_user.html.erb (7.6ms)
+[c03f2e33aaf9e8e47cd361819423ad2a] [127.0.0.1]   Rendered networks/index.html.erb within layouts/application (11.7ms)
+[c03f2e33aaf9e8e47cd361819423ad2a] [127.0.0.1]   [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `notifications` WHERE `notifications`.`user_id` = 1 AND `notifications`.`read` = 0[0m
+[c03f2e33aaf9e8e47cd361819423ad2a] [127.0.0.1]   Rendered collection (0.0ms)
+[c03f2e33aaf9e8e47cd361819423ad2a] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `photos`.* FROM `photos` WHERE `photos`.`photoable_id` = 1 AND `photos`.`photoable_type` = 'User' ORDER BY photos.created_at DESC LIMIT 1
+[c03f2e33aaf9e8e47cd361819423ad2a] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'[0m
+[c03f2e33aaf9e8e47cd361819423ad2a] [127.0.0.1]   Rendered layouts/_top_right.html.erb (6.3ms)
+[c03f2e33aaf9e8e47cd361819423ad2a] [127.0.0.1]   [1m[35mNetwork Load (0.4ms)[0m  SELECT `networks`.* FROM `networks` ORDER BY networks.network_participations_count DESC, networks.created_at, name
+[c03f2e33aaf9e8e47cd361819423ad2a] [127.0.0.1]   Rendered collection (0.0ms)
+[c03f2e33aaf9e8e47cd361819423ad2a] [127.0.0.1]   Rendered layouts/_sidebar_networks.html.erb (3.3ms)
+[c03f2e33aaf9e8e47cd361819423ad2a] [127.0.0.1] Completed 200 OK in 126ms (Views: 120.1ms | ActiveRecord: 1.8ms | Solr: 0.0ms)
+[8d2a2c6e15e0ffe98381b8ff3ecafc41] [127.0.0.1] 
+
+Started GET "/assets/participations.css?body=1" for 127.0.0.1 at 2012-04-19 08:21:36 +0900
+[8d2a2c6e15e0ffe98381b8ff3ecafc41] [127.0.0.1] Served asset /participations.css - 304 Not Modified (0ms)
+[87be9546d6795064b36d69e17f991818] [127.0.0.1] 
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-19 08:21:36 +0900
+[87be9546d6795064b36d69e17f991818] [127.0.0.1] Served asset /users.css - 304 Not Modified (0ms)
+[940fcf87df02be62e0f4f9556b4d839e] [127.0.0.1] 
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2012-04-19 08:21:36 +0900
+[940fcf87df02be62e0f4f9556b4d839e] [127.0.0.1] Served asset /best_in_place.js - 304 Not Modified (0ms)
+[72f7c937847cdca021affe2cad5e21a4] [127.0.0.1] 
+
+Started GET "/assets/seeds.css?body=1" for 127.0.0.1 at 2012-04-19 08:21:36 +0900
+[72f7c937847cdca021affe2cad5e21a4] [127.0.0.1] Served asset /seeds.css - 304 Not Modified (0ms)
+[ba3e5d97a7ddec8214f40c24673059cb] [127.0.0.1] 
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-19 08:21:36 +0900
+[ba3e5d97a7ddec8214f40c24673059cb] [127.0.0.1] Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+[14c33df84b7ddd795919810f6e4978f0] [127.0.0.1] 
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-19 08:21:36 +0900
+[14c33df84b7ddd795919810f6e4978f0] [127.0.0.1] Served asset /jquery.js - 304 Not Modified (0ms)
+[a16ff16293800b82bca360c74b9e58fd] [127.0.0.1] 
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-04-19 08:21:36 +0900
+[a16ff16293800b82bca360c74b9e58fd] [127.0.0.1] Served asset /home.js - 304 Not Modified (0ms)
+[d575a2964de8f999816458e86051bf2c] [127.0.0.1] 
+
+Started GET "/assets/imports.js?body=1" for 127.0.0.1 at 2012-04-19 08:21:36 +0900
+[d575a2964de8f999816458e86051bf2c] [127.0.0.1] Served asset /imports.js - 304 Not Modified (0ms)
+[187e1536c510b6078479716a9da49861] [127.0.0.1] 
+
+Started GET "/assets/participations.js?body=1" for 127.0.0.1 at 2012-04-19 08:21:36 +0900
+[187e1536c510b6078479716a9da49861] [127.0.0.1] Served asset /participations.js - 304 Not Modified (0ms)
+[13fcc9ca5414583be15f06fbceb75cde] [127.0.0.1] 
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2012-04-19 08:21:36 +0900
+[13fcc9ca5414583be15f06fbceb75cde] [127.0.0.1] Served asset /photos.js - 304 Not Modified (0ms)
+[f1edf6867096b8ec40039464d18b113f] [127.0.0.1] 
+
+Started GET "/kits" for 127.0.0.1 at 2012-04-19 08:21:41 +0900
+[f1edf6867096b8ec40039464d18b113f] [127.0.0.1] Processing by KitsController#index as HTML
+[f1edf6867096b8ec40039464d18b113f] [127.0.0.1]   [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY users.avatar_content_type is not NULL DESC, users.updated_at DESC LIMIT 1[0m
+[f1edf6867096b8ec40039464d18b113f] [127.0.0.1]   [1m[35mNotification Load (0.1ms)[0m  SELECT `notifications`.* FROM `notifications` WHERE `notifications`.`user_id` = 1 ORDER BY notifications.created_at DESC
+[f1edf6867096b8ec40039464d18b113f] [127.0.0.1]   [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'[0m
+[f1edf6867096b8ec40039464d18b113f] [127.0.0.1]   [1m[35mPhoto Load (0.2ms)[0m  SELECT `photos`.* FROM `photos` WHERE `photos`.`photoable_id` = 1 AND `photos`.`photoable_type` = 'User' ORDER BY photos.created_at DESC LIMIT 1
+[f1edf6867096b8ec40039464d18b113f] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'[0m
+[f1edf6867096b8ec40039464d18b113f] [127.0.0.1]   Rendered kits/_kit_form.html.erb (10.9ms)
+[f1edf6867096b8ec40039464d18b113f] [127.0.0.1]   [1m[35mKit Load (0.4ms)[0m  SELECT `kits`.* FROM `kits` ORDER BY kits.updated_at DESC, id LIMIT 20 OFFSET 0
+[f1edf6867096b8ec40039464d18b113f] [127.0.0.1]   Rendered collection (0.0ms)
+[f1edf6867096b8ec40039464d18b113f] [127.0.0.1]   Rendered kits/index.html.erb within layouts/application (13.6ms)
+[f1edf6867096b8ec40039464d18b113f] [127.0.0.1]   [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `notifications` WHERE `notifications`.`user_id` = 1 AND `notifications`.`read` = 0[0m
+[f1edf6867096b8ec40039464d18b113f] [127.0.0.1]   Rendered collection (0.0ms)
+[f1edf6867096b8ec40039464d18b113f] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `photos`.* FROM `photos` WHERE `photos`.`photoable_id` = 1 AND `photos`.`photoable_type` = 'User' ORDER BY photos.created_at DESC LIMIT 1
+[f1edf6867096b8ec40039464d18b113f] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'[0m
+[f1edf6867096b8ec40039464d18b113f] [127.0.0.1]   Rendered layouts/_top_right.html.erb (5.5ms)
+[f1edf6867096b8ec40039464d18b113f] [127.0.0.1]   [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `seeds` INNER JOIN `participations` ON `seeds`.`id` = `participations`.`seed_id` WHERE `participations`.`user_id` = 1 AND (status = 'progress')
+[f1edf6867096b8ec40039464d18b113f] [127.0.0.1]   [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `seeds` INNER JOIN `participations` ON `seeds`.`id` = `participations`.`seed_id` WHERE `participations`.`user_id` = 1 AND (status = 'complete')[0m
+[f1edf6867096b8ec40039464d18b113f] [127.0.0.1]   [1m[35mSeed Load (0.4ms)[0m  SELECT `seeds`.* FROM `seeds` ORDER BY seeds.updated_at DESC
+[f1edf6867096b8ec40039464d18b113f] [127.0.0.1]   Rendered layouts/_sidebar_seeds.html.erb (4.0ms)
+[f1edf6867096b8ec40039464d18b113f] [127.0.0.1] Completed 200 OK in 60ms (Views: 53.4ms | ActiveRecord: 2.0ms | Solr: 0.0ms)
+[2329e84271e5e982ebb61bbef2dd17a5] [127.0.0.1] 
+
+Started GET "/assets/participations.css?body=1" for 127.0.0.1 at 2012-04-19 08:21:41 +0900
+[2329e84271e5e982ebb61bbef2dd17a5] [127.0.0.1] Served asset /participations.css - 304 Not Modified (0ms)
+[3d7007794eb326f4d4648e85a522feb2] [127.0.0.1] 
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-19 08:21:41 +0900
+[3d7007794eb326f4d4648e85a522feb2] [127.0.0.1] Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+[7630157ad4aff30229f811e93df2ea53] [127.0.0.1] 
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-19 08:21:41 +0900
+[7630157ad4aff30229f811e93df2ea53] [127.0.0.1] Served asset /users.css - 304 Not Modified (0ms)
+[8273cca956e38245ef54fc0e0d38e44c] [127.0.0.1] 
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-19 08:21:41 +0900
+[8273cca956e38245ef54fc0e0d38e44c] [127.0.0.1] Served asset /jquery.js - 304 Not Modified (0ms)
+[4c8c2efb152488d1b7ef760b9d76837f] [127.0.0.1] 
+
+Started GET "/assets/seeds.css?body=1" for 127.0.0.1 at 2012-04-19 08:21:41 +0900
+[4c8c2efb152488d1b7ef760b9d76837f] [127.0.0.1] Served asset /seeds.css - 304 Not Modified (0ms)
+[de67932632804373b8ad45050504c7a2] [127.0.0.1] 
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2012-04-19 08:21:41 +0900
+[de67932632804373b8ad45050504c7a2] [127.0.0.1] Served asset /best_in_place.js - 304 Not Modified (0ms)
+[85966974e0c55ca12359708dbd3addc0] [127.0.0.1] 
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-04-19 08:21:41 +0900
+[85966974e0c55ca12359708dbd3addc0] [127.0.0.1] Served asset /home.js - 304 Not Modified (7ms)
+[fd1e67fe7c40a0d8d70d253380ce936c] [127.0.0.1] 
+
+Started GET "/assets/imports.js?body=1" for 127.0.0.1 at 2012-04-19 08:21:41 +0900
+[fd1e67fe7c40a0d8d70d253380ce936c] [127.0.0.1] Served asset /imports.js - 304 Not Modified (0ms)
+[2a8585416602c888d0ac145694f5ea8d] [127.0.0.1] 
+
+Started GET "/assets/participations.js?body=1" for 127.0.0.1 at 2012-04-19 08:21:41 +0900
+[2a8585416602c888d0ac145694f5ea8d] [127.0.0.1] Served asset /participations.js - 304 Not Modified (0ms)
+[2077a858711a650cb8eb1e5c222e6a11] [127.0.0.1] 
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2012-04-19 08:21:41 +0900
+[2077a858711a650cb8eb1e5c222e6a11] [127.0.0.1] Served asset /photos.js - 304 Not Modified (0ms)
+[be1632228f41c97e9c4e50b347337bb5] [127.0.0.1] 
+
+Started POST "/kits" for 127.0.0.1 at 2012-04-19 08:21:49 +0900
+[be1632228f41c97e9c4e50b347337bb5] [127.0.0.1] Processing by KitsController#create as JS
+[be1632228f41c97e9c4e50b347337bb5] [127.0.0.1]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"xx4Klfd+C3M3Uy0OBpSdbT9A9U+OSk9PxYOdOdJh31Y=", "kit"=>{"content"=>"asdf", "kitable_id"=>"1", "kitable_type"=>"User"}}
+[be1632228f41c97e9c4e50b347337bb5] [127.0.0.1]   [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY users.avatar_content_type is not NULL DESC, users.updated_at DESC LIMIT 1[0m
+[be1632228f41c97e9c4e50b347337bb5] [127.0.0.1]   [1m[35mNotification Load (0.3ms)[0m  SELECT `notifications`.* FROM `notifications` WHERE `notifications`.`user_id` = 1 ORDER BY notifications.created_at DESC
+[be1632228f41c97e9c4e50b347337bb5] [127.0.0.1]   [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'[0m
+[be1632228f41c97e9c4e50b347337bb5] [127.0.0.1]   [1m[35m (0.4ms)[0m  BEGIN
+[be1632228f41c97e9c4e50b347337bb5] [127.0.0.1]   [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `kits` (`content`, `created_at`, `kitable_id`, `kitable_type`, `photo_content_type`, `photo_file_name`, `photo_file_size`, `updated_at`, `user_id`) VALUES ('asdf', '2012-04-18 23:21:49', 1, 'User', NULL, NULL, NULL, '2012-04-18 23:21:49', 1)[0m
+[be1632228f41c97e9c4e50b347337bb5] [127.0.0.1]   [1m[35mComment Load (0.8ms)[0m  SELECT `comments`.* FROM `comments` WHERE `comments`.`kit_id` = 3
+[be1632228f41c97e9c4e50b347337bb5] [127.0.0.1]   [1m[32mSOLR Request (1.1ms)[0m  [ path=#<RSolr::Client:0x007f832c801248> parameters={data: [1m[1m<?xml version="1.0" encoding="UTF-8"?><add><doc><field name="id">Kit 3</field><field name="type">Kit</field><field name="type">ActiveRecord::Base</field><field name="class_name">Kit</field><field boost="2" name="content_text">asdf</field></doc></add>[0m, headers: [1m[1m{"Content-Type"=>"text/xml"}[0m, method: [1m[1mpost[0m, params: [1m[1m{:wt=>:ruby}[0m, query: [1m[1mwt=ruby[0m, path: [1m[1mupdate[0m, uri: [1m[1mhttp://localhost:8982/solr/update?wt=ruby[0m} ]
+[be1632228f41c97e9c4e50b347337bb5] [127.0.0.1]   [1m[36m (1.3ms)[0m  [1mROLLBACK[0m
+[be1632228f41c97e9c4e50b347337bb5] [127.0.0.1] Completed 500 Internal Server Error in 16ms
+[be1632228f41c97e9c4e50b347337bb5] [127.0.0.1] 
+Errno::ECONNREFUSED (Connection refused - connect(2)):
+  app/controllers/kits_controller.rb:26:in `create'
+
+
+[be1632228f41c97e9c4e50b347337bb5] [127.0.0.1]   Rendered /Users/headflow/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.5ms)
+[be1632228f41c97e9c4e50b347337bb5] [127.0.0.1]   Rendered /Users/headflow/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+[be1632228f41c97e9c4e50b347337bb5] [127.0.0.1]   Rendered /Users/headflow/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.3ms)
+[2405da3937c344944e3caaea81ce2fb2] [127.0.0.1] 
+
+Started GET "/kits" for 127.0.0.1 at 2012-04-19 08:21:52 +0900
+[2405da3937c344944e3caaea81ce2fb2] [127.0.0.1] Processing by KitsController#index as HTML
+[2405da3937c344944e3caaea81ce2fb2] [127.0.0.1]   [1m[35mUser Load (1.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY users.avatar_content_type is not NULL DESC, users.updated_at DESC LIMIT 1
+[2405da3937c344944e3caaea81ce2fb2] [127.0.0.1]   [1m[36mNotification Load (0.3ms)[0m  [1mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`user_id` = 1 ORDER BY notifications.created_at DESC[0m
+[2405da3937c344944e3caaea81ce2fb2] [127.0.0.1]   [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'
+[2405da3937c344944e3caaea81ce2fb2] [127.0.0.1]   [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT `photos`.* FROM `photos` WHERE `photos`.`photoable_id` = 1 AND `photos`.`photoable_type` = 'User' ORDER BY photos.created_at DESC LIMIT 1[0m
+[2405da3937c344944e3caaea81ce2fb2] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'
+[2405da3937c344944e3caaea81ce2fb2] [127.0.0.1]   Rendered kits/_kit_form.html.erb (9.8ms)
+[2405da3937c344944e3caaea81ce2fb2] [127.0.0.1]   [1m[36mKit Load (0.4ms)[0m  [1mSELECT `kits`.* FROM `kits` ORDER BY kits.updated_at DESC, id LIMIT 20 OFFSET 0[0m
+[2405da3937c344944e3caaea81ce2fb2] [127.0.0.1]   Rendered collection (0.0ms)
+[2405da3937c344944e3caaea81ce2fb2] [127.0.0.1]   Rendered kits/index.html.erb within layouts/application (12.1ms)
+[2405da3937c344944e3caaea81ce2fb2] [127.0.0.1]   [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `notifications` WHERE `notifications`.`user_id` = 1 AND `notifications`.`read` = 0
+[2405da3937c344944e3caaea81ce2fb2] [127.0.0.1]   Rendered collection (0.0ms)
+[2405da3937c344944e3caaea81ce2fb2] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `photos`.* FROM `photos` WHERE `photos`.`photoable_id` = 1 AND `photos`.`photoable_type` = 'User' ORDER BY photos.created_at DESC LIMIT 1[0m
+[2405da3937c344944e3caaea81ce2fb2] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'
+[2405da3937c344944e3caaea81ce2fb2] [127.0.0.1]   Rendered layouts/_top_right.html.erb (5.7ms)
+[2405da3937c344944e3caaea81ce2fb2] [127.0.0.1]   [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `seeds` INNER JOIN `participations` ON `seeds`.`id` = `participations`.`seed_id` WHERE `participations`.`user_id` = 1 AND (status = 'progress')[0m
+[2405da3937c344944e3caaea81ce2fb2] [127.0.0.1]   [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `seeds` INNER JOIN `participations` ON `seeds`.`id` = `participations`.`seed_id` WHERE `participations`.`user_id` = 1 AND (status = 'complete')
+[2405da3937c344944e3caaea81ce2fb2] [127.0.0.1]   [1m[36mSeed Load (0.1ms)[0m  [1mSELECT `seeds`.* FROM `seeds` ORDER BY seeds.updated_at DESC[0m
+[2405da3937c344944e3caaea81ce2fb2] [127.0.0.1]   Rendered layouts/_sidebar_seeds.html.erb (3.9ms)
+[2405da3937c344944e3caaea81ce2fb2] [127.0.0.1]   [1m[32mSOLR Request (1.0ms)[0m  [ path=#<RSolr::Client:0x007f832c801248> parameters={data: [1m[1m<?xml version="1.0" encoding="UTF-8"?><commit/>[0m, headers: [1m[1m{"Content-Type"=>"text/xml"}[0m, method: [1m[1mpost[0m, params: [1m[1m{:wt=>:ruby}[0m, query: [1m[1mwt=ruby[0m, path: [1m[1mupdate[0m, uri: [1m[1mhttp://localhost:8982/solr/update?wt=ruby[0m} ]
+[2405da3937c344944e3caaea81ce2fb2] [127.0.0.1] Completed 500 Internal Server Error in 61ms
+[2405da3937c344944e3caaea81ce2fb2] [127.0.0.1] 
+Errno::ECONNREFUSED (Connection refused - connect(2)):
+  /Users/headflow/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/net/http.rb:762:in `initialize'
+  /Users/headflow/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/net/http.rb:762:in `open'
+  /Users/headflow/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/net/http.rb:762:in `block in connect'
+  /Users/headflow/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/timeout.rb:54:in `timeout'
+  /Users/headflow/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/timeout.rb:99:in `timeout'
+  /Users/headflow/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/net/http.rb:762:in `connect'
+  /Users/headflow/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/net/http.rb:755:in `do_start'
+  /Users/headflow/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/net/http.rb:744:in `start'
+  /Users/headflow/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/net/http.rb:1284:in `request'
+  rsolr (1.0.6) lib/rsolr/connection.rb:15:in `execute'
+  sunspot_rails (1.3.0) lib/sunspot/rails/solr_instrumentation.rb:14:in `block in execute_with_as_instrumentation'
+  activesupport (3.2.0) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.0) lib/active_support/notifications.rb:123:in `instrument'
+  sunspot_rails (1.3.0) lib/sunspot/rails/solr_instrumentation.rb:12:in `execute_with_as_instrumentation'
+  rsolr (1.0.6) lib/rsolr/client.rb:163:in `execute'
+  rsolr (1.0.6) lib/rsolr/client.rb:158:in `send_and_receive'
+  (eval):2:in `post'
+  rsolr (1.0.6) lib/rsolr/client.rb:67:in `update'
+  rsolr (1.0.6) lib/rsolr/client.rb:96:in `commit'
+  sunspot (1.3.0) lib/sunspot/session.rb:107:in `commit'
+  sunspot (1.3.0) lib/sunspot/session.rb:204:in `commit_if_dirty'
+  sunspot (1.3.0) lib/sunspot/session_proxy/abstract_session_proxy.rb:11:in `commit_if_dirty'
+  sunspot (1.3.0) lib/sunspot.rb:516:in `commit_if_dirty'
+  sunspot_rails (1.3.0) lib/sunspot/rails/request_lifecycle.rb:26:in `block (2 levels) in included'
+  activesupport (3.2.0) lib/active_support/callbacks.rb:449:in `_run__4505629895822649430__process_action__253473831012965021__callbacks'
+  activesupport (3.2.0) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.0) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.0) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.0) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.0) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.0) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.0) lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+  activerecord (3.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.0) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.0) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.0) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.0) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.0) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.0) lib/action_dispatch/routing/route_set.rb:66:in `call'
+  actionpack (3.2.0) lib/action_dispatch/routing/route_set.rb:66:in `dispatch'
+  actionpack (3.2.0) lib/action_dispatch/routing/route_set.rb:30:in `call'
+  journey (1.0.1) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.1) lib/journey/router.rb:56:in `each'
+  journey (1.0.1) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.0) lib/action_dispatch/routing/route_set.rb:570:in `call'
+  rack-pjax (0.5.7) lib/rack/pjax.rb:12:in `call'
+  omniauth (1.0.2) lib/omniauth/strategy.rb:168:in `call!'
+  omniauth (1.0.2) lib/omniauth/strategy.rb:148:in `call'
+  omniauth (1.0.2) lib/omniauth/builder.rb:42:in `call'
+  /Users/headflow/.rvm/gems/ruby-1.9.3-p0/bundler/gems/client_side_validations-bf593243aac1/lib/client_side_validations/middleware.rb:16:in `call'
+  warden (1.1.0) lib/warden/manager.rb:35:in `block in call'
+  warden (1.1.0) lib/warden/manager.rb:34:in `catch'
+  warden (1.1.0) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/head.rb:14:in `call'
+  remotipart (1.0.1) lib/remotipart/middleware.rb:30:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.0) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.0) lib/active_support/callbacks.rb:405:in `_run__718247135550663674__call__3119351530481134114__callbacks'
+  activesupport (3.2.0) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.0) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.0) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.0) lib/rails/rack/logger.rb:14:in `block in call'
+  activesupport (3.2.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  railties (3.2.0) lib/rails/rack/logger.rb:14:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.0) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.0) lib/rails/engine.rb:479:in `call'
+  railties (3.2.0) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.0) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/headflow/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/headflow/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/headflow/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+[2405da3937c344944e3caaea81ce2fb2] [127.0.0.1]   Rendered /Users/headflow/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.9ms)
+[2405da3937c344944e3caaea81ce2fb2] [127.0.0.1]   Rendered /Users/headflow/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+[2405da3937c344944e3caaea81ce2fb2] [127.0.0.1]   Rendered /Users/headflow/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.8ms)
+[9d6702dee06c58dd44809d1a2b61798c] [127.0.0.1] 
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2012-04-19 08:22:02 +0900
+[9d6702dee06c58dd44809d1a2b61798c] [127.0.0.1] Served asset /favicon.ico - 304 Not Modified (0ms)
+[f72584bff8a3b9a4f066558486b0e5cb] [127.0.0.1] 
+
+Started GET "/" for 127.0.0.1 at 2012-04-19 08:23:13 +0900
+[f72584bff8a3b9a4f066558486b0e5cb] [127.0.0.1] Processing by SeedsController#index as HTML
+[f72584bff8a3b9a4f066558486b0e5cb] [127.0.0.1]   [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY users.avatar_content_type is not NULL DESC, users.updated_at DESC LIMIT 1
+[f72584bff8a3b9a4f066558486b0e5cb] [127.0.0.1]   [1m[36mNotification Load (0.1ms)[0m  [1mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`user_id` = 1 ORDER BY notifications.created_at DESC[0m
+[f72584bff8a3b9a4f066558486b0e5cb] [127.0.0.1]   [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'
+[f72584bff8a3b9a4f066558486b0e5cb] [127.0.0.1]   [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT `photos`.* FROM `photos` WHERE `photos`.`photoable_id` = 1 AND `photos`.`photoable_type` = 'User' ORDER BY photos.created_at DESC LIMIT 1[0m
+[f72584bff8a3b9a4f066558486b0e5cb] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'
+[f72584bff8a3b9a4f066558486b0e5cb] [127.0.0.1]   [1m[36mSeed Load (0.3ms)[0m  [1mSELECT `seeds`.* FROM `seeds` ORDER BY seeds.updated_at DESC, id LIMIT 20 OFFSET 0[0m
+[f72584bff8a3b9a4f066558486b0e5cb] [127.0.0.1]   Rendered collection (0.0ms)
+[f72584bff8a3b9a4f066558486b0e5cb] [127.0.0.1]   Rendered seeds/index.html.erb within layouts/application (11.1ms)
+[f72584bff8a3b9a4f066558486b0e5cb] [127.0.0.1]   [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `notifications` WHERE `notifications`.`user_id` = 1 AND `notifications`.`read` = 0
+[f72584bff8a3b9a4f066558486b0e5cb] [127.0.0.1]   Rendered collection (0.0ms)
+[f72584bff8a3b9a4f066558486b0e5cb] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `photos`.* FROM `photos` WHERE `photos`.`photoable_id` = 1 AND `photos`.`photoable_type` = 'User' ORDER BY photos.created_at DESC LIMIT 1[0m
+[f72584bff8a3b9a4f066558486b0e5cb] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'
+[f72584bff8a3b9a4f066558486b0e5cb] [127.0.0.1]   Rendered layouts/_top_right.html.erb (5.2ms)
+[f72584bff8a3b9a4f066558486b0e5cb] [127.0.0.1]   [1m[36mSeed Load (0.2ms)[0m  [1mSELECT `seeds`.* FROM `seeds` ORDER BY seeds.updated_at DESC[0m
+[f72584bff8a3b9a4f066558486b0e5cb] [127.0.0.1]   Rendered layouts/_header_seed_index.html.erb (0.9ms)
+[f72584bff8a3b9a4f066558486b0e5cb] [127.0.0.1]   [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `seeds` INNER JOIN `participations` ON `seeds`.`id` = `participations`.`seed_id` WHERE `participations`.`user_id` = 1 AND (status = 'progress')
+[f72584bff8a3b9a4f066558486b0e5cb] [127.0.0.1]   [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `seeds` INNER JOIN `participations` ON `seeds`.`id` = `participations`.`seed_id` WHERE `participations`.`user_id` = 1 AND (status = 'complete')[0m
+[f72584bff8a3b9a4f066558486b0e5cb] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `seeds`.* FROM `seeds` ORDER BY seeds.updated_at DESC
+[f72584bff8a3b9a4f066558486b0e5cb] [127.0.0.1]   Rendered layouts/_sidebar_seeds.html.erb (3.7ms)
+[f72584bff8a3b9a4f066558486b0e5cb] [127.0.0.1] Completed 200 OK in 123ms (Views: 116.2ms | ActiveRecord: 1.9ms | Solr: 0.0ms)
+[c126e06d38559200a9792232512cadb0] [127.0.0.1] 
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-19 08:23:13 +0900
+[c126e06d38559200a9792232512cadb0] [127.0.0.1] Served asset /users.css - 304 Not Modified (0ms)
+[246b515b4f672128ca7d62b5d45d33f5] [127.0.0.1] 
+
+Started GET "/assets/seeds.css?body=1" for 127.0.0.1 at 2012-04-19 08:23:13 +0900
+[246b515b4f672128ca7d62b5d45d33f5] [127.0.0.1] Served asset /seeds.css - 304 Not Modified (0ms)
+[12be7f1b468dbe1282667f5f0d2a2604] [127.0.0.1] 
+
+Started GET "/assets/participations.css?body=1" for 127.0.0.1 at 2012-04-19 08:23:13 +0900
+[12be7f1b468dbe1282667f5f0d2a2604] [127.0.0.1] Served asset /participations.css - 304 Not Modified (0ms)
+[c3e934cdf746b8474ddc8ea5d8d718e0] [127.0.0.1] 
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2012-04-19 08:23:13 +0900
+[c3e934cdf746b8474ddc8ea5d8d718e0] [127.0.0.1] Served asset /best_in_place.js - 304 Not Modified (0ms)
+[9ca9124cf04065fb7620a0f94690ab13] [127.0.0.1] 
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-19 08:23:13 +0900
+[9ca9124cf04065fb7620a0f94690ab13] [127.0.0.1] Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+[0d44ea1251042723d5171b1b6d7185a2] [127.0.0.1] 
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-19 08:23:13 +0900
+[0d44ea1251042723d5171b1b6d7185a2] [127.0.0.1] Served asset /jquery.js - 304 Not Modified (0ms)
+[9b1fceb3c53f01b9bca8f22c16619c2a] [127.0.0.1] 
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-04-19 08:23:13 +0900
+[9b1fceb3c53f01b9bca8f22c16619c2a] [127.0.0.1] Served asset /home.js - 304 Not Modified (0ms)
+[735ae395b0b38d9c679930cca2abe759] [127.0.0.1] 
+
+Started GET "/assets/imports.js?body=1" for 127.0.0.1 at 2012-04-19 08:23:13 +0900
+[735ae395b0b38d9c679930cca2abe759] [127.0.0.1] Served asset /imports.js - 304 Not Modified (0ms)
+[5a2e44f1cf7b990b327cb1f9bef77748] [127.0.0.1] 
+
+Started GET "/assets/participations.js?body=1" for 127.0.0.1 at 2012-04-19 08:23:13 +0900
+[5a2e44f1cf7b990b327cb1f9bef77748] [127.0.0.1] Served asset /participations.js - 304 Not Modified (0ms)
+[6b18903172db3977ad009d9b5daef49f] [127.0.0.1] 
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2012-04-19 08:23:13 +0900
+[6b18903172db3977ad009d9b5daef49f] [127.0.0.1] Served asset /photos.js - 304 Not Modified (0ms)
+[ab20a773fd848e7e073ceaa1b36b334b] [127.0.0.1] 
+
+Started GET "/kits" for 127.0.0.1 at 2012-04-19 08:23:17 +0900
+[ab20a773fd848e7e073ceaa1b36b334b] [127.0.0.1] Processing by KitsController#index as HTML
+[ab20a773fd848e7e073ceaa1b36b334b] [127.0.0.1]   [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY users.avatar_content_type is not NULL DESC, users.updated_at DESC LIMIT 1[0m
+[ab20a773fd848e7e073ceaa1b36b334b] [127.0.0.1]   [1m[35mNotification Load (0.1ms)[0m  SELECT `notifications`.* FROM `notifications` WHERE `notifications`.`user_id` = 1 ORDER BY notifications.created_at DESC
+[ab20a773fd848e7e073ceaa1b36b334b] [127.0.0.1]   [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'[0m
+[ab20a773fd848e7e073ceaa1b36b334b] [127.0.0.1]   [1m[35mPhoto Load (0.2ms)[0m  SELECT `photos`.* FROM `photos` WHERE `photos`.`photoable_id` = 1 AND `photos`.`photoable_type` = 'User' ORDER BY photos.created_at DESC LIMIT 1
+[ab20a773fd848e7e073ceaa1b36b334b] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'[0m
+[ab20a773fd848e7e073ceaa1b36b334b] [127.0.0.1]   Rendered kits/_kit_form.html.erb (9.7ms)
+[ab20a773fd848e7e073ceaa1b36b334b] [127.0.0.1]   [1m[35mKit Load (0.2ms)[0m  SELECT `kits`.* FROM `kits` ORDER BY kits.updated_at DESC, id LIMIT 20 OFFSET 0
+[ab20a773fd848e7e073ceaa1b36b334b] [127.0.0.1]   Rendered collection (0.0ms)
+[ab20a773fd848e7e073ceaa1b36b334b] [127.0.0.1]   Rendered kits/index.html.erb within layouts/application (11.9ms)
+[ab20a773fd848e7e073ceaa1b36b334b] [127.0.0.1]   [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `notifications` WHERE `notifications`.`user_id` = 1 AND `notifications`.`read` = 0[0m
+[ab20a773fd848e7e073ceaa1b36b334b] [127.0.0.1]   Rendered collection (0.0ms)
+[ab20a773fd848e7e073ceaa1b36b334b] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `photos`.* FROM `photos` WHERE `photos`.`photoable_id` = 1 AND `photos`.`photoable_type` = 'User' ORDER BY photos.created_at DESC LIMIT 1
+[ab20a773fd848e7e073ceaa1b36b334b] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'[0m
+[ab20a773fd848e7e073ceaa1b36b334b] [127.0.0.1]   Rendered layouts/_top_right.html.erb (6.1ms)
+[ab20a773fd848e7e073ceaa1b36b334b] [127.0.0.1]   [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `seeds` INNER JOIN `participations` ON `seeds`.`id` = `participations`.`seed_id` WHERE `participations`.`user_id` = 1 AND (status = 'progress')
+[ab20a773fd848e7e073ceaa1b36b334b] [127.0.0.1]   [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `seeds` INNER JOIN `participations` ON `seeds`.`id` = `participations`.`seed_id` WHERE `participations`.`user_id` = 1 AND (status = 'complete')[0m
+[ab20a773fd848e7e073ceaa1b36b334b] [127.0.0.1]   [1m[35mSeed Load (0.1ms)[0m  SELECT `seeds`.* FROM `seeds` ORDER BY seeds.updated_at DESC
+[ab20a773fd848e7e073ceaa1b36b334b] [127.0.0.1]   Rendered layouts/_sidebar_seeds.html.erb (3.3ms)
+[ab20a773fd848e7e073ceaa1b36b334b] [127.0.0.1] Completed 200 OK in 58ms (Views: 52.3ms | ActiveRecord: 1.3ms | Solr: 0.0ms)
+[de0b0ba15837b8c6aa83ea0c972bbd28] [127.0.0.1] 
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-19 08:23:17 +0900
+[de0b0ba15837b8c6aa83ea0c972bbd28] [127.0.0.1] Served asset /users.css - 304 Not Modified (0ms)
+[bbf24b87e96e9fbb8aa7e8a08ad89910] [127.0.0.1] 
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-19 08:23:17 +0900
+[bbf24b87e96e9fbb8aa7e8a08ad89910] [127.0.0.1] Served asset /jquery.js - 304 Not Modified (0ms)
+[3e78b1326d85f1cc7ff1b92f2392ec03] [127.0.0.1] 
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-19 08:23:17 +0900
+[3e78b1326d85f1cc7ff1b92f2392ec03] [127.0.0.1] Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+[ff152293ad775ae993eb0be7cb4cecf9] [127.0.0.1] 
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2012-04-19 08:23:17 +0900
+[ff152293ad775ae993eb0be7cb4cecf9] [127.0.0.1] Served asset /best_in_place.js - 304 Not Modified (0ms)
+[d6e106d181302be59de10300411482dc] [127.0.0.1] 
+
+Started GET "/assets/seeds.css?body=1" for 127.0.0.1 at 2012-04-19 08:23:17 +0900
+[d6e106d181302be59de10300411482dc] [127.0.0.1] Served asset /seeds.css - 304 Not Modified (0ms)
+[28faf8b38d5413bd16fbc006cec5b685] [127.0.0.1] 
+
+Started GET "/assets/participations.css?body=1" for 127.0.0.1 at 2012-04-19 08:23:17 +0900
+[28faf8b38d5413bd16fbc006cec5b685] [127.0.0.1] Served asset /participations.css - 304 Not Modified (0ms)
+[5b5200cc9bee4393156077d3987e708c] [127.0.0.1] 
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-04-19 08:23:17 +0900
+[5b5200cc9bee4393156077d3987e708c] [127.0.0.1] Served asset /home.js - 304 Not Modified (0ms)
+[fe4151ff232b7186d2eec60571ce2adf] [127.0.0.1] 
+
+Started GET "/assets/imports.js?body=1" for 127.0.0.1 at 2012-04-19 08:23:17 +0900
+[fe4151ff232b7186d2eec60571ce2adf] [127.0.0.1] Served asset /imports.js - 304 Not Modified (0ms)
+[72a1787bccfb48f50c84bfef00193049] [127.0.0.1] 
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2012-04-19 08:23:17 +0900
+[72a1787bccfb48f50c84bfef00193049] [127.0.0.1] Served asset /photos.js - 304 Not Modified (0ms)
+[4c5aeb76cb575440c3557ebb5574b2ea] [127.0.0.1] 
+
+Started GET "/assets/participations.js?body=1" for 127.0.0.1 at 2012-04-19 08:23:17 +0900
+[4c5aeb76cb575440c3557ebb5574b2ea] [127.0.0.1] Served asset /participations.js - 304 Not Modified (0ms)
+[b3fdd6af8bde5650a260f20f4ce64545] [127.0.0.1] 
+
+Started GET "/networks" for 127.0.0.1 at 2012-04-19 08:23:19 +0900
+[b3fdd6af8bde5650a260f20f4ce64545] [127.0.0.1] Processing by NetworksController#index as HTML
+[b3fdd6af8bde5650a260f20f4ce64545] [127.0.0.1]   [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY users.avatar_content_type is not NULL DESC, users.updated_at DESC LIMIT 1[0m
+[b3fdd6af8bde5650a260f20f4ce64545] [127.0.0.1]   [1m[35mNotification Load (0.1ms)[0m  SELECT `notifications`.* FROM `notifications` WHERE `notifications`.`user_id` = 1 ORDER BY notifications.created_at DESC
+[b3fdd6af8bde5650a260f20f4ce64545] [127.0.0.1]   [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'[0m
+[b3fdd6af8bde5650a260f20f4ce64545] [127.0.0.1]   [1m[35mNetwork Load (0.1ms)[0m  SELECT `networks`.* FROM `networks` ORDER BY networks.network_participations_count DESC, networks.created_at
+[b3fdd6af8bde5650a260f20f4ce64545] [127.0.0.1]   [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` ORDER BY users.avatar_content_type is not NULL DESC, users.updated_at DESC, id LIMIT 30 OFFSET 0[0m
+[b3fdd6af8bde5650a260f20f4ce64545] [127.0.0.1]   [1m[35mPhoto Load (0.2ms)[0m  SELECT `photos`.* FROM `photos` WHERE `photos`.`photoable_id` = 1 AND `photos`.`photoable_type` = 'User' ORDER BY photos.created_at DESC LIMIT 1
+[b3fdd6af8bde5650a260f20f4ce64545] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'[0m
+[b3fdd6af8bde5650a260f20f4ce64545] [127.0.0.1]   Rendered users/_user.html.erb (5.4ms)
+[b3fdd6af8bde5650a260f20f4ce64545] [127.0.0.1]   Rendered networks/index.html.erb within layouts/application (7.9ms)
+[b3fdd6af8bde5650a260f20f4ce64545] [127.0.0.1]   [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `notifications` WHERE `notifications`.`user_id` = 1 AND `notifications`.`read` = 0
+[b3fdd6af8bde5650a260f20f4ce64545] [127.0.0.1]   Rendered collection (0.0ms)
+[b3fdd6af8bde5650a260f20f4ce64545] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `photos`.* FROM `photos` WHERE `photos`.`photoable_id` = 1 AND `photos`.`photoable_type` = 'User' ORDER BY photos.created_at DESC LIMIT 1[0m
+[b3fdd6af8bde5650a260f20f4ce64545] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'
+[b3fdd6af8bde5650a260f20f4ce64545] [127.0.0.1]   Rendered layouts/_top_right.html.erb (5.4ms)
+[b3fdd6af8bde5650a260f20f4ce64545] [127.0.0.1]   [1m[36mNetwork Load (0.2ms)[0m  [1mSELECT `networks`.* FROM `networks` ORDER BY networks.network_participations_count DESC, networks.created_at, name[0m
+[b3fdd6af8bde5650a260f20f4ce64545] [127.0.0.1]   Rendered collection (0.0ms)
+[b3fdd6af8bde5650a260f20f4ce64545] [127.0.0.1]   Rendered layouts/_sidebar_networks.html.erb (2.4ms)
+[b3fdd6af8bde5650a260f20f4ce64545] [127.0.0.1] Completed 200 OK in 51ms (Views: 45.2ms | ActiveRecord: 1.2ms | Solr: 0.0ms)
+[16b50ae4b30c6c4086a88796b01f67fc] [127.0.0.1] 
+
+Started GET "/assets/participations.css?body=1" for 127.0.0.1 at 2012-04-19 08:23:19 +0900
+[16b50ae4b30c6c4086a88796b01f67fc] [127.0.0.1] Served asset /participations.css - 304 Not Modified (0ms)
+[46250f25090555dac029028fc032eddb] [127.0.0.1] 
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2012-04-19 08:23:19 +0900
+[46250f25090555dac029028fc032eddb] [127.0.0.1] Served asset /best_in_place.js - 304 Not Modified (0ms)
+[4835505013a7002a30142cce4f2e189d] [127.0.0.1] 
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-19 08:23:19 +0900
+[4835505013a7002a30142cce4f2e189d] [127.0.0.1] Served asset /users.css - 304 Not Modified (0ms)
+[759b7fa34d514101aa977549b531b0f1] [127.0.0.1] 
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-19 08:23:19 +0900
+[759b7fa34d514101aa977549b531b0f1] [127.0.0.1] Served asset /jquery.js - 304 Not Modified (0ms)
+[f49594d944ca531ba14fd7d925bbc864] [127.0.0.1] 
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-19 08:23:19 +0900
+[f49594d944ca531ba14fd7d925bbc864] [127.0.0.1] Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+[dc325aa5c58ac6cb1ff0e4e4117083aa] [127.0.0.1] 
+
+Started GET "/assets/seeds.css?body=1" for 127.0.0.1 at 2012-04-19 08:23:19 +0900
+[dc325aa5c58ac6cb1ff0e4e4117083aa] [127.0.0.1] Served asset /seeds.css - 304 Not Modified (0ms)
+[f643d330d1215198cf8bb0d0389fbe86] [127.0.0.1] 
+
+Started GET "/assets/imports.js?body=1" for 127.0.0.1 at 2012-04-19 08:23:19 +0900
+[f643d330d1215198cf8bb0d0389fbe86] [127.0.0.1] Served asset /imports.js - 304 Not Modified (0ms)
+[7fbc16f49a78862ca0370f1e7c107666] [127.0.0.1] 
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-04-19 08:23:19 +0900
+[7fbc16f49a78862ca0370f1e7c107666] [127.0.0.1] Served asset /home.js - 304 Not Modified (0ms)
+[979d0cf31e62bdae5a2983df0f216b01] [127.0.0.1] 
+
+Started GET "/assets/participations.js?body=1" for 127.0.0.1 at 2012-04-19 08:23:19 +0900
+[979d0cf31e62bdae5a2983df0f216b01] [127.0.0.1] Served asset /participations.js - 304 Not Modified (0ms)
+[d0667676d84d271f5b678c56d13e44c1] [127.0.0.1] 
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2012-04-19 08:23:20 +0900
+[d0667676d84d271f5b678c56d13e44c1] [127.0.0.1] Served asset /photos.js - 304 Not Modified (0ms)
+[45cea587b0f18c7f0f9850890e99ed97] [127.0.0.1] 
+
+Started GET "/kits" for 127.0.0.1 at 2012-04-19 08:23:21 +0900
+[45cea587b0f18c7f0f9850890e99ed97] [127.0.0.1] Processing by KitsController#index as HTML
+[45cea587b0f18c7f0f9850890e99ed97] [127.0.0.1]   [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY users.avatar_content_type is not NULL DESC, users.updated_at DESC LIMIT 1
+[45cea587b0f18c7f0f9850890e99ed97] [127.0.0.1]   [1m[36mNotification Load (0.2ms)[0m  [1mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`user_id` = 1 ORDER BY notifications.created_at DESC[0m
+[45cea587b0f18c7f0f9850890e99ed97] [127.0.0.1]   [1m[35m (0.8ms)[0m  SELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'
+[45cea587b0f18c7f0f9850890e99ed97] [127.0.0.1]   [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT `photos`.* FROM `photos` WHERE `photos`.`photoable_id` = 1 AND `photos`.`photoable_type` = 'User' ORDER BY photos.created_at DESC LIMIT 1[0m
+[45cea587b0f18c7f0f9850890e99ed97] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'
+[45cea587b0f18c7f0f9850890e99ed97] [127.0.0.1]   Rendered kits/_kit_form.html.erb (9.9ms)
+[45cea587b0f18c7f0f9850890e99ed97] [127.0.0.1]   [1m[36mKit Load (0.6ms)[0m  [1mSELECT `kits`.* FROM `kits` ORDER BY kits.updated_at DESC, id LIMIT 20 OFFSET 0[0m
+[45cea587b0f18c7f0f9850890e99ed97] [127.0.0.1]   Rendered collection (0.0ms)
+[45cea587b0f18c7f0f9850890e99ed97] [127.0.0.1]   Rendered kits/index.html.erb within layouts/application (12.7ms)
+[45cea587b0f18c7f0f9850890e99ed97] [127.0.0.1]   [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `notifications` WHERE `notifications`.`user_id` = 1 AND `notifications`.`read` = 0
+[45cea587b0f18c7f0f9850890e99ed97] [127.0.0.1]   Rendered collection (0.0ms)
+[45cea587b0f18c7f0f9850890e99ed97] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `photos`.* FROM `photos` WHERE `photos`.`photoable_id` = 1 AND `photos`.`photoable_type` = 'User' ORDER BY photos.created_at DESC LIMIT 1[0m
+[45cea587b0f18c7f0f9850890e99ed97] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'
+[45cea587b0f18c7f0f9850890e99ed97] [127.0.0.1]   Rendered layouts/_top_right.html.erb (5.7ms)
+[45cea587b0f18c7f0f9850890e99ed97] [127.0.0.1]   [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `seeds` INNER JOIN `participations` ON `seeds`.`id` = `participations`.`seed_id` WHERE `participations`.`user_id` = 1 AND (status = 'progress')[0m
+[45cea587b0f18c7f0f9850890e99ed97] [127.0.0.1]   [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `seeds` INNER JOIN `participations` ON `seeds`.`id` = `participations`.`seed_id` WHERE `participations`.`user_id` = 1 AND (status = 'complete')
+[45cea587b0f18c7f0f9850890e99ed97] [127.0.0.1]   [1m[36mSeed Load (0.2ms)[0m  [1mSELECT `seeds`.* FROM `seeds` ORDER BY seeds.updated_at DESC[0m
+[45cea587b0f18c7f0f9850890e99ed97] [127.0.0.1]   Rendered layouts/_sidebar_seeds.html.erb (4.2ms)
+[45cea587b0f18c7f0f9850890e99ed97] [127.0.0.1] Completed 200 OK in 133ms (Views: 122.8ms | ActiveRecord: 2.9ms | Solr: 0.0ms)
+[1c5549097b91c59e3f0099ca31016a1b] [127.0.0.1] 
+
+Started GET "/assets/seeds.css?body=1" for 127.0.0.1 at 2012-04-19 08:23:21 +0900
+[1c5549097b91c59e3f0099ca31016a1b] [127.0.0.1] Served asset /seeds.css - 304 Not Modified (0ms)
+[a997f32875edd0db2dfe9cc80c277fc2] [127.0.0.1] 
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-19 08:23:21 +0900
+[a997f32875edd0db2dfe9cc80c277fc2] [127.0.0.1] Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+[169c363f33da8df332234d5808ccc7d3] [127.0.0.1] 
+
+Started GET "/assets/participations.css?body=1" for 127.0.0.1 at 2012-04-19 08:23:21 +0900
+[169c363f33da8df332234d5808ccc7d3] [127.0.0.1] Served asset /participations.css - 304 Not Modified (0ms)
+[f4ce8e763ca116eda488e44eef89cb49] [127.0.0.1] 
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-19 08:23:21 +0900
+[f4ce8e763ca116eda488e44eef89cb49] [127.0.0.1] Served asset /jquery.js - 304 Not Modified (0ms)
+[e939693ed3ebd45ff6eb810ff15640b9] [127.0.0.1] 
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2012-04-19 08:23:21 +0900
+[e939693ed3ebd45ff6eb810ff15640b9] [127.0.0.1] Served asset /best_in_place.js - 304 Not Modified (2ms)
+[16be1d91f602773f5bc36bb76fe45589] [127.0.0.1] 
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-04-19 08:23:21 +0900
+[16be1d91f602773f5bc36bb76fe45589] [127.0.0.1] Served asset /home.js - 304 Not Modified (0ms)
+[409ccca2d88660f7070bd0ce5d2fcdb2] [127.0.0.1] 
+
+Started GET "/assets/imports.js?body=1" for 127.0.0.1 at 2012-04-19 08:23:21 +0900
+[409ccca2d88660f7070bd0ce5d2fcdb2] [127.0.0.1] Served asset /imports.js - 304 Not Modified (0ms)
+[966049045b1eef3d812acd4e4cf90ac6] [127.0.0.1] 
+
+Started GET "/assets/participations.js?body=1" for 127.0.0.1 at 2012-04-19 08:23:21 +0900
+[966049045b1eef3d812acd4e4cf90ac6] [127.0.0.1] Served asset /participations.js - 304 Not Modified (0ms)
+[36be3023140d89ec20415e2c10952a21] [127.0.0.1] 
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2012-04-19 08:23:22 +0900
+[36be3023140d89ec20415e2c10952a21] [127.0.0.1] Served asset /photos.js - 304 Not Modified (0ms)
+[013a3996d15e090672cfcd805de51142] [127.0.0.1] 
+
+Started DELETE "/d/users/sign_out" for 127.0.0.1 at 2012-04-19 08:23:27 +0900
+[013a3996d15e090672cfcd805de51142] [127.0.0.1] Processing by SessionsController#destroy as HTML
+[013a3996d15e090672cfcd805de51142] [127.0.0.1]   Parameters: {"authenticity_token"=>"xx4Klfd+C3M3Uy0OBpSdbT9A9U+OSk9PxYOdOdJh31Y="}
+[013a3996d15e090672cfcd805de51142] [127.0.0.1]   [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY users.avatar_content_type is not NULL DESC, users.updated_at DESC LIMIT 1
+[013a3996d15e090672cfcd805de51142] [127.0.0.1]   [1m[36mNotification Load (0.1ms)[0m  [1mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`user_id` = 1 ORDER BY notifications.created_at DESC[0m
+[013a3996d15e090672cfcd805de51142] [127.0.0.1]   [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `authentications` WHERE `authentications`.`user_id` = 1 AND `authentications`.`provider` = 'facebook'
+[013a3996d15e090672cfcd805de51142] [127.0.0.1]   [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+[013a3996d15e090672cfcd805de51142] [127.0.0.1] [paperclip] Saving attachments.
+[013a3996d15e090672cfcd805de51142] [127.0.0.1]   [1m[35m (0.1ms)[0m  COMMIT
+[013a3996d15e090672cfcd805de51142] [127.0.0.1] Redirected to http://127.0.0.1:3000/
+[013a3996d15e090672cfcd805de51142] [127.0.0.1] Completed 302 Found in 26ms (ActiveRecord: 1.0ms)
+[a1894ff4274c5287f7ea03683e64b576] [127.0.0.1] 
+
+Started GET "/" for 127.0.0.1 at 2012-04-19 08:23:27 +0900
+[a1894ff4274c5287f7ea03683e64b576] [127.0.0.1] Processing by SeedsController#index as HTML
+[a1894ff4274c5287f7ea03683e64b576] [127.0.0.1]   [1m[36mSeed Load (0.2ms)[0m  [1mSELECT `seeds`.* FROM `seeds` ORDER BY seeds.updated_at DESC, id LIMIT 20 OFFSET 0[0m
+[a1894ff4274c5287f7ea03683e64b576] [127.0.0.1]   Rendered collection (0.0ms)
+[a1894ff4274c5287f7ea03683e64b576] [127.0.0.1]   Rendered seeds/index.html.erb within layouts/application (1.7ms)
+[a1894ff4274c5287f7ea03683e64b576] [127.0.0.1]   Rendered layouts/_top_right.html.erb (0.4ms)
+[a1894ff4274c5287f7ea03683e64b576] [127.0.0.1]   [1m[35mSeed Load (0.2ms)[0m  SELECT `seeds`.* FROM `seeds` ORDER BY seeds.updated_at DESC
+[a1894ff4274c5287f7ea03683e64b576] [127.0.0.1]   Rendered layouts/_header_seed_index.html.erb (0.9ms)
+[a1894ff4274c5287f7ea03683e64b576] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `seeds`.* FROM `seeds` ORDER BY seeds.updated_at DESC[0m
+[a1894ff4274c5287f7ea03683e64b576] [127.0.0.1]   Rendered layouts/_sidebar_seeds.html.erb (0.9ms)
+[a1894ff4274c5287f7ea03683e64b576] [127.0.0.1] Completed 200 OK in 35ms (Views: 33.2ms | ActiveRecord: 0.4ms | Solr: 0.0ms)
+[275e825d9214d5d495cc84c25777a424] [127.0.0.1] 
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-19 08:23:27 +0900
+[275e825d9214d5d495cc84c25777a424] [127.0.0.1] Served asset /users.css - 200 OK (0ms)
+[348555e60fcd6737debcc9848cc307d0] [127.0.0.1] 
+
+Started GET "/assets/seeds.css?body=1" for 127.0.0.1 at 2012-04-19 08:23:28 +0900
+[348555e60fcd6737debcc9848cc307d0] [127.0.0.1] Served asset /seeds.css - 304 Not Modified (0ms)
+[c52575e05cfaccc809f3a4032a41046a] [127.0.0.1] 
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-19 08:23:28 +0900
+[c52575e05cfaccc809f3a4032a41046a] [127.0.0.1] Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+[f4ced802bc4d0f90622faf7830c09762] [127.0.0.1] 
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-19 08:23:28 +0900
+[f4ced802bc4d0f90622faf7830c09762] [127.0.0.1] Served asset /jquery.js - 304 Not Modified (0ms)
+[cfa86a80f9bf48a0ba23c558d0387343] [127.0.0.1] 
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2012-04-19 08:23:28 +0900
+[cfa86a80f9bf48a0ba23c558d0387343] [127.0.0.1] Served asset /best_in_place.js - 304 Not Modified (0ms)
+[53c9594a2a12b88a606f383543c2a38a] [127.0.0.1] 
+
+Started GET "/assets/participations.css?body=1" for 127.0.0.1 at 2012-04-19 08:23:28 +0900
+[53c9594a2a12b88a606f383543c2a38a] [127.0.0.1] Served asset /participations.css - 304 Not Modified (0ms)
+[6bc331b5073d3e1fd9a7747656fab148] [127.0.0.1] 
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-04-19 08:23:28 +0900
+[6bc331b5073d3e1fd9a7747656fab148] [127.0.0.1] Served asset /home.js - 304 Not Modified (0ms)
+[adfc21320ec531675d03791fdd549f1f] [127.0.0.1] 
+
+Started GET "/assets/imports.js?body=1" for 127.0.0.1 at 2012-04-19 08:23:28 +0900
+[adfc21320ec531675d03791fdd549f1f] [127.0.0.1] Served asset /imports.js - 304 Not Modified (0ms)
+[b622ce29b11e85351763daf29580a364] [127.0.0.1] 
+
+Started GET "/assets/participations.js?body=1" for 127.0.0.1 at 2012-04-19 08:23:28 +0900
+[b622ce29b11e85351763daf29580a364] [127.0.0.1] Served asset /participations.js - 304 Not Modified (0ms)
+[05ffcb3a9ede2c61cc9011401e82af49] [127.0.0.1] 
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2012-04-19 08:23:28 +0900
+[05ffcb3a9ede2c61cc9011401e82af49] [127.0.0.1] Served asset /photos.js - 304 Not Modified (0ms)
+[0d4cfc6ac49bce78214502e0fcd2bd5c] [127.0.0.1] 
+
+Started GET "/assets/login-facebook.png" for 127.0.0.1 at 2012-04-19 08:23:28 +0900
+[0d4cfc6ac49bce78214502e0fcd2bd5c] [127.0.0.1] Served asset /login-facebook.png - 304 Not Modified (0ms)

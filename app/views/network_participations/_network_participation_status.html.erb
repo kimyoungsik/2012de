@@ -1,0 +1,11 @@
+<% if current_user.networks.empty? %>
+	<div class="item-box network-item"><span>*기존에 자신이 속한 대학교 등을 새로 추가해보세요.</span></div>
+<% else %>
+	<% current_user.networks.each do |network| %>
+		<div class="network-control">
+			<%= link_to "", current_user.network_participations.find_by_network_id(network.id), 
+			:method => :delete, :remote => true, :confirm => "정말로 #{network.name} 네트워크를 탈퇴하시겠습니까?", :class => "network-delete" %>
+		</div>
+		<%= link_to network.name, network_path(network), :class => "item-link network-item" %>							
+	<% end %>				
+<% end %>

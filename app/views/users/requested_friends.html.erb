@@ -1,0 +1,12 @@
+<!-- friend requested -->
+<% if current_user == @user && !@requested_friends.empty? %>
+	<div class="main-box" id="friend">
+		<div class="item-title">
+			<h2><%= @user.name %> 에게 온 친구요청</h2>
+			<span><%= @requested_friends.count %>명</span>
+		</div>
+		<%= render :partial => @requested_friends, :locals => { :list => true } %>
+		<%= will_paginate @requested_friends %>
+		<div class="clear"></div>
+	</div>	
+<% end %>

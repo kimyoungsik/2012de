@@ -1,0 +1,2 @@
+$("#comments_<%= @kit.id %>").html("<%= escape_javascript(render(@kit.comments)) %>");
+$("#view_all_comments_<%= @kit.id %>").remove();

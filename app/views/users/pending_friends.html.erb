@@ -1,0 +1,14 @@
+<!-- friend pending -->
+<% if current_user == @user && !@pending_friends.empty? %>
+	<div class="main-box" id="friend">
+		<div class="item-title">
+			<h2><%= @user.name %> 님의 친구신청 대기</h2>
+			<span><%= @pending_friends.count %>명</span>
+		</div>
+		<div id="pending_friends">
+			<%= render :partial => @pending_friends, :locals => { :list => true } %>
+		</div>
+		<%= will_paginate @pending_friends %>
+		<div class="clear"></div>
+	</div>
+<% end %>

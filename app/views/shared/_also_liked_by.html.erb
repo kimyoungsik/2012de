@@ -1,0 +1,15 @@
+<% ditto_friends = also_liked_by(current_user, kit) %>
+<% if ditto_friends.any? %>
+	<% ditto_friends.first(3).each do |ditto_friend| %>
+		<% if ditto_friend == current_user %>
+			회원님<%= ", " if ditto_friends.last != ditto_friend %>
+		<% else %>
+			<%= link_to ditto_friend.name, ditto_friend %>님<%= ", " if ditto_friends.last != ditto_friend %>
+		<% end %>
+	<% end %>
+	<% other_dittos = (kit.dittos.count - ditto_friends.first(3).count )%>
+	<% if other_dittos > 0 %>
+		외 <%= other_dittos %>명
+	<% end %>
+	이 좋아합니다.
+<% end %>

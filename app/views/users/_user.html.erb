@@ -1,0 +1,29 @@
+<% if params[:action] == "requested_friends" %>
+	<%= div_for(user, :style => "cursor:pointer;", :class=> "item-box requested-friend-item") do %>
+		<div class="item-left">
+			<%= link_to profile_photo(user, :small, 60), user %>
+		</div>
+
+		<div class="item-right">
+			<div class="main-friend-box friend-box">
+				<%= render 'friendships/friendship_status', :user => user %>
+			</div>
+		</div>
+			
+		<div class="item-content">
+			<h2><%= link_to user.name, user %></h2>
+			<p><%= user.profile %></p>
+		</div>
+		<div class="clear"></div>
+	<% end %>
+<% else %>
+	<%= div_for(user, :onclick => "location.href='#{user_path(user)}';",  :style => "cursor:pointer;", :class=> "item-box friend-item") do %>
+		<div class="item-left">
+			<%= link_to profile_photo(user, :small, 60), user %>
+		</div>
+		<div class="item-content">
+			<h2><%= link_to user.name, user %></h2>
+			<p><%= truncate(user.profile, :length => 45) %></p>
+		</div>
+	<% end %>
+<% end %>

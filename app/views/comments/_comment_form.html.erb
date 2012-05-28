@@ -1,0 +1,16 @@
+<% if user_signed_in? %>
+	<div class="item-left">
+		<%= profile_photo(current_user, :small, 40) %>
+	</div>
+	<div class="item-content">
+		<%= form_for current_user.comments.build(:kit_id => kit.id), :validate => true, :remote => true do |f| %>
+			<%= f.text_area :content, :rows => 3, :class => "comment-textarea", :id => "comment-content-textarea-#{kit.id}" %>
+			<%= f.hidden_field :kit_id %>
+			<div class="comment-button-box">
+			<%= f.submit "Comment", :class => "comment-submit" %>
+			<a link="#" class="comment-cancel">취소</a>
+			</div>
+		<% end %>
+	</div>	
+<% end %>
+<div class="clear"></div>

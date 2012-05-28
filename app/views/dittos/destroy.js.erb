@@ -1,0 +1,6 @@
+var id = <%= @ditto.dittoable_id %>;
+<% if @ditto.dittoable_type == "Kit" %>
+	$("div#kit_" + id + "_like").html("<%= escape_javascript(render 'kits/like_button', :kit => @ditto.dittoable) %>");
+<% elsif @ditto.dittoable_type == "Comment" %>
+	$("div#comment_" + id + "_like").html("<%= escape_javascript(render 'comments/like_button', :comment => @ditto.dittoable) %>");
+<% end %>

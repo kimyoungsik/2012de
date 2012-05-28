@@ -1,0 +1,956 @@
+# Logfile created on 2012-02-16 11:45:36 +0900 by logger.rb/31641
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly1@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly1@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly1@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly1@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly1@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users/sign_in with {"utf8"=>"✓", "user"=>{"email"=>"doly1@headflow.net", "password"=>"dudtlr", "remember_me"=>"0"}, "commit"=>"로그인"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users/sign_in with {"utf8"=>"✓", "user"=>{"email"=>"doly1@headflow.net", "password"=>"dudtlr", "remember_me"=>"0"}, "commit"=>"로그인"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /kits with {"utf8"=>"✓", "kit"=>{"content"=>"Loren ipsum dolor sit amet", "kitable_id"=>"8756", "kitable_type"=>"User", "photos_attributes"=>[{"image"=>""}]}, "commit"=>"Kit"} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET http://www.example.com/kits with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users/sign_in with {"utf8"=>"✓", "user"=>{"email"=>"doly1@headflow.net", "password"=>"dudtlr", "remember_me"=>"0"}, "commit"=>"로그인"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /kits with {"utf8"=>"✓", "kit"=>{"content"=>"test content", "kitable_id"=>"8757", "kitable_type"=>"User", "photos_attributes"=>[{"image"=>""}]}, "commit"=>"Kit"} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET http://www.example.com/kits with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users/sign_in with {"utf8"=>"✓", "user"=>{"email"=>"doly1@headflow.net", "password"=>"dudtlr", "remember_me"=>"0"}, "commit"=>"로그인"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /kits with {"utf8"=>"✓", "kit"=>{"content"=>"test content", "kitable_id"=>"8758", "kitable_type"=>"User", "photos_attributes"=>[{"image"=>""}]}, "commit"=>"Kit"} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET http://www.example.com/kits with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users/sign_in with {"utf8"=>"✓", "user"=>{"email"=>"doly1@headflow.net", "password"=>"dudtlr", "remember_me"=>"0"}, "commit"=>"로그인"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /kits with {"utf8"=>"✓", "kit"=>{"content"=>"", "kitable_id"=>"8759", "kitable_type"=>"User", "photos_attributes"=>[{"image"=>""}]}, "commit"=>"Kit"} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET http://www.example.com/kits with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users/sign_in with {"utf8"=>"✓", "user"=>{"email"=>"doly1@headflow.net", "password"=>"dudtlr", "remember_me"=>"0"}, "commit"=>"로그인"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /kits with {"utf8"=>"✓", "kit"=>{"content"=>"test content", "kitable_id"=>"8760", "kitable_type"=>"User", "photos_attributes"=>[{"image"=>""}]}, "commit"=>"Kit"} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET http://www.example.com/kits with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users/sign_in with {"utf8"=>"✓", "user"=>{"email"=>"doly1@headflow.net", "password"=>"dudtlr", "remember_me"=>"0"}, "commit"=>"로그인"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /kits with {"utf8"=>"✓", "kit"=>{"content"=>"test content", "kitable_id"=>"8761", "kitable_type"=>"User", "photos_attributes"=>[{"image"=>""}]}, "commit"=>"Kit"} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET http://www.example.com/kits with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users/sign_in with {"utf8"=>"✓", "user"=>{"email"=>"doly1@headflow.net", "password"=>"dudtlr", "remember_me"=>"0"}, "commit"=>"로그인"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /kits with {"utf8"=>"✓", "kit"=>{"content"=>"test content", "kitable_id"=>"8762", "kitable_type"=>"User", "photos_attributes"=>[{"image"=>""}]}, "commit"=>"Kit"} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET http://www.example.com/kits with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"홍길동", "email"=>"", "password"=>"", "password_confirmation"=>"dudtlr"}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users/sign_in with {"utf8"=>"✓", "user"=>{"email"=>"doly1@headflow.net", "password"=>"dudtlr", "remember_me"=>"0"}, "commit"=>"로그인"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /kits with {"utf8"=>"✓", "kit"=>{"content"=>"test content", "kitable_id"=>"8763", "kitable_type"=>"User", "photos_attributes"=>[{"image"=>""}]}, "commit"=>"Kit"} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET http://www.example.com/kits with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"홍길동", "email"=>"", "password"=>"", "password_confirmation"=>"dudtlr"}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users/sign_in with {"utf8"=>"✓", "user"=>{"email"=>"doly1@headflow.net", "password"=>"dudtlr", "remember_me"=>"0"}, "commit"=>"로그인"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /kits with {"utf8"=>"✓", "kit"=>{"content"=>"test content", "kitable_id"=>"8764", "kitable_type"=>"User", "photos_attributes"=>[{"image"=>""}]}, "commit"=>"Kit"} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET http://www.example.com/kits with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"홍길동", "email"=>"", "password"=>"", "password_confirmation"=>"dudtlr"}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users/sign_in with {"utf8"=>"✓", "user"=>{"email"=>"doly1@headflow.net", "password"=>"dudtlr", "remember_me"=>"0"}, "commit"=>"로그인"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /kits with {"utf8"=>"✓", "kit"=>{"content"=>"test content", "kitable_id"=>"8765", "kitable_type"=>"User", "photos_attributes"=>[{"image"=>""}]}, "commit"=>"Kit"} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET http://www.example.com/kits with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"박길동", "email"=>"", "password"=>"", "password_confirmation"=>"123456"}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users/sign_in with {"utf8"=>"✓", "user"=>{"email"=>"doly1@headflow.net", "password"=>"dudtlr", "remember_me"=>"0"}, "commit"=>"로그인"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /kits with {"utf8"=>"✓", "kit"=>{"content"=>"test content", "kitable_id"=>"8766", "kitable_type"=>"User", "photos_attributes"=>[{"image"=>""}]}, "commit"=>"Kit"} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET http://www.example.com/kits with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"박길동", "email"=>"", "password"=>"", "password_confirmation"=>"123456"}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users/sign_in with {"utf8"=>"✓", "user"=>{"email"=>"doly1@headflow.net", "password"=>"dudtlr", "remember_me"=>"0"}, "commit"=>"로그인"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /kits with {"utf8"=>"✓", "kit"=>{"content"=>"test content", "kitable_id"=>"8767", "kitable_type"=>"User", "photos_attributes"=>[{"image"=>""}]}, "commit"=>"Kit"} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET http://www.example.com/kits with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"박길동", "email"=>"", "password"=>"", "password_confirmation"=>"123456"}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users/sign_in with {"utf8"=>"✓", "user"=>{"email"=>"doly1@headflow.net", "password"=>"dudtlr", "remember_me"=>"0"}, "commit"=>"로그인"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /kits with {"utf8"=>"✓", "kit"=>{"content"=>"test content", "kitable_id"=>"8768", "kitable_type"=>"User", "photos_attributes"=>[{"image"=>""}]}, "commit"=>"Kit"} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET http://www.example.com/kits with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"박길동", "email"=>"", "password"=>"", "password_confirmation"=>"123456"}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users/sign_in with {"utf8"=>"✓", "user"=>{"email"=>"doly1@headflow.net", "password"=>"dudtlr", "remember_me"=>"0"}, "commit"=>"로그인"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /kits with {"utf8"=>"✓", "kit"=>{"content"=>"test content", "kitable_id"=>"8769", "kitable_type"=>"User", "photos_attributes"=>[{"image"=>""}]}, "commit"=>"Kit"} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET http://www.example.com/kits with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"박길동", "email"=>"", "password"=>"", "password_confirmation"=>"123456"}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users/sign_in with {"utf8"=>"✓", "user"=>{"email"=>"doly1@headflow.net", "password"=>"dudtlr", "remember_me"=>"0"}, "commit"=>"로그인"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /kits with {"utf8"=>"✓", "kit"=>{"content"=>"test content", "kitable_id"=>"8770", "kitable_type"=>"User", "photos_attributes"=>[{"image"=>""}]}, "commit"=>"Kit"} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET http://www.example.com/kits with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"박길동", "email"=>"", "password"=>"", "password_confirmation"=>"123456"}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users/sign_in with {"utf8"=>"✓", "user"=>{"email"=>"doly1@headflow.net", "password"=>"dudtlr", "remember_me"=>"0"}, "commit"=>"로그인"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /kits with {"utf8"=>"✓", "kit"=>{"content"=>"test content", "kitable_id"=>"8771", "kitable_type"=>"User", "photos_attributes"=>[{"image"=>""}]}, "commit"=>"Kit"} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET http://www.example.com/kits with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users/sign_in with {"utf8"=>"✓", "user"=>{"email"=>"doly1@headflow.net", "password"=>"dudtlr", "remember_me"=>"0"}, "commit"=>"로그인"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /kits with {"utf8"=>"✓", "kit"=>{"content"=>"test content", "kitable_id"=>"8772", "kitable_type"=>"User", "photos_attributes"=>[{"image"=>""}]}, "commit"=>"Kit"} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET http://www.example.com/kits with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"박길동", "email"=>"", "password"=>"", "password_confirmation"=>"123456"}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users/sign_in with {"utf8"=>"✓", "user"=>{"email"=>"doly1@headflow.net", "password"=>"dudtlr", "remember_me"=>"0"}, "commit"=>"로그인"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /kits with {"utf8"=>"✓", "kit"=>{"content"=>"test content", "kitable_id"=>"8773", "kitable_type"=>"User", "photos_attributes"=>[{"image"=>""}]}, "commit"=>"Kit"} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET http://www.example.com/kits with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users/sign_in with {"utf8"=>"✓", "user"=>{"email"=>"doly1@headflow.net", "password"=>"dudtlr", "remember_me"=>"0"}, "commit"=>"로그인"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /kits with {"utf8"=>"✓", "kit"=>{"content"=>"test content", "kitable_id"=>"8774", "kitable_type"=>"User", "photos_attributes"=>[{"image"=>""}]}, "commit"=>"Kit"} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET http://www.example.com/kits with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users/sign_in with {"utf8"=>"✓", "user"=>{"email"=>"doly1@headflow.net", "password"=>"dudtlr", "remember_me"=>"0"}, "commit"=>"로그인"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /kits with {"utf8"=>"✓", "kit"=>{"content"=>"test content", "kitable_id"=>"8775", "kitable_type"=>"User", "photos_attributes"=>[{"image"=>""}]}, "commit"=>"Kit"} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET http://www.example.com/kits with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users/sign_in with {"utf8"=>"✓", "user"=>{"email"=>"doly1@headflow.net", "password"=>"dudtlr", "remember_me"=>"0"}, "commit"=>"로그인"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /kits with {"utf8"=>"✓", "kit"=>{"content"=>"test content", "kitable_id"=>"8776", "kitable_type"=>"User", "photos_attributes"=>[{"image"=>""}]}, "commit"=>"Kit"} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET http://www.example.com/kits with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users/sign_in with {"utf8"=>"✓", "user"=>{"email"=>"doly1@headflow.net", "password"=>"dudtlr", "remember_me"=>"0"}, "commit"=>"로그인"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /kits with {"utf8"=>"✓", "kit"=>{"content"=>"test content", "kitable_id"=>"8777", "kitable_type"=>"User", "photos_attributes"=>[{"image"=>""}]}, "commit"=>"Kit"} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET http://www.example.com/kits with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users/sign_in with {"utf8"=>"✓", "user"=>{"email"=>"doly1@headflow.net", "password"=>"dudtlr", "remember_me"=>"0"}, "commit"=>"로그인"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /kits with {"utf8"=>"✓", "kit"=>{"content"=>"test content", "kitable_id"=>"8778", "kitable_type"=>"User", "photos_attributes"=>[{"image"=>""}]}, "commit"=>"Kit"} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET http://www.example.com/kits with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users/sign_in with {"utf8"=>"✓", "user"=>{"email"=>"doly1@headflow.net", "password"=>"dudtlr", "remember_me"=>"0"}, "commit"=>"로그인"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /kits with {"utf8"=>"✓", "kit"=>{"content"=>"test content", "kitable_id"=>"8779", "kitable_type"=>"User", "photos_attributes"=>[{"image"=>""}]}, "commit"=>"Kit"} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET http://www.example.com/kits with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users/sign_in with {"utf8"=>"✓", "user"=>{"email"=>"doly1@headflow.net", "password"=>"dudtlr", "remember_me"=>"0"}, "commit"=>"로그인"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /kits with {"utf8"=>"✓", "kit"=>{"content"=>"test content", "kitable_id"=>"8780", "kitable_type"=>"User", "photos_attributes"=>[{"image"=>""}]}, "commit"=>"Kit"} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET http://www.example.com/kits with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users/sign_in with {"utf8"=>"✓", "user"=>{"email"=>"doly1@headflow.net", "password"=>"dudtlr", "remember_me"=>"0"}, "commit"=>"로그인"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /kits with {"utf8"=>"✓", "kit"=>{"content"=>"test content", "kitable_id"=>"8781", "kitable_type"=>"User", "photos_attributes"=>[{"image"=>""}]}, "commit"=>"Kit"} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET http://www.example.com/kits with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: POST /d/users/sign_in with {"utf8"=>"✓", "user"=>{"email"=>"doly1@headflow.net", "password"=>"dudtlr", "remember_me"=>"0"}, "commit"=>"로그인"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /kits with {"utf8"=>"✓", "kit"=>{"content"=>"test content", "kitable_id"=>"8782", "kitable_type"=>"User", "photos_attributes"=>[{"image"=>""}]}, "commit"=>"Kit"} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET http://www.example.com/kits with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"박길동", "email"=>"", "password"=>"", "password_confirmation"=>"123456"}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/d/users"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"박길동", "email"=>"", "password"=>"", "password_confirmation"=>"123456"}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users/sign_in with {"utf8"=>"✓", "user"=>{"email"=>"doly1@headflow.net", "password"=>"dudtlr", "remember_me"=>"0"}, "commit"=>"로그인"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /kits with {"utf8"=>"✓", "kit"=>{"content"=>"test content", "kitable_id"=>"8784", "kitable_type"=>"User", "photos_attributes"=>[{"image"=>""}]}, "commit"=>"Kit"} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET http://www.example.com/kits with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"박길동", "email"=>"", "password"=>"", "password_confirmation"=>"123456"}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users/sign_in with {"utf8"=>"✓", "user"=>{"email"=>"doly1@headflow.net", "password"=>"dudtlr", "remember_me"=>"0"}, "commit"=>"로그인"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"박길동", "email"=>"", "password"=>"", "password_confirmation"=>"123456"}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users/sign_in with {"utf8"=>"✓", "user"=>{"email"=>"doly1@headflow.net", "password"=>"dudtlr", "remember_me"=>"0"}, "commit"=>"로그인"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"박길동", "email"=>"", "password"=>"", "password_confirmation"=>"123456"}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users/sign_in with {"utf8"=>"✓", "user"=>{"email"=>"doly1@headflow.net", "password"=>"dudtlr", "remember_me"=>"0"}, "commit"=>"로그인"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"박길동", "email"=>"", "password"=>"", "password_confirmation"=>"123456"}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users/sign_in with {"utf8"=>"✓", "user"=>{"email"=>"doly1@headflow.net", "password"=>"dudtlr", "remember_me"=>"0"}, "commit"=>"로그인"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"박길동", "email"=>"", "password"=>"", "password_confirmation"=>"123456"}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users/sign_in with {"utf8"=>"✓", "user"=>{"email"=>"doly1@headflow.net", "password"=>"dudtlr", "remember_me"=>"0"}, "commit"=>"로그인"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"박길동", "email"=>"", "password"=>"", "password_confirmation"=>"123456"}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users/sign_in with {"utf8"=>"✓", "user"=>{"email"=>"doly1@headflow.net", "password"=>"dudtlr", "remember_me"=>"0"}, "commit"=>"로그인"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /kits with {"utf8"=>"✓", "kit"=>{"content"=>"test content", "kitable_id"=>"8790", "kitable_type"=>"User", "photos_attributes"=>[{"image"=>""}]}, "commit"=>"Kit"} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET http://www.example.com/kits with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"박길동", "email"=>"", "password"=>"", "password_confirmation"=>"123456"}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users/sign_in with {"utf8"=>"✓", "user"=>{"email"=>"doly1@headflow.net", "password"=>"dudtlr", "remember_me"=>"0"}, "commit"=>"로그인"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /kits with {"utf8"=>"✓", "kit"=>{"content"=>"test content", "kitable_id"=>"8791", "kitable_type"=>"User", "photos_attributes"=>[{"image"=>""}]}, "commit"=>"Kit"} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET http://www.example.com/kits with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"박길동", "email"=>"", "password"=>"", "password_confirmation"=>"123456"}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"박길동", "email"=>"", "password"=>"", "password_confirmation"=>"123456"}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"박길동", "email"=>"", "password"=>"", "password_confirmation"=>"123456"}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"박길동", "email"=>"", "password"=>"", "password_confirmation"=>"123456"}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"박길동", "email"=>"", "password"=>"", "password_confirmation"=>"123456"}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"박길동", "email"=>"", "password"=>"", "password_confirmation"=>"123456"}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"박길동", "email"=>"", "password"=>"", "password_confirmation"=>"123456"}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"박길동", "email"=>"", "password"=>"", "password_confirmation"=>"123456"}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"박길동", "email"=>"", "password"=>"", "password_confirmation"=>"123456"}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {}
+REQUESTING PAGE: POST /kits with {"utf8"=>"✓", "kit"=>{"content"=>"test content", "kitable_id"=>"8799", "kitable_type"=>"User", "photos_attributes"=>[{"image"=>""}]}, "commit"=>"Kit"} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET http://www.example.com/kits with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"박길동", "email"=>"", "password"=>"", "password_confirmation"=>"123456"}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"박길동", "email"=>"", "password"=>"", "password_confirmation"=>"123456"}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"박길동", "email"=>"", "password"=>"", "password_confirmation"=>"123456"}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {}
+REQUESTING PAGE: POST /kits with {"utf8"=>"✓", "kit"=>{"content"=>"test content", "kitable_id"=>"8802", "kitable_type"=>"User", "photos_attributes"=>[{"image"=>""}]}, "commit"=>"Kit"} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET http://www.example.com/kits with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"박길동", "email"=>"", "password"=>"", "password_confirmation"=>"123456"}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /kits with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /networks with {} and HTTP headers {"HTTP_REFERER"=>"/kits"}
+REQUESTING PAGE: GET /d/users/sign_up with {} and HTTP headers {}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"email"=>"doly10@headflow.net", "password"=>"dudtlr", "password_confirmation"=>"dudtlr"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_up"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /d/users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: POST /d/users with {"utf8"=>"✓", "user"=>{"name"=>"박길동", "email"=>"", "password"=>"", "password_confirmation"=>"123456"}, "commit"=>"시작하기"} and HTTP headers {"HTTP_REFERER"=>"/d/users/sign_in"}

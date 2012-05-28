@@ -1,0 +1,25 @@
+<div class="main-box">
+	<% if user_signed_in? %>
+	<div class="show-padding">
+
+		<%= form_for @message, :validate => true do |f| %>
+		
+		<div class="user-edit-title">쪽지 보낼 사람</div>
+		<div id="message-user">
+			<%= f.autocomplete_field :user_tokens,
+			"data-pre" => @message.users.map(&:attributes).to_json %>
+		</div>
+		<div class="user-edit-title">쪽지 제목</div>
+		<%= f.text_field :title %>
+	</div>
+
+	<div id="message-form">
+		<%= f.text_area :content, :id => "message-form-text" %>
+
+		<div id="message-form-button">	
+			<%= f.submit "쪽지 보내기", :id => "message-submit", :disable_with=>"쪽지 보내기" %>	
+			<% end %>
+		</div>	
+	</div>
+	<% end %>
+</div>

@@ -1,0 +1,6 @@
+$('#pending_friends').append('<%= j render(@pending_friends) %>');
+<% if @pending_friends.next_page %>
+  $('.pagination').replaceWith('<%= j will_paginate(@pending_friends) %>');
+<% else %>
+  $('.pagination').remove();
+<% end %>

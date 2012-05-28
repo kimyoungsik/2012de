@@ -1,0 +1,10 @@
+
+development:
+    app_id: '181566241883873'
+    secret_key: 'b1d48ecdec1256fa93580ed33895d353'
+test:
+    app_id: '181566241883873'
+    secret_key: 'b1d48ecdec1256fa93580ed33895d353'
+production:
+    app_id: '181566241883873'
+    secret_key: 'b1d48ecdec1256fa93580ed33895d353'

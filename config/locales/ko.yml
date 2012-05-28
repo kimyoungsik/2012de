@@ -1,0 +1,205 @@
+# Korean (한글) translations for Ruby on Rails
+# by John Hwang (jhwang@tavon.org)
+# http://github.com/tavon
+# and Sunghee Kang(paranoiase@gmail.com)
+# http://www.twitter.com/paranoiase
+
+# should properly apply korean localization in the future, instead of 
+# pegging it inside of the english localization file
+
+ko:
+  
+  views:
+    pagination:
+      first: "←"
+      previous: "이전"
+      next: "다음"
+      truncate: "..."
+      last: "→"
+      
+  
+  date:
+    formats:
+      default: "%Y/%m/%d"
+      short: "%m/%d"
+      long: "%Y년 %m월 %d일 (%a)"
+
+    day_names: [일요일, 월요일, 화요일, 수요일, 목요일, 금요일, 토요일]
+    abbr_day_names: [일, 월, 화, 수, 목, 금, 토]
+
+    month_names: [~, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    abbr_month_names: [~, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    order:
+      - :year
+      - :month
+      - :day
+
+  time:
+    formats:
+      default: "%Y/%m/%d %H:%M:%S"
+      short: "%y/%m/%d %H:%M"
+      long2: "%Y년 %B월 %d일"
+      long: "%Y년 %B월 %d일, %H시 %M분"
+      longest: "%Y년 %B월 %d일, %H시 %M분 %S초 %Z"
+      moimdate: "%Y.%m.%d"
+      moimhour: "%H:%M"
+      
+    am: "오전"
+    pm: "오후"
+
+  support:
+    array:
+      sentence_connector: ", "
+      words_connector: ", "
+      two_words_connector: "와(과) "
+      last_word_connector: ", "
+
+    select:
+      prompt: "선택해 주세요"
+
+  number:
+    format:
+      separator: "."
+      delimiter: ","
+      precision: 3
+      significant: false
+      strip_insignificant_zeros: false
+
+    currency:
+      format:
+        format: "%n%u"
+        unit: "원"
+        separator: "."
+        delimiter: ","
+        precision: 0
+        significant: false
+        strip_insignificant_zeros: false
+
+    percentage:
+      format:
+        delimiter: ""
+
+    precision:
+      format:
+        delimiter: ""
+
+    human:
+      format:
+        delimiter: ""
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+
+      storage_units:
+        format: "%n%u"
+        units:
+          byte: "바이트"
+          kb: "킬로바이트"
+          mb: "메가바이트"
+          gb: "기가바이트"
+          tb: "테라바이트"
+
+      decimal_units:
+        format: "%n%u"
+        units:
+          unit: ""
+          thousand: "천"
+          million: "백만"
+          billion: "십억"
+          trillion: "조"
+          quadrillion: "경"
+
+  datetime:
+    distance_in_words:
+      half_a_minute: "30초"
+      less_than_x_seconds:
+        one: "1초 이하"
+        other: "%{count}초 이하"
+      x_seconds:
+        one: "1초"
+        other: "%{count}초"
+      less_than_x_minutes:
+        one: "방금"
+        other: "%{count}분 이하"
+      x_minutes:
+        one: "1분"
+        other: "%{count}분"
+      about_x_hours:
+        one: "1시간"
+        other: "%{count}시간"
+      x_days:
+        one: "1일"
+        other: "%{count}일"
+      about_x_months:
+        one: "1달"
+        other: "%{count}달"
+      x_months:
+        one: "1달"
+        other: "%{count}달"
+      about_x_years:
+        one: "1년"
+        other: "%{count}년"
+      over_x_years:
+        one: "1년 이상"
+        other: "%{count}년 이상"
+      almost_x_years:
+        one: "1년 이하"
+        other: "%{count}년 이하"
+
+    prompts:
+      year: "년"
+      month: "월"
+      day: "일"
+      hour: "시"
+      minute: "분"
+      second: "초"
+
+  helpers:
+    select:
+      prompt: "선택해주세요."
+
+    submit:
+      create: "등록"
+      update: ""
+      submit: "제출"
+
+  errors:
+    format: "%{attribute}%{message}"
+
+    messages: &errors_messages
+      inclusion: "은(는) 목록에 포함되어 있습니다."
+      exclusion: "은(는) 목록에 포함되어 있습니다."
+      invalid: "정확하게 입력해주세요."
+      confirmation: "확인해주세요."
+      accepted: "은(는) 확인되었습니다."
+      empty: " 내용을 입력해주세요."
+      blank: " 내용을 입력해주세요."
+      too_long: "%{count}자 이내로 입력해주세요."
+      too_short: "%{count}자 이상 입력해주세요."
+      wrong_length: "은(는) 길이가 틀렸습니다. (%{count}자를 필요합니다)"
+      not_a_number: "숫자가 아닙니다."
+      not_an_integer: "정수가 아닙니다."
+      greater_than: "은(는) %{count}이상을 요구합니다."
+      greater_than_or_equal_to: "은(는) %{count}과 같거나 이상을 요구합니다."
+      equal_to: "은(는) %{count}과 같아야 합니다."
+      less_than: "은(는) %{count}이하를 요구합니다."
+      less_than_or_equal_to: "은(는) %{count}과 같거나 이하을 요구합니다."
+      odd: "홀수로 입력해주세요."
+      even: "짝수로 입력해주세요."
+      not_saved: "정보가 저장되지 않았습니다."
+
+  activerecord:
+    errors:
+      template:
+        header:
+          one: "한 개의 오류가 발생해 %{model}를 저장 할 수 없습니다."
+          other: "%{count}개의 오류가 발생해 %{model}를 저장 할 수 없습니다."
+        body: "다음 항목에 문제가 발견되었습니다:"
+
+      messages:
+        taken: "이미 존재하는 이메일입니다."
+        record_invalid: "데이터 검증에 실패하였습니다. %{errors}"
+        <<: *errors_messages
+
+      full_messages:
+        format: "%{attribute}%{message}"

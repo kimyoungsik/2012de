@@ -1,0 +1,5 @@
+<% if @success == true %>
+	$("#password-reset-response").html("비밀번호 재설정 안내 메일이 발송되었습니다.");
+<% else %>
+	$("#password-reset-response").html("등록되지 않은 이메일입니다.");
+<% end %>

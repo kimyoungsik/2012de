@@ -1,0 +1,20 @@
+<% if user_signed_in? and user != current_user %>
+	<% if Friendship.are_friends(current_user, user) %>
+		<div class="friend">내 친구</div>
+		<%= link_to "", current_user.friendships.find_by_friend_id(user), 
+		:method => :delete, :remote => true, :confirm => "친구 관계를 끊겠습니까?", :class => "cancel-friend" %>
+	<% elsif Friendship.pending?(current_user, user) %>
+		<div class="friend-pending">수락대기</div>
+		<%= link_to "", current_user.friendships.find_by_friend_id(user), 
+		:method => :delete, :remote => true, :confirm => "친구신청을 취소하시겠습니까?", :class => "cancel-friend-request" %>
+	<% elsif Friendship.requested?(current_user, user) %>
+		<%= form_for current_user.friendships.find_by_friend_id(user.id), :remote => true do |f| %>
+			<%= f.submit "친구 수락", :confirm => "#{user.name} 님의 친구요청을 수락하시겠습니까?", :class => "accept-friend", :disable_with => "친구수락" %>
+		<% end %>
+	<% else %>
+		<%= form_for current_user.friendships.build(:friend_id => user.id), :remote => true do |f| %>
+			<%= f.hidden_field :friend_id %>
+			<%= f.submit "친구 추가", :class => "add-friend" %>
+		<% end %>
+	<% end %>
+<% end %>

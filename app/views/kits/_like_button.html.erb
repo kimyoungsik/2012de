@@ -1,0 +1,22 @@
+<% if user_signed_in? %>
+	<div id = "kit_<%= kit.id%>_like">
+		<div class="item-box like-box">
+			<div class="content-info"><%= time_ago_in_words(kit.created_at) %> 전</div>
+			<% if Ditto.where(:user_id => current_user.id, :dittoable_id => kit.id, :dittoable_type => 'Kit').empty? %>	
+				<%= form_for current_user.dittos.build(:dittoable_id => kit.id, :dittoable_type => 'Kit'), :remote => true do |f| %>
+					<%= f.hidden_field :dittoable_id %>
+					<%= f.hidden_field :dittoable_type %>
+					<%= f.submit "좋아요", :class => "like-submit" %>
+				<% end %>		
+			<% else %>
+				<%= link_to "좋아요 취소", kit.dittos.find_by_user_id(current_user), :method => :delete, :remote => true, :class => "like-submit" %>
+			<% end%>
+		</div>
+		
+		<% if kit.dittos.any? %>
+			<div class="item-box like-info"><i class="like-icon"></i>
+				<p><%= kit.dittos.count %>명이 이 Kit을 좋아합니다.</p>
+			</div>
+		<% end %>
+	</div>	
+<% end %>

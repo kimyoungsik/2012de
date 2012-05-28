@@ -1,0 +1,33 @@
+<html>
+<body>
+	<div style="width:500px; margin:auto;">
+		<div id="mailtop" style="font-family: dotum, arial;background-color:#0094bc; border:1px solid #006484;">
+			<div class="mailtop" style="font-family: arial;padding:5px 0;font-size:24px;	color:#ffffff;padding: 5px;">Dream<strong>Kit</strong><span style="font-size: 11px;color:#fff;padding-left:10px;">나의 꿈이 현실이 되는 공간</span>
+			</div>
+		</div>
+		<div id="contents" style="margin:auto;border:1px solid #eee;margin-top:5px;">
+			<div id="title" style="padding: 5px 5px 5px 5px; color:#0094BC; font-size:12px;font-family: dotum, arial; font-weight:bold;">
+				<%= @m_subject.html_safe %>
+			</div>
+			<% unless @m_body.nil? or @m_body.empty? %>
+			<div id="description" style="padding: 5px; font-size:12px; color:#444; font-family: dotum, arial;">
+				<%= @m_body.html_safe %>
+			</div>
+			<% end %>
+		</div>
+
+		<div id="contents" style="margin:auto;border:1px solid #eee;margin-top: 5px;">
+
+
+			<div id="footer" style="padding: 5px;border-top:1px solid #f4f4f4;background:#f9f9f9;font-family: dotum, arial;font-size:11px;color:#777;">
+				<div style="visibility:visible;">
+					<%= @footer.html_safe %>
+				</div>
+				<div style="visibility:visible;">
+					<a href="<%= @url %>"> <%= @url.html_safe %></a>
+				</div>
+			</div>
+		</div>		
+	</div>
+</body>
+</html>

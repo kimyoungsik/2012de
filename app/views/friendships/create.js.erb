@@ -1,0 +1,9 @@
+$(".friend-box").html("<%= escape_javascript(render 'friendships/friendship_status', :user => @friend) %>");
+
+$(".friend-pending").hover(function(){
+	$(this).html("신청취소");
+}, function(){
+	$(this).html("수락대기");
+}).click(function(){
+	$(".cancel-friend-request").click();
+});

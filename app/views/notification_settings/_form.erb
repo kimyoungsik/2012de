@@ -1,0 +1,30 @@
+<div class="item-title">
+	<h2>이메일 알림</h2>
+	<span>Kit이나 댓글 등이 달렸을 때 알림 여부를 설정합니다. </span>
+</div>
+
+<%= form_for(current_user.notification_setting) do |f| %>
+	<div class="item-box">
+		<h2>Kit 알림설정</h2>
+		<div><%= f.check_box :kit_notify %> 나의 뜰에 Kit이 등록되었을 때</div>
+		<div><%= f.check_box :seed_kit_notify %> 내가 만든 시드에 Kit이 등록되었을 때</div>
+		<div><%= f.check_box :moim_kit_notify %> 내가 참여하는 모임에 Kit이 등록되었을 때</div>
+	</div>
+	<div class="item-box">
+		<h2>댓글 알림설정</h2>
+		<div><%= f.check_box :comment_notify %> 나의 Kit에 댓글이 등록되었을 때</div>
+		<div><%= f.check_box :other_comment_notify %> 내가 댓글을 남긴 Kit에 다른 댓글이 등록되었을 때</div>
+	</div>
+	<div class="item-box">
+		<h2>친구 알림설정</h2>
+		<div><%= f.check_box :friendship_notify %> 상대방이 나를 친구로 추가했을 때</div>
+		<div><%= f.check_box :friendship_acceptance_notify %> 상대방이 나의 친구요청을 수락했을 때</div>
+	</div>
+	<div class="item-box">
+		<h2>쪽지 알림설정</h2>
+		<div><%= f.check_box :reply_notify %> 쪽지를 받았을 때</div>
+	</div>
+	<div class="item-box">
+		<%= f.submit "수정하기", :disable_with => "수정하기" %>
+	</div>
+<% end %>

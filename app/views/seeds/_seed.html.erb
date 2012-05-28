@@ -1,0 +1,12 @@
+<%= div_for(seed, :onclick => "location.href='#{seed_path(seed)}';",  :style => "cursor:pointer;", :class=> "item-box") do %>
+	<i class="selector"></i>
+	<div class="item-left">
+		<%= link_to profile_photo(seed.user, :small, 70), seed.user %>
+	</div>
+	
+	<div class="item-content">
+		<h2><%= link_to seed.title, seed %></h2>
+		<p><%= seed.description.gsub(/<\/?.*?>/, "").html_safe %></p>
+		<div class="clear"></div>
+	</div>	
+<% end %>

@@ -1,0 +1,6 @@
+$('#seeds').append('<%= j render(@seeds) %>');
+<% if @seeds.next_page %>
+  $('.pagination').replaceWith('<%= j will_paginate(@seeds) %>');
+<% else %>
+  $('.pagination').remove();
+<% end %>

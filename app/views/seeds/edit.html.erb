@@ -1,0 +1,25 @@
+<% if user_signed_in?  && current_user == @seed.user %>
+	<div id="seed-new" class="main-box">
+		<div class="item-box">
+			<div class="item-left">
+				<%= profile_photo(current_user, :small, 70) %>
+			</div>
+
+			<div class="item-content">
+				<%= form_for @seed do |f| %>
+				<div class="input-box" id="input-box-switch">
+					<%= f.text_field :title %>
+					<%= f.text_area :description %>
+				</div>
+				<div id="seed-button-box" style="display: block">
+				<%= f.submit "수정하기", :id => "seed-submit" %>
+				</div>
+				
+				<% end %>
+			
+			</div>
+
+			<div class="clear"></div>
+		</div>
+	</div>
+<% end %>

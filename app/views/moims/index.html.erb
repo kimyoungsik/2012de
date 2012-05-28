@@ -1,0 +1,7 @@
+<%= link_to "Create a Moim!", new_moim_path %>
+<% @moims.each do |moim| %>
+	<div class="item-box">
+		<h2><%= link_to moim.title, moim %></h2>
+		<p><%= moim.description %></p>
+	</div>
+<% end %>

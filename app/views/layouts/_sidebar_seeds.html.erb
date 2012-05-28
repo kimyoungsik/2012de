@@ -1,0 +1,36 @@
+<% if user_signed_in? %>
+	<div class="sidebar-box">
+		<div class="sidebar-title">
+			<h2>내가 참여 중인 시드</h2>
+		</div>
+		<% unless current_user.progress_seeds.empty? %>
+			<% current_user.progress_seeds.shuffle.first(5).each do |seed| %>
+				<%= render 'layouts/sidebar_seed_item', :seed => seed %>
+			<% end %>
+		<% else %>
+			<a class="item-subtitle-box">
+				*아직 시드가 없으신가요? 추천 시드에 참여해보세요!
+			</a>
+		<% end %>
+	</div>
+	
+	<% unless current_user.complete_seeds.empty? %>
+	<div class="sidebar-box">
+		<div class="sidebar-title">
+			<h2>내가 성공한 시드</h2>
+		</div>
+		<% current_user.complete_seeds.shuffle.first(5).each do |seed| %>
+			<%= render 'layouts/sidebar_seed_item', :seed => seed %>
+		<% end %>
+	</div>
+	<% end %>
+<% end %>
+
+<div class="sidebar-box">
+	<div class="sidebar-title">
+		<h2>추천 시드</h2>
+	</div>
+	<% Seed.all.shuffle.first(10).each do |seed| %>
+		<%= render 'layouts/sidebar_seed_item', :seed => seed %>
+	<% end %>
+</div>

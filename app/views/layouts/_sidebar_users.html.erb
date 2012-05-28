@@ -1,0 +1,209 @@
+<% if ["show", "friends", "pending_friends", "requested_friends"].include?(params[:action]) %>
+	<div class="sidebar-box">
+
+		<%= profile_photo(@user, :original, 310) %>
+
+		<div class="item-box none-link">
+			<div class="item-left">
+				<h1><%= @user.name %></h1>
+				<% if current_user == @user %>
+					<span><%= link_to "프로필 사진", new_user_photo_path(@user) %></span>
+				<% end %>
+			</div>
+
+			<div class="friend-box">
+				<%= render 'friendships/friendship_status', :user => @user %>
+			</div>
+			<!-- <div id = "user-profile-sex">
+					<% if !@user.sex.blank? %>
+						<% if @user.sex == "male" %>
+							<%= image_tag("sex_male.png") %>
+						<% elsif @user.sex == "female" %>
+							<%= image_tag("sex_female.png") %>
+						<% end %>
+					<% end %>
+			</div> -->
+		</div>
+
+		<!-- profile -->
+		<% if !@user.profile.blank? %>	
+			<div class="item-box none-link">
+				<h2><%= @user.name %> 님의 소개</h2>
+				<h3 class="normal-space">
+					<% if current_user == @user %>
+					<%= best_in_place @user, :profile, type: :textarea  %>
+					<% else %>
+					<%= @user.profile %>
+					<% end %>
+				</h3>
+			</div>
+			<% else %>
+			<% if current_user == @user %>
+			<div class="item-box none-link">
+				<h2><%= @user.name %> 님의 소개
+				</h2>
+				<h3 class="normal-space">
+					<% @user.profile = "자기 자신을 한마디로 표현한다면?"%>
+					<%= best_in_place @user, :profile, type: :textarea  %>
+				</h3>
+			</div>
+			<% end %>
+		<% end %>
+
+		<% if @facebook_uid %>
+			<%= link_to "#{@user.name} 님의 페이스북", "http://www.facebook.com/profile.php?id=#{@facebook_uid}", 
+			:target => '_blank', :class => "item-link" %>
+		<% end %>
+	</div>
+
+	<!-- network -->
+	<% if @user == current_user %>
+		<div class ="sidebar-box">
+
+			<div class="sidebar-title">
+				<h2>학교/네트워크</h2>
+			</div>
+
+			<div class="sidebar-search">
+				<%= form_for current_user.network_participations.build, :remote => true do |f| %>
+				<i class="nav-search"></i>
+				<%= f.text_field :network_name, data: {autocomplete_source: networks_path} %>
+					<div id="network-button-box">
+						<%= f.submit "등록하기", :id => "network-button",:disable_with => "등록하기", :confirm => "네트워크를 등록하시겠습니까?" %>
+					</div>
+				<% end %>	
+			</div>
+		
+			<div id="network-item-box">
+				<%= render 'network_participations/network_participation_status' %>
+			</div>
+		</div>
+		
+	<% elsif !@user.networks.empty? %>
+		<div class="sidebar-box">
+			<div class="sidebar-title">
+				<h2>학교 / 네트워크</h2>
+			</div>
+
+			<% @user.networks.each do |network| %>
+				<%= link_to network.name, network, :class => "item-link" %>
+			<% end %>
+		</div>
+	<% end %>
+
+	<!-- major	 -->
+	<% if current_user == @user %>
+
+		<div class="sidebar-box">		
+			<div class="item-box first-item">		
+				<h2>전공 / 관심분야</h2>
+				<% majors = []%>
+				<% Major.all.each do |major|%>
+					<% majors<<[Integer("#{major.id}"), "#{major.title}"]%>
+				<% end %>
+
+				<h3><%= best_in_place @user, :major_id, type: :select, :nil => "이곳을 클릭하여 자신의 전공을 선택하세요", collection: majors %></h3>
+			</div>
+
+			<div class="item-box">
+				<h2>세부전공</h2>
+				<h3><%= best_in_place @user, :major_detail , type: :input, :nil => "이곳을 클릭하여 세부전공을 적어주세요" %></h3>
+			</div>
+
+			<div class="item-box">
+				<h2>하고 싶은 일</h2>
+				<% interests = []%>
+				<% Interest.all.each do |interest|%>
+					<% interests<<[Integer("#{interest.id}"),"#{interest.title}"]%>
+				<% end %>
+				<h3><%= best_in_place @user, :interest_id, type: :select, :nil => "이곳을 클릭하여 자신의 관심사를 선택하세요", collection:  interests %></h3>
+			</div>		
+		</div>
+
+	<% else %>
+		<% if @user.major_id or @user.major_detail or @user.interest_id %>
+			<div class="sidebar-box">
+				<% if @user.major_id %>
+				<div class="item-box">		
+					<h2>전공 / 관심분야</h2>
+					<h3><%= Major.find(@user.major_id).title %></h3>
+				</div>
+				<% end %>	
+
+				<% if @user.major_detail %>
+					<div class="item-box">
+						<h2>세부전공</h2>
+						<h3><%= @user.major_detail %></h3>
+					</div>
+				<% end %>		
+
+				<% if @user.interest_id %>
+					<div class="item-box">
+						<h2>하고 싶은 일</h2>
+						<h3><%= Interest.find(@user.interest_id).title %></h3>
+					</div>
+				<% end %>	
+			</div>
+		<% end %>
+	<% end %>
+
+	<!-- friend -->
+	<div class="sidebar-box">
+		<div class="sidebar-title">
+			<h2><%= @user.name %> 님의 친구들 <span><%= @user.friends.count %>명
+			<%= link_to "전체보기" , "/friends/#{@user.id}" %></span></h2>
+			
+		</div>
+
+		<% if current_user == @user && @user.friends.empty? %>
+			<a class="item-subtitle-box">
+				*아직 친구가 없으신가요? 새로운 친구를 추가해보세요.
+			</a>
+		<% else %>
+			<div class="item-box3">
+				<% @user.friends.shuffle.first(24).each do |friend| %>
+					<%= link_to profile_photo(friend, :small, 30), friend %>
+				<% end %>
+				<div class="clear"></div>
+			</div>
+			<% if @facebook_uid and @user == current_user %>
+				<%= link_to "#{@user.name} 님의 페이스북 친구", import_path, :class => "item-link" %>
+			<% end %>
+		<% end %>
+	</div>
+	
+	<% if current_user == @user && @user.pending_friends.any? %>
+		<div class="sidebar-box">
+			<div class="sidebar-title">
+				<h2><%= @user.name %> 님의 친구신청 대기 <span><%= @user.pending_friends.count %>명
+				<%= link_to "전체보기" , "/pending_friends/#{@user.id}" %> </span></h2>
+			</div>
+			
+			<div class="item-box2">
+				<% @user.pending_friends.shuffle.first(24).each do |friend| %>
+					<%= link_to profile_photo(friend, :small, 30), friend %>
+				<% end %>
+				<div class="clear"></div>
+			</div>
+	
+		</div>
+	<% end %>
+	
+	<% if current_user == @user && @user.requested_friends.any? %>
+		<div class="sidebar-box">
+			<div class="sidebar-title">
+				<h2><%= @user.name %> 에게 온 친구요청 <span><%= @user.requested_friends.count %>명
+				<%= link_to "전체보기" , "/requested_friends/#{@user.id}" %></span></h2>
+			</div>
+			
+			<div class="item-box2">
+				<% @user.requested_friends.shuffle.first(24).each do |friend| %>
+					<%= link_to profile_photo(friend, :small, 30), friend %>
+				<% end %>
+				<div class="clear"></div>
+			</div>
+	
+		</div>
+	<% end %>
+<% end %>
+

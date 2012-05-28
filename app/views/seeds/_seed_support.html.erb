@@ -1,0 +1,17 @@
+<% if user_signed_in? %>
+ <div class="status-control <%= current_user.supports?(@seed) ? 'li-freeze' : 'li-normal' %>">
+	<div class="seed-digit" id="support-digit"><%= @seed.supports.count %></div>
+	
+		<% if current_user.supports?(@seed) %>
+			<div class="seed-description">이 시드를 응원했습니다.</div>
+		<% else %>
+			<div class="seed-description">
+				<%= form_for current_user.supports.build(:seed_id => @seed.id), :remote => true do |f| %>
+					<%= f.hidden_field :seed_id %>
+					<%= f.submit "응원하기", :class => "seed-support-button" %>
+				<% end %>
+			</div>
+		<% end %>
+
+ </div>
+<% end %>

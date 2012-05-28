@@ -1,0 +1,15 @@
+$("#message-main").html("<%= escape_javascript(render 'messages/message_show') %>");
+$(".message-title-unread h2").parent().parent(".message-title-unread").css("background-image", "none");
+
+$(document).ready(function() {
+	$("#message-textarea").watermark("메시지를 입력해주십시오.");
+	
+	// $("#reply-button-box").hide();
+	// $(".reply-field > .item-left > img").hide();
+	
+	$("#new_reply").click(function(){
+		// $("#reply-button-box").show();
+		// $(".reply-field > .item-left > img").show();
+		$("#message-textarea").css("background", "#fff");
+	});
+});

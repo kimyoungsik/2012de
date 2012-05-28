@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="ie ie6 some-custom-class"><![endif]-->
+<!--[if IE 7]><html class="ie ie7 some-custom-class"><![endif]-->
+<!--[if IE 8]><html class="ie ie8 some-custom-class"><![endif]-->
+<!--[if IE 9]><html class="ie ie9 some-custom-class"><![endif]-->
+<!--[if gt IE 9]><html class="ie some-custom-class"><![endif]-->
+<!--[if !IE]><!-->
+<html class="some-custom-class">
+<!--<![endif]-->
+	<head>
+		<title><%= title %></title>
+		<%= stylesheet_link_tag    "application" %>
+		<%= javascript_include_tag "application" %>
+		
+		<meta name="description" content="<%= description %>"/>
+		<meta name="revisit-after" content= "<%= revisit_after %>"/>
+		<meta name="author" content="<%= author %>"/>
+		<meta name="copyright" content="Copyright © 2012 · All Rights Reserved · HeadFlow "/>
+		 
+		<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/assets/favicon.ico"type="image/x-icon">
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-4818612-4']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+		<%= csrf_meta_tags %>
+	</head>
+	<body>
+		<% if !user_signed_in? and session[:visit_counter] > 0 and request.fullpath != new_admin_session_path %>
+			<div class="popup-wrapper">	
+				<div id="signup-popup">
+				</div>
+				<div id="signup-box">
+					<div class="facebook_button">
+						<%= link_to content_tag(:span, "Login with Facebook", :class => 'fb_button_text'), '/auth/facebook' %>
+					</div>
+					<div class="popup-text">드림킷 계정으로 
+						<span id="dreamkit-login-text">로그인</span>
+						하기
+					</div>
+
+					<div id="dreamkit-login-box">
+						<ul>
+							<li><a href="#tabs-1">드림킷 로그인</a></li>
+							<li><a href="#tabs-2">비밀번호 찾기</a></li>
+							<li><a href="#tabs-3">회원가입</a></li>
+						</ul>
+						<div id="tabs-1">
+							<%= form_for User.new, :url => user_session_path, :remote => true do |f| %>
+								<div class="input-box">
+									<%= f.text_field :email %>
+									<%= f.password_field :password %>
+								</div>
+								<div id="signin-bottom">
+									<%= f.check_box :remember_me %>
+									<%= f.label :remember_me %>
+									<%= f.submit "로그인", :id =>"signin-submit" %>
+								</div>
+							<% end %>
+							<div id="signin-failure">
+							</div>
+						</div>
+
+						<div id="tabs-2">
+							<%= form_for User.new, :url => user_password_path, :remote => true do |f| %>
+								<div class="input-box">
+									<%= f.text_field :email, :value => session[:omniauth_email] %>
+								</div>
+								<div id="signin-bottom">
+									<%= f.submit "메일 발송", :id =>"email-submit" %>
+								</div>
+							<% end %>
+							<div id="password-reset-response">
+							</div>
+						</div>
+						<div id="tabs-3">
+							<%= form_for(User.new, :url => registration_path(:user), :validate => true) do |f| %>
+								<div class="input-box">
+									<%= f.text_field :name %>
+									<%= f.text_field :email %>
+									<%= f.password_field :password, :validate => true %>
+									<%= f.password_field :password_confirmation %>
+								</div>
+								<div id="signin-bottom">
+									<%= f.submit "시작하기", :id =>"signup-submit" %>
+								</div>
+							<% end %>
+						</div>
+					</div>
+				</div>
+			</div>
+		<% end %>
+
+
+		<%  if user_signed_in? and ( current_user.profile.blank? ) %>
+			<div class="popup-wrapper"> 
+				<div id="tutorial-popup">
+				</div>
+				<div id="tutorial-box">
+					<div class="item-box tutorial-header"></div>
+
+					<!-- tutorial-part1 -->
+					<% if current_user.profile.blank? %>
+						<div id="tutorial-part1">
+							<div class="item-box" id="tutorial-image1">
+							</div>
+							<div class="item-box">
+								<h3>자신을 사람들에게 어필하세요.</h3>
+								<%= best_in_place current_user, :profile, type: :textarea ,:nil => "빠르고 간편하게 입력하실 수 있습니다!" %>
+							</div>
+							<button id="tutorial-button1"></button>
+						</div>
+					<% end %>
+					
+					<!-- tutorial-part2 -->
+					<% if current_user.networks.empty? %>
+						<div id="tutorial-part2">
+							<div class="item-box" id="tutorial-image1-2">
+							</div>
+							<div class="item-box">
+								<h3>자신이 속해있는 네트워크를 추가해보세요.</h3>
+								<%= form_for current_user.network_participations.build, :remote => true do |f| %>
+									<i class="nav-search"></i>
+									<%= f.text_field :network_name, data: {autocomplete_source: networks_path} %>
+									<div id="network-button-box">
+									<%= f.submit "등록하기", :id => "network-button", :disable_with => "등록하기", :confirm => "네트워크를 등록하시겠습니까?" %>
+
+									</div>
+								<% end %>
+							</div>
+							<div id="network-item-box">
+								<%= render 'network_participations/network_participation_status' %>
+							</div>
+							<div class="item-box">
+								<button id="tutorial-button2"></button>
+								<!-- <button id="tutorial-back-button2"></button> -->
+							</div>
+						</div>	
+					<% end %>
+					
+					<!-- tutorial-part3 -->
+					<% if !current_user.major_id or current_user.major_detail.blank? or !current_user.interest_id %>
+						<div id="tutorial-part3">		
+							<div class="item-box" id="tutorial-image3">
+							</div>
+							
+							<% if !current_user.major_id? %>
+								<div class="item-box">
+									<h3>전공 및 관심분야는 무엇인가요?</h3>
+									<% majors = []%>
+									<% Major.all.each do |major|%>
+										<% majors << [Integer("#{major.id}"), "#{major.title}"] %>
+									<%end%>
+									<%= best_in_place current_user, :major_id, type: :select, :nil => "이곳을 클릭하여 자신의 전공을 선택하세요" ,collection: majors %>
+								</div>
+							<% end %>
+							
+							<% if current_user.major_detail.blank? %>
+								<div class="item-box">
+									<h3>세부전공을 작성해주세요.</h3>
+									<div id="major-detail"><%= best_in_place current_user, :major_detail, type: :input, :nil => "이곳을 클릭하여 세부전공을 적어주세요" %></div>
+								</div>
+							<% end %>
+							
+							<% if !current_user.interest_id? %>
+								<div class="item-box">
+									<h3>하고 싶은 일은 무엇인가요?</h3>
+									<% interests = []%>
+									<% Interest.all.each do |interest|%>
+										<% interests << [Integer("#{interest.id}"), "#{interest.title}"] %>
+									<% end %>
+									<div id="interests"><%= best_in_place current_user, :interest_id, type: :select, :nil => "이곳을 클릭하여 자신의 관심사를 선택하세요", collection: interests %></div>
+								</div>
+							<% end %>	
+							<div class="item-box">
+								<button id="tutorial-button3"></button>
+								<!-- <button id="tutorial-back-button2"></button> -->
+							</div>	
+						</div>
+					<% end %>
+					<% if @graph%>
+						<!-- tutorial-part4 -->
+						<div id="tutorial-part4">
+							<div class="item-box" id="tutorial-image4">
+							</div>				
+							<div class="item-box">
+								<h3>드림킷을 하는 페이스북 친구들</h3>
+							</div>
+								<% dreamers = dreamer_in_facebook %>
+								<% if dreamers.length > 0 %>
+									<% dreamers.shuffle.first(5).each do |dreamer|%>
+										<% unless Friendship.are_friends(dreamer.user, current_user) %>
+											<div class="item-box dreamer-item2">
+												<div class="item-left">
+													<%= profile_photo(dreamer.user, :small, 60) %>
+												</div>
+												
+												<div class="item-right">
+													<div class="main-friend-box friend-box">
+														<%= render 'friendships/friendship_status', :user => dreamer.user %>
+													</div>
+												</div>
+												
+												<div class="item-content">
+													<h3><%= dreamer.user.name%></h3>
+													<%= truncate(dreamer.user.profile, :length => 30) %>
+												</div>
+												
+												<div class="clear"></div>
+											</div>
+										<% end %>
+									<% end %>
+								<!-- <% else %>
+								 <h4>=>> 페이스북 친구들을 드림킷에 초대하세요!</h4>
+								<% end %>
+							
+									<p><a href ="#" onclick ="FB.ui({method: 'apprequests', message: 'Lets hit the Dreamkit!'}); return false;">
+											페이스북 친구초대</a></p> -->
+							
+							<div class="item-box">
+								<button id="tutorial-button4"></button>
+								<!-- <button id="tutorial-back-button3"></button> -->
+							</div>
+						</div>
+					<% end %>
+				</div>
+			</div>
+		<% end %>
+
+		<div id="top">
+			<div id="top-inner">
+				<div id="top-left">
+					<ul>
+						<li id="logo"><%= link_to image_tag('dreamkit.png'), root_path %></li>
+						<% if user_signed_in? %>
+							<li class="top-item" id="notification-count">
+								<p><%= current_user.unread_notifications.count %></p>
+								<div id="notification">
+									<%= render @notifications_mini %>
+									<div id="notification-link"><%= link_to "모든 알림 보기", notifications_path %></div>
+								</div>
+							</li>
+						<% end %>
+						<li class="top-item"><%= link_to "시내", kits_path %></li>
+						<li class="top-item"><%= link_to "사람들", networks_path %></li>
+					</ul>
+				</div>
+				<div id="top-right">
+					<%= render "layouts/top_right" %>
+				</div>
+			</div>
+		</div>
+		<div id="top-fake"></div>
+		<div id="header">
+			<% if params[:controller] == "seeds" && params[:action] == "index" %>
+				<%= render "layouts/header_seed_index" %>
+			<% end %>
+		</div>
+
+		<!-- <div class="notice"><%= notice %></div>
+		<div class="alert"><%= alert %></div> -->
+		<div id="container">
+			<div id="sidebar">
+				<% if ["users", "networks", "messages"].include?(params[:controller]) %>
+					<%= render "layouts/sidebar_#{params[:controller]}" %>	
+				<% else %>
+					<%= render "layouts/sidebar_seeds" %>
+				<% end %>
+				<!-- <div class='clear'></div> -->
+			</div>
+			<div id="main">
+				<%= yield %>
+			</div>
+		</div>
+	</body>
+</html>

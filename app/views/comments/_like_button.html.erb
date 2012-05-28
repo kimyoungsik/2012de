@@ -1,0 +1,16 @@
+<% if user_signed_in? %>
+	<div id = "comment_<%= comment.id%>_like">
+		<% if Ditto.where(:user_id => current_user.id, :dittoable_id => comment.id, :dittoable_type => 'Comment').empty? %>	
+			<%= form_for current_user.dittos.build(:dittoable_id => comment.id, :dittoable_type => 'Comment'), :remote => true do |f| %>
+				<%= f.hidden_field :dittoable_id %>
+				<%= f.hidden_field :dittoable_type %>
+				<%= f.submit "좋아요", :class => "like-submit" %>
+			<% end %>		
+		<% else %>
+			<%= link_to "취소", comment.dittos.find_by_user_id(current_user), :method => :delete, :remote => true, :class => "like-submit" %>
+		<% end%>
+		<% if comment.dittos.any? %>
+			<span class="comment-like-info"><%= comment.dittos.count %></span>
+		<% end %>
+	</div>
+<% end %>

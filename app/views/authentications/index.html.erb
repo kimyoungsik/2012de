@@ -1,0 +1,11 @@
+<% if admin_signed_in?%>
+	<% if @authentications %>
+		<% @authentications.each do |authentication| %>
+			<%= authentication.provider %>
+			<%= authentication.uid %>
+			<%= link_to "delete", authentication, :method => :delete %>
+		<% end %>
+	<% end %>
+
+	<%= link_to "facebook Auth", '/auth/facebook'%>
+<% end %>

@@ -1,0 +1,14 @@
+<% if notification.sender %>
+	<%= div_for(notification, :onclick => "location.href= '#{notification.url}';",  :style => "cursor:pointer;", :class=> "item-box notification-item") do %>
+		<i class="notification-selector"></i>
+		<div class="item-left">
+			<%= profile_photo(notification.sender, :small, 50) %>
+		</div>
+		<div class="item-content">
+			<h3 class="content-hover"><%= link_to "#{notification.subject}", notification.url %></h3>
+			<div><%= link_to "#{notification.message}", notification.url %></div>
+			<div class="content-info"><%= time_ago_in_words(notification.created_at) %> 전 </div>
+			<div class="clear"></div>
+		</div>
+	<% end %>
+<% end %>

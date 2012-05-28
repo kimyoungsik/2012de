@@ -1,0 +1,26 @@
+<% if user_signed_in? %>
+ <div class="status-control <%= current_user.complete?(@seed) ? 'li-freeze' : 'li-normal' %>">
+	<div class="seed-digit" id="success-digit"><%= @seed.complete.count %></div>
+	
+		<% if current_user.complete?(@seed) %>	
+			<div class="seed-description">이 시드를 성공했습니다.</div>
+			<%= link_to "", current_user.participations.find_by_seed_id(@seed.id), 
+			:method => :delete, :remote => true, :confirm => "정말로 시드 참여를 취소하시겠습니까?", :class => "cancel-button" %>					
+		<% else %>
+			<div class="seed-description">
+				<% if current_user.participates_in?(@seed) %>
+					<%= form_for current_user.participations.find_by_seed_id(@seed.id), :remote => true do |f| %>
+						<%= f.submit "성공!", :class => "seed-complete-button" %>
+					<% end %>
+				<% else %>
+					<%= form_for current_user.participations.build(:seed_id => @seed.id, :status => 'complete'), :remote => true do |f| %>
+						<%= f.hidden_field :seed_id %>
+						<%= f.hidden_field :status %>
+						<%= f.submit "성공!", :class => "seed-complete-button" %>
+					<% end %>
+				<% end %>
+			</div>
+		<% end %>
+
+ </div>
+<% end %>

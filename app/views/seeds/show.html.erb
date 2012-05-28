@@ -1,0 +1,51 @@
+<% if user_signed_in? and current_user == @seed.user %>
+	<div id="seed-show-control">
+		<%= link_to "", @seed, :confirm => "정말로 삭제하시겠습니까?", :method => :delete, :id => "seed-show-delete" %>
+		<%= link_to "", edit_seed_path(@seed), :id => "seed-show-edit" %>
+	</div>
+<% end %>
+<div class="main-box seed-show">
+	<div class="item-box">
+		<div class="item-left">
+			<%= link_to image_tag(@seed.user.avatar.url(:small), :width => 70), @seed.user %>
+				<% if @seed.user.complete?(@seed) %>
+					<i class="mentor-icon"></i>
+				<% end %>
+		</div>
+		<div class="item-content">
+			<h1><%= @seed.title %></h1>
+			<div class="seed-info">
+				<h2><%= link_to @seed.user.name, user_path(@seed.user.id) %></h2>
+				<span><%= time_ago_in_words(@seed.created_at) %> 전</span>
+			</div>
+		</div>
+	</div>
+	<div class="item-box">
+		<div class="box-control">
+			<p><%= auto_link(@seed.description.gsub(/\n/, "<br />").html_safe) %></p>
+		</div>
+	</div>
+
+	<ul class="seed-status">
+		<li id="seed-participate"> 
+			<%= render 'seed_participate' %>
+		</li>
+
+		<li id="seed-support">
+			<%= render 'seed_support' %>
+		</li>
+
+		<li id="seed-complete">
+			<%= render 'seed_complete' %>
+		</li>		
+		<div class="clear"></div>
+	</ul>
+
+	<%= render 'kits/kit_form' %>
+</div>
+
+<div id="kits">
+	<%= render @kits%>
+</div>
+
+<%= will_paginate @kits %>

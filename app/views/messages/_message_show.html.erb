@@ -1,0 +1,33 @@
+<% if user_signed_in? %>
+	<div id="message-control">
+	<%= link_to "", @message.message_participations.find_by_user_id(current_user), :method => :delete, :confirm => "정말로 삭제하시겠습니까?", :id => "message-delete" %>
+	</div>
+<% end %>
+
+<div class="item-box message-item">
+	<div class="item-left">
+		<%= link_to profile_photo(@message.replies.last.user, :small, 60), @message.replies.last.user %>
+		<!-- <% @message.message_participants.each do |message_participant| %>			
+		<%= link_to profile_photo(message_participant, :small, 50), message_participant %>
+		<% end %> -->
+	</div>
+
+	<div class="item-content">
+		<h2><%= @message.title %></h2>
+		<p>총 <%= @replies.count %>개의 쪽지</p>
+		<div class="content-info">
+			<% @message.message_participants.each do |message_participant| %>
+			<%= message_participant.name %>
+			<% end %>
+			<%= @message.message_participants.count %>명 참가
+		</div>
+	</div>
+	<div class="clear"></div>	
+</div>
+
+<div id="reply_<%= @message.id %>">
+<%= render :partial => @replies, :locals => { :list => true } %>
+</div>
+<div class="reply-field">
+	<%= render 'replies/reply_form' %>
+</div>

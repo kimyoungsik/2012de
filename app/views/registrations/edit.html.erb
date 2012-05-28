@@ -1,0 +1,53 @@
+<div class="main-box user-edit">
+	<div class="item-title">
+		<h2>사용자정보 수정하기</h2>
+		<span>사용자의 정보를 변경합니다.</span>
+	</div>
+	
+	<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }, :validate => true) do |f| %>
+		<div class="item-box">
+			  <%= devise_error_messages! %>
+
+			  <div class="edit-input">
+					<p>이메일주소 변경하기</p>
+			  	<%= f.email_field :email %>
+				</div>
+			</div>
+			
+			<div class="item-box">
+			  <div class="edit-input">
+					<p>비밀번호 변경하기</p>
+					<div class="input-box">
+			  		<%= f.password_field :password %>
+			  		<%= f.password_field :password_confirmation %>
+					</div>
+					<span>* 만일 비밀번호 변경을 원치 않으실 경우, 빈칸으로 남겨주십시오.</span>
+				</div>
+			</div>
+			<div class="item-box">
+			  <div class="edit-input">
+					<p>현재 비밀번호</p>
+			  	<%= f.password_field :current_password %>
+				</div>
+		</div>
+		<div class="item-box">
+			<%= f.submit "수정하기" %>
+		</div>
+	<% end %>
+
+</div>
+
+<div class="main-box notification-setting">
+	<%= render 'notification_settings/form' %>
+</div>
+
+<!-- <div class="main-box account-cancel">
+	<div class="item-title">
+		<h2>Cancel my account</h2>
+	</div>	
+
+	<div class="item-box">
+		Unhappy? <%= link_to "Cancel my account", registration_path(resource_name), :confirm => "Are you sure?", :method => :delete %>.
+		<%= link_to "Back", :back %>
+	</div>
+</div> -->

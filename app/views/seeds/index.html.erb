@@ -1,0 +1,33 @@
+<% if user_signed_in? %>
+	<div id="seed-new" class="main-box">
+		<div class="item-box">
+			<div class="item-left">
+				<%= profile_photo(current_user, :small, 70) %>
+			</div>
+
+			<div class="item-content">
+			<i id="seed-box-wedge"></i>	
+				<%= form_for @seed, :validate => true do |f| %>
+					<div class="input-box">
+						<input id="seed-title-fake">
+						<%= f.text_field :title %>
+						<%= f.text_area :description %>
+					</div>
+					<div id="seed-button-box">
+					<%= f.submit "시드 만들기", :id => "seed-submit" %>
+					<a link="#" id="seed-cancel">취소</a>
+					</div>
+
+				<% end %>
+
+			</div>
+
+			<div class="clear"></div>
+		</div>
+	</div>
+<% end %>
+
+<div id="seeds" class="main-box">
+	<%= render @seeds %>
+</div>
+<%= will_paginate @seeds %>

@@ -1,0 +1,73 @@
+<div id="dreamers" class="main-box">
+	<div class="item-title">
+		<h2>드림킷을 하는 페이스북 친구들</h2>
+		<span>이미 페이스북 친구인 사람을 추가합니다.</span>
+	</div>
+	
+	 <% if @fb_user %>
+		<% dreamers = dreamer_in_facebook %>
+		<% dreamers.each do |dreamer|%>
+			<% unless Friendship.are_friends(dreamer.user, current_user) %>
+				<div class="item-box dreamer-item">
+				
+					<div class="item-left">
+						<%= profile_photo(dreamer.user, :small, 60) %>
+					</div>
+
+					<div class="item-right">
+						<div class="main-friend-box">
+							<%= render 'friendships/friendship_status', :user => dreamer.user %>
+						</div>
+					</div>
+								
+					<div class="item-content">
+						<h2><%= dreamer.user.name%></h2>
+						<p><%= dreamer.user.profile %></p>
+					</div>
+				
+					<div class="clear"></div>
+				</div>
+			<% end %>
+		<% end %>
+		
+	<% else %>	
+		<div class="item-box">
+			<p>페이스북 친구 중 아직 드림킷을 하는 사람이 없습니다.<br />
+				 페이스북 친구들을 새로 초대해보세요.</p>
+		</div>
+	<% end %>
+</div>
+
+ 
+
+<div id="dreamers-facebook" class="main-box">
+	<div class="item-title">
+		<h2>페이스북 친구를 드림킷으로 초대하기</h2>
+		<span>아직 드림킷을 해보지 않은 친구를 초대합니다.</span>
+	</div>
+	<div class="item-box facebook-item">
+		<div id="facebook-invite">
+			<a href ="#" onclick ="FB.ui({method: 'apprequests', message: 'Lets hit the Dreamkit!'}); return false;">페이스북 친구초대</a>
+		</div>
+		<div id="fb-root"></div>
+	</div>
+</div>
+
+
+
+<script>
+ window.fbAsyncInit = function() {
+   FB.init({
+		 appId      : '181566241883873',
+     status     : true, 
+     cookie     : true,
+     xfbml      : true,
+   });
+ };
+(function(){
+	var e = document.createElement('script');
+	e.src = document.location.protocol +'//connect.facebook.net/en_US/all.js';
+	e.async = true;
+	document.getElementById('fb-root').appendChild(e);
+}());
+</script>

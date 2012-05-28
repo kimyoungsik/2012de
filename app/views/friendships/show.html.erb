@@ -1,0 +1,31 @@
+<!-- friend requested -->
+<% if current_user == @user && !@user.requested_friends.empty? %>
+<div class="main-box" id="friend">
+	<div class="item-title">
+		<h2><%= @user.name %> 에게 온 친구요청</h2>
+		<span><%= @user.requested_friends.count %>명</span>
+	</div>
+	
+	<% @user.requested_friends.each do |friend| %>
+		<%= div_for(friend, :onclick => "location.href='#{user_path(friend)}';",  :style => "cursor:pointer;", :class=> "item-box requested-friend-item") do %>
+		<div class="item-left">
+			<%= link_to profile_photo(friend, :small, 60), friend %>
+		</div>
+
+		<div class="item-right">
+			<div class="main-friend-box">
+				<%= render 'friendships/friendship_status', :user =>friend %>
+			</div>
+		</div>
+				
+		<div class="item-content">
+			<h2><%= link_to friend.name, friend %></h2>
+			<p><%= friend.profile %></p>
+		</div>
+		<div class="clear"></div>
+		
+		<% end %>
+	<% end %>
+	<div class="clear"></div>
+</div>	
+<% end %>

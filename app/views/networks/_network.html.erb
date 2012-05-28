@@ -1,0 +1,10 @@
+<%= div_for(network, :onclick => "location.href='#{network_path(network)}';",  :style => "cursor:pointer;", :class=> "item-box") do %>
+<i class="sidebar-selector"></i>
+<h4>
+	<%= link_to network.name, network_path(network) %> 
+	<span><%= network.network_participations_count %></span>
+</h4>
+<% network.network_participants.first(8).each do |network_participant| %>
+<%= link_to profile_photo(network_participant, :small, 30), network_participant %>
+<% end %>
+<% end %>

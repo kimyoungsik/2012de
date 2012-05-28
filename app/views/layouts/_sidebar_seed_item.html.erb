@@ -1,0 +1,4 @@
+<%= div_for(seed, :onclick => "location.href='#{seed_path(seed)}';",  :style => "cursor:pointer;", :class=> "item-box") do %>
+	<i class="sidebar-selector"></i>
+	<%= link_to truncate(seed.title, :length => 25), seed %> <span><%= seed.participations.count %>명</span>
+<% end %>
